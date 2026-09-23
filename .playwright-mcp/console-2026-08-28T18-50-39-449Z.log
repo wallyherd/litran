@@ -1,0 +1,16 @@
+[    2922ms] [WARNING] Erro ao decodificar HTML: InvalidCharacterError: Failed to execute 'atob' on 'Window': The string to be decoded contains characters outside of the Latin1 range.
+    at Proxy.htmlDecodificado (https://assets-cdn.facilzap.app.br/componentes/catalogo/html-personalizado/html-personalizado.1.0.0.js:1:693)
+    at Qe (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:8423)
+    at get value (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:19209)
+    at Object.get [as htmlDecodificado] (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:64769)
+    at Object.get (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:35471)
+    at Rs.o (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:64872)
+    at gn (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:19821)
+    at yn (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:19881)
+    at Vi._.call (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:54450)
+    at qe.fn (https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:1:54957) @ https://assets-cdn.facilzap.app.br/componentes/catalogo/html-personalizado/html-personalizado.1.0.0.js:0
+[    2971ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:0
+[    2994ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js:0
+[   11170ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://api.facilzap.app.br/stories/listagem_geral?lojas%5B0%5D%5Bid%5D=45018&lojas%5B0%5D%5Bcatalogo%5D=4662&loja_id=45018&[object%20Object]&_=1787943041754:0
+[   11288ms] Object
+[   12034ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://litran.com.br/:0

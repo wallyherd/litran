@@ -1,0 +1,1506 @@
+[    2143ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:21548
+[    2573ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4414
+[    2575ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4414
+[ 1329428ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329691ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329691ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329691ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329691ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329691ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329691ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329691ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329692ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329699ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329700ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329700ms] TypeError: Cannot destructure property 'cart' of 'useCart(...)' as it is undefined.
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:25:5)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329700ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329700ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329700ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329700ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329701ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329701ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329701ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329701ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329701ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329701ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329709ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329709ms] TypeError: Cannot destructure property 'cart' of 'useCart(...)' as it is undefined.
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:25:5)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1329077ms] [ERROR] The above error occurred in the <Header> component:
+
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:22:26)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329078ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329078ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329078ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329078ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329078ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329079ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329081ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329082ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329082ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329083ms] [ERROR] The above error occurred in the <BottomStickyBar> component:
+
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:48)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329083ms] [ERROR] The above error occurred in the <CartDrawer> component:
+
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:41:7)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787933524543:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1329832ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19751:22)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19114:15)
+    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:18734:28)
+    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:18877:28)
+[ 1329698ms] [ERROR] Failed to load resource: net::ERR_CACHE_OPERATION_NOT_SUPPORTED @ http://localhost:3000/videos/video2.mp4:0
+[ 1329701ms] [ERROR] Failed to load resource: net::ERR_CACHE_OPERATION_NOT_SUPPORTED @ http://localhost:3000/videos/video3.mp4:0
+[ 1330521ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330526ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330527ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330649ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330678ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330680ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330680ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330680ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330680ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330680ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330680ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330680ms] TypeError: Cannot destructure property 'cart' of 'useCart(...)' as it is undefined.
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:25:5)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330818ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330819ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330820ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330820ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330820ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330820ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330820ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330821ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330821ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330829ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330829ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330829ms] TypeError: Cannot destructure property 'cart' of 'useCart(...)' as it is undefined.
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:25:5)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1330729ms] [ERROR] The above error occurred in the <Header> component:
+
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:22:26)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330730ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330730ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330730ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330730ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330731ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330731ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330731ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330731ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330731ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330731ms] [ERROR] The above error occurred in the <BottomStickyBar> component:
+
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:48)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330732ms] [ERROR] The above error occurred in the <CartDrawer> component:
+
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:41:7)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1330830ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19751:22)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19114:15)
+    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:18734:28)
+    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:18877:28)
+[ 1498502ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498503ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498557ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498561ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498561ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498561ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498561ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498561ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498561ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498561ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498561ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'cart' of 'useCart(...)' as it is undefined.
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:25:5)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498562ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498563ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498563ms] TypeError: Cannot destructure property 'addToCart' of 'useCart(...)' as it is undefined.
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:23:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498565ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498566ms] TypeError: Cannot destructure property 'cart' of 'useCart(...)' as it is undefined.
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:25:5)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[ 1498566ms] [ERROR] The above error occurred in the <Header> component:
+
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:22:26)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498567ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498567ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498568ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498568ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498569ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498569ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498569ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498570ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498570ms] [ERROR] The above error occurred in the <ProductCard> component:
+
+    at ProductCard (http://localhost:3000/src/components/ProductCard.jsx?t=1787935016524:21:31)
+    at div
+    at div
+    at section
+    at ProductGrid (http://localhost:3000/src/components/ProductGrid.jsx?t=1787935016524:22:31)
+    at main
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498571ms] [ERROR] The above error occurred in the <BottomStickyBar> component:
+
+    at BottomStickyBar (http://localhost:3000/src/components/BottomStickyBar.jsx?t=1787935016286:24:48)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498571ms] [ERROR] The above error occurred in the <CartDrawer> component:
+
+    at CartDrawer (http://localhost:3000/src/components/CartDrawer.jsx?t=1787935016524:41:7)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935016524:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016286:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[ 1498582ms] TypeError: Cannot destructure property 'totalItems' of 'useCart(...)' as it is undefined.
+    at Header (http://localhost:3000/src/components/Header.jsx?t=1787935016524:24:11)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at mountIndeterminateComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14924:21)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15912:22)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19751:22)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19114:15)
+    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:18734:28)
+    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:18877:28)
+[ 1500084ms] [ERROR] Failed to load resource: net::ERR_CACHE_OPERATION_NOT_SUPPORTED @ http://localhost:3000/videos/video1.mp4:0

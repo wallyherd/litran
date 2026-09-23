@@ -1,0 +1,1030 @@
+- generic [ref=f21e3]:
+  - generic [ref=f21e5]:
+    - generic [ref=f21e6]: Frete Grátis em compras acima de R$ 150,00 para todo o Brasil!
+    - generic [ref=f21e13]: Parcele suas compras em até 6x sem juros no cartão!
+    - generic [ref=f21e17]: Bem-vindos à loja LITRAN moda esportiva! Dúvidas? Fale no WhatsApp!
+    - generic [ref=f21e19]: Tecnologia & Atendimento por HDSoluções
+    - generic [ref=f21e24]: Frete Grátis em compras acima de R$ 150,00 para todo o Brasil!
+    - generic [ref=f21e31]: Parcele suas compras em até 6x sem juros no cartão!
+  - banner [ref=f21e35]:
+    - generic [ref=f21e37]:
+      - generic [ref=f21e38]: Buscar Produtos
+      - link [ref=f21e45] [cursor=pointer]:
+        - /url: "#"
+        - img "Litran Moda Esportiva" [ref=f21e46]
+      - generic [ref=f21e47]:
+        - link "WhatsApp" [ref=f21e48] [cursor=pointer]:
+          - /url: https://wa.me/5566996210809
+        - button "Minha Conta" [ref=f21e51] [cursor=pointer]:
+          - generic [ref=f21e55]:
+            - generic [ref=f21e56]: Minha
+            - generic [ref=f21e57]: Conta
+        - button "0" [ref=f21e58] [cursor=pointer]
+  - navigation [ref=f21e64]:
+    - list [ref=f21e66]:
+      - listitem [ref=f21e67]:
+        - button "INÍCIO" [ref=f21e68] [cursor=pointer]
+      - listitem [ref=f21e71]:
+        - button "MODA FITNESS ▾" [ref=f21e72] [cursor=pointer]:
+          - generic [ref=f21e73]: MODA FITNESS
+          - generic [ref=f21e74]: ▾
+      - listitem [ref=f21e75]:
+        - button "SUPLEMENTOS" [ref=f21e76] [cursor=pointer]
+      - listitem [ref=f21e78]:
+        - button "MUAY THAI ▾" [ref=f21e79] [cursor=pointer]:
+          - generic [ref=f21e80]: MUAY THAI
+          - generic [ref=f21e81]: ▾
+      - listitem [ref=f21e82]:
+        - button "MMA ▾" [ref=f21e83] [cursor=pointer]:
+          - generic [ref=f21e84]: MMA
+          - generic [ref=f21e85]: ▾
+      - listitem [ref=f21e86]:
+        - button "JIU-JITSU" [ref=f21e87] [cursor=pointer]
+      - listitem [ref=f21e89]:
+        - button "MAIS CATEGORIAS ▾" [ref=f21e90] [cursor=pointer]:
+          - generic [ref=f21e91]: MAIS CATEGORIAS
+          - generic [ref=f21e92]: ▾
+  - main [ref=f21e93]:
+    - generic [ref=f21e94]:
+      - generic [ref=f21e95]:
+        - img "Frete Grátis na primeira compra acima de 150,00" [ref=f21e97] [cursor=pointer]
+        - button "Slide anterior" [ref=f21e98] [cursor=pointer]
+        - button "Próximo slide" [ref=f21e101] [cursor=pointer]
+        - generic [ref=f21e104]:
+          - button "Ir para slide 1" [ref=f21e105] [cursor=pointer]
+          - button "Ir para slide 2" [ref=f21e106] [cursor=pointer]
+          - button "Ir para slide 3" [ref=f21e107] [cursor=pointer]
+          - button "Ir para slide 4" [ref=f21e108] [cursor=pointer]
+          - button "Ir para slide 5" [ref=f21e109] [cursor=pointer]
+      - generic [ref=f21e111]:
+        - generic [ref=f21e112]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+        - generic [ref=f21e115]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+        - generic [ref=f21e118]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+      - generic [ref=f21e122]:
+        - generic [ref=f21e123] [cursor=pointer]
+        - generic [ref=f21e124] [cursor=pointer]
+        - generic [ref=f21e125] [cursor=pointer]
+        - generic [ref=f21e126] [cursor=pointer]
+    - generic [ref=f21e129]:
+      - button "MODA FITNESS MODA FITNESS" [ref=f21e130] [cursor=pointer]:
+        - img "MODA FITNESS" [ref=f21e132]
+        - generic [ref=f21e133]: MODA FITNESS
+      - button "SUPLEMENTOS SUPLEMENTOS" [ref=f21e134] [cursor=pointer]:
+        - img "SUPLEMENTOS" [ref=f21e136]
+        - generic [ref=f21e137]: SUPLEMENTOS
+      - button "MUAY THAI MUAY THAI" [ref=f21e138] [cursor=pointer]:
+        - img "MUAY THAI" [ref=f21e140]
+        - generic [ref=f21e141]: MUAY THAI
+      - button "JIU-JITSU JIU-JITSU" [ref=f21e142] [cursor=pointer]:
+        - img "JIU-JITSU" [ref=f21e144]
+        - generic [ref=f21e145]: JIU-JITSU
+      - button "MMA MMA" [ref=f21e146] [cursor=pointer]:
+        - img "MMA" [ref=f21e148]
+        - generic [ref=f21e149]: MMA
+      - button "CAMISETA CAMISETA" [ref=f21e150] [cursor=pointer]:
+        - img "CAMISETA" [ref=f21e152]
+        - generic [ref=f21e153]: CAMISETA
+      - button "BLUSA BLUSA" [ref=f21e154] [cursor=pointer]:
+        - img "BLUSA" [ref=f21e156]
+        - generic [ref=f21e157]: BLUSA
+      - button "ACESSÓRIOS ACESSÓRIOS" [ref=f21e158] [cursor=pointer]:
+        - img "ACESSÓRIOS" [ref=f21e160]
+        - generic [ref=f21e161]: ACESSÓRIOS
+    - generic [ref=f21e163]:
+      - generic [ref=f21e164]:
+        - generic [ref=f21e165]:
+          - heading "TODOS OS PRODUTOS DA LOJA" [level=2] [ref=f21e166]
+          - paragraph [ref=f21e168]: Mostrando 44 produto(s) disponível(is)
+        - generic [ref=f21e169]:
+          - generic [ref=f21e171]: "Ordenar por:"
+          - combobox [ref=f21e172] [cursor=pointer]:
+            - option "Relevância" [selected]
+            - option "Menor Preço"
+            - option "Maior Preço"
+            - option "Melhores Avaliados"
+      - generic [ref=f21e173]:
+        - generic [ref=f21e174]:
+          - generic [ref=f21e175] [cursor=pointer]:
+            - img "MACAQUINHO MEIA COXA LORRANE" [ref=f21e176]
+            - generic [ref=f21e177]: Destaque
+            - button [ref=f21e178]
+          - generic [ref=f21e181]:
+            - generic [ref=f21e182]:
+              - heading "MACAQUINHO MEIA COXA LORRANE" [level=3] [ref=f21e183] [cursor=pointer]
+              - generic [ref=f21e184]:
+                - generic [ref=f21e185]: a partir de
+                - generic [ref=f21e186]:
+                  - generic [ref=f21e187]: R$ 100,00
+                  - generic [ref=f21e188]: R$ 130,00
+            - generic [ref=f21e189]:
+              - generic [ref=f21e190]:
+                - button [ref=f21e191] [cursor=pointer]
+                - generic [ref=f21e193]: "1"
+                - button [ref=f21e194] [cursor=pointer]
+              - button "Comprar" [ref=f21e196] [cursor=pointer]
+        - generic [ref=f21e202]:
+          - generic [ref=f21e203] [cursor=pointer]:
+            - img "CONJUNTO SHORT SUZANA" [ref=f21e204]
+            - generic [ref=f21e205]: Destaque
+            - button [ref=f21e206]
+          - generic [ref=f21e209]:
+            - generic [ref=f21e210]:
+              - heading "CONJUNTO SHORT SUZANA" [level=3] [ref=f21e211] [cursor=pointer]
+              - generic [ref=f21e212]:
+                - generic [ref=f21e213]: a partir de
+                - generic [ref=f21e214]:
+                  - generic [ref=f21e215]: R$ 115,90
+                  - generic [ref=f21e216]: R$ 145,90
+            - generic [ref=f21e217]:
+              - generic [ref=f21e218]:
+                - button [ref=f21e219] [cursor=pointer]
+                - generic [ref=f21e221]: "1"
+                - button [ref=f21e222] [cursor=pointer]
+              - button "Comprar" [ref=f21e224] [cursor=pointer]
+        - generic [ref=f21e230]:
+          - generic [ref=f21e231] [cursor=pointer]:
+            - img "BLUSA TULE PATRICIA" [ref=f21e232]
+            - generic [ref=f21e233]: Destaque
+            - button [ref=f21e234]
+          - generic [ref=f21e237]:
+            - generic [ref=f21e238]:
+              - heading "BLUSA TULE PATRICIA" [level=3] [ref=f21e239] [cursor=pointer]
+              - generic [ref=f21e240]:
+                - generic [ref=f21e241]: a partir de
+                - generic [ref=f21e242]:
+                  - generic [ref=f21e243]: R$ 49,90
+                  - generic [ref=f21e244]: R$ 69,90
+            - generic [ref=f21e245]:
+              - generic [ref=f21e246]:
+                - button [ref=f21e247] [cursor=pointer]
+                - generic [ref=f21e249]: "1"
+                - button [ref=f21e250] [cursor=pointer]
+              - button "Comprar" [ref=f21e252] [cursor=pointer]
+        - generic [ref=f21e258]:
+          - generic [ref=f21e259] [cursor=pointer]:
+            - img "MACACÃO ERICA" [ref=f21e260]
+            - generic [ref=f21e261]: Destaque
+            - button [ref=f21e262]
+          - generic [ref=f21e265]:
+            - generic [ref=f21e266]:
+              - heading "MACACÃO ERICA" [level=3] [ref=f21e267] [cursor=pointer]
+              - generic [ref=f21e268]:
+                - generic [ref=f21e269]: a partir de
+                - generic [ref=f21e270]:
+                  - generic [ref=f21e271]: R$ 125,90
+                  - generic [ref=f21e272]: R$ 155,90
+            - generic [ref=f21e273]:
+              - generic [ref=f21e274]:
+                - button [ref=f21e275] [cursor=pointer]
+                - generic [ref=f21e277]: "1"
+                - button [ref=f21e278] [cursor=pointer]
+              - button "Comprar" [ref=f21e280] [cursor=pointer]
+        - generic [ref=f21e286]:
+          - generic [ref=f21e287] [cursor=pointer]:
+            - img "SHORT MMA STRIKER GEAR" [ref=f21e288]
+            - generic [ref=f21e289]: Novidade
+            - button [ref=f21e290]
+          - generic [ref=f21e293]:
+            - generic [ref=f21e294]:
+              - heading "SHORT MMA STRIKER GEAR" [level=3] [ref=f21e295] [cursor=pointer]
+              - generic [ref=f21e296]:
+                - generic [ref=f21e297]: a partir de
+                - generic [ref=f21e298]:
+                  - generic [ref=f21e299]: R$ 99,90
+                  - generic [ref=f21e300]: R$ 129,90
+            - generic [ref=f21e301]:
+              - generic [ref=f21e302]:
+                - button [ref=f21e303] [cursor=pointer]
+                - generic [ref=f21e305]: "1"
+                - button [ref=f21e306] [cursor=pointer]
+              - button "Comprar" [ref=f21e308] [cursor=pointer]
+        - generic [ref=f21e314]:
+          - generic [ref=f21e315] [cursor=pointer]:
+            - img "SHORT MMA FORCE" [ref=f21e316]
+            - generic [ref=f21e317]: Novidade
+            - button [ref=f21e318]
+          - generic [ref=f21e321]:
+            - generic [ref=f21e322]:
+              - heading "SHORT MMA FORCE" [level=3] [ref=f21e323] [cursor=pointer]
+              - generic [ref=f21e324]:
+                - generic [ref=f21e325]: a partir de
+                - generic [ref=f21e326]:
+                  - generic [ref=f21e327]: R$ 69,90
+                  - generic [ref=f21e328]: R$ 99,90
+            - generic [ref=f21e329]:
+              - generic [ref=f21e330]:
+                - button [ref=f21e331] [cursor=pointer]
+                - generic [ref=f21e333]: "1"
+                - button [ref=f21e334] [cursor=pointer]
+              - button "Comprar" [ref=f21e336] [cursor=pointer]
+        - generic [ref=f21e342]:
+          - generic [ref=f21e343] [cursor=pointer]:
+            - img "SHORT MUAY THAI CURTO" [ref=f21e344]
+            - generic [ref=f21e345]: Novidade
+            - button [ref=f21e346]
+          - generic [ref=f21e349]:
+            - generic [ref=f21e350]:
+              - heading "SHORT MUAY THAI CURTO" [level=3] [ref=f21e351] [cursor=pointer]
+              - generic [ref=f21e352]:
+                - generic [ref=f21e353]: a partir de
+                - generic [ref=f21e354]:
+                  - generic [ref=f21e355]: R$ 65,00
+                  - generic [ref=f21e356]: R$ 95,00
+            - generic [ref=f21e357]:
+              - generic [ref=f21e358]:
+                - button [ref=f21e359] [cursor=pointer]
+                - generic [ref=f21e361]: "1"
+                - button [ref=f21e362] [cursor=pointer]
+              - button "Comprar" [ref=f21e364] [cursor=pointer]
+        - generic [ref=f21e370]:
+          - generic [ref=f21e371] [cursor=pointer]:
+            - img "SHORT MUAY THAI CURTO" [ref=f21e372]
+            - generic [ref=f21e373]: Novidade
+            - button [ref=f21e374]
+          - generic [ref=f21e377]:
+            - generic [ref=f21e378]:
+              - heading "SHORT MUAY THAI CURTO" [level=3] [ref=f21e379] [cursor=pointer]
+              - generic [ref=f21e380]:
+                - generic [ref=f21e381]: a partir de
+                - generic [ref=f21e382]:
+                  - generic [ref=f21e383]: R$ 65,00
+                  - generic [ref=f21e384]: R$ 95,00
+            - generic [ref=f21e385]:
+              - generic [ref=f21e386]:
+                - button [ref=f21e387] [cursor=pointer]
+                - generic [ref=f21e389]: "1"
+                - button [ref=f21e390] [cursor=pointer]
+              - button "Comprar" [ref=f21e392] [cursor=pointer]
+        - generic [ref=f21e398]:
+          - generic [ref=f21e399] [cursor=pointer]:
+            - img "SHORT MUAY THAI PRETO" [ref=f21e400]
+            - generic [ref=f21e401]: Novidade
+            - button [ref=f21e402]
+          - generic [ref=f21e405]:
+            - generic [ref=f21e406]:
+              - heading "SHORT MUAY THAI PRETO" [level=3] [ref=f21e407] [cursor=pointer]
+              - generic [ref=f21e408]:
+                - generic [ref=f21e409]: a partir de
+                - generic [ref=f21e410]:
+                  - generic [ref=f21e411]: R$ 89,90
+                  - generic [ref=f21e412]: R$ 119,90
+            - generic [ref=f21e413]:
+              - generic [ref=f21e414]:
+                - button [ref=f21e415] [cursor=pointer]
+                - generic [ref=f21e417]: "1"
+                - button [ref=f21e418] [cursor=pointer]
+              - button "Comprar" [ref=f21e420] [cursor=pointer]
+        - generic [ref=f21e426]:
+          - generic [ref=f21e427] [cursor=pointer]:
+            - img "CONJUNTO BICOLOR LARISA" [ref=f21e428]
+            - generic [ref=f21e429]: Destaque
+            - button [ref=f21e430]
+          - generic [ref=f21e433]:
+            - generic [ref=f21e434]:
+              - heading "CONJUNTO BICOLOR LARISA" [level=3] [ref=f21e435] [cursor=pointer]
+              - generic [ref=f21e436]:
+                - generic [ref=f21e437]: a partir de
+                - generic [ref=f21e438]:
+                  - generic [ref=f21e439]: R$ 139,90
+                  - generic [ref=f21e440]: R$ 169,90
+            - generic [ref=f21e441]:
+              - generic [ref=f21e442]:
+                - button [ref=f21e443] [cursor=pointer]
+                - generic [ref=f21e445]: "1"
+                - button [ref=f21e446] [cursor=pointer]
+              - button "Comprar" [ref=f21e448] [cursor=pointer]
+        - generic [ref=f21e454]:
+          - generic [ref=f21e455] [cursor=pointer]:
+            - img "FAIXA DE CABELO" [ref=f21e456]
+            - generic [ref=f21e457]: Destaque
+            - button [ref=f21e458]
+          - generic [ref=f21e461]:
+            - generic [ref=f21e462]:
+              - heading "FAIXA DE CABELO" [level=3] [ref=f21e463] [cursor=pointer]
+              - generic [ref=f21e464]:
+                - generic [ref=f21e465]: a partir de
+                - generic [ref=f21e466]:
+                  - generic [ref=f21e467]: R$ 18,00
+                  - generic [ref=f21e468]: R$ 38,00
+            - generic [ref=f21e469]:
+              - generic [ref=f21e470]:
+                - button [ref=f21e471] [cursor=pointer]
+                - generic [ref=f21e473]: "1"
+                - button [ref=f21e474] [cursor=pointer]
+              - button "Comprar" [ref=f21e476] [cursor=pointer]
+        - generic [ref=f21e482]:
+          - generic [ref=f21e483] [cursor=pointer]:
+            - img "SHORT DUPLO COM PROTEÇÃO SOLAR" [ref=f21e484]
+            - generic [ref=f21e485]: Destaque
+            - button [ref=f21e486]
+          - generic [ref=f21e489]:
+            - generic [ref=f21e490]:
+              - heading "SHORT DUPLO COM PROTEÇÃO SOLAR" [level=3] [ref=f21e491] [cursor=pointer]
+              - generic [ref=f21e492]:
+                - generic [ref=f21e493]: a partir de
+                - generic [ref=f21e494]:
+                  - generic [ref=f21e495]: R$ 49,90
+                  - generic [ref=f21e496]: R$ 69,90
+            - generic [ref=f21e497]:
+              - generic [ref=f21e498]:
+                - button [ref=f21e499] [cursor=pointer]
+                - generic [ref=f21e501]: "1"
+                - button [ref=f21e502] [cursor=pointer]
+              - button "Comprar" [ref=f21e504] [cursor=pointer]
+        - generic [ref=f21e510]:
+          - generic [ref=f21e511] [cursor=pointer]:
+            - img "BERMUDA VICTOR" [ref=f21e512]
+            - generic [ref=f21e513]: Destaque
+            - button [ref=f21e514]
+          - generic [ref=f21e517]:
+            - generic [ref=f21e518]:
+              - heading "BERMUDA VICTOR" [level=3] [ref=f21e519] [cursor=pointer]
+              - generic [ref=f21e520]:
+                - generic [ref=f21e521]: a partir de
+                - generic [ref=f21e522]:
+                  - generic [ref=f21e523]: R$ 49,90
+                  - generic [ref=f21e524]: R$ 69,90
+            - generic [ref=f21e525]:
+              - generic [ref=f21e526]:
+                - button [ref=f21e527] [cursor=pointer]
+                - generic [ref=f21e529]: "1"
+                - button [ref=f21e530] [cursor=pointer]
+              - button "Comprar" [ref=f21e532] [cursor=pointer]
+        - generic [ref=f21e538]:
+          - generic [ref=f21e539] [cursor=pointer]:
+            - img "CALÇA JOGG RTECTEL" [ref=f21e540]
+            - generic [ref=f21e541]: Destaque
+            - button [ref=f21e542]
+          - generic [ref=f21e545]:
+            - generic [ref=f21e546]:
+              - heading "CALÇA JOGG RTECTEL" [level=3] [ref=f21e547] [cursor=pointer]
+              - generic [ref=f21e548]:
+                - generic [ref=f21e549]: a partir de
+                - generic [ref=f21e550]:
+                  - generic [ref=f21e551]: R$ 72,00
+                  - generic [ref=f21e552]: R$ 102,00
+            - generic [ref=f21e553]:
+              - generic [ref=f21e554]:
+                - button [ref=f21e555] [cursor=pointer]
+                - generic [ref=f21e557]: "1"
+                - button [ref=f21e558] [cursor=pointer]
+              - button "Comprar" [ref=f21e560] [cursor=pointer]
+        - generic [ref=f21e566]:
+          - generic [ref=f21e567] [cursor=pointer]:
+            - img "CONJUNTO BRUNA" [ref=f21e568]
+            - generic [ref=f21e569]: Destaque
+            - button [ref=f21e570]
+          - generic [ref=f21e573]:
+            - generic [ref=f21e574]:
+              - heading "CONJUNTO BRUNA" [level=3] [ref=f21e575] [cursor=pointer]
+              - generic [ref=f21e576]:
+                - generic [ref=f21e577]: a partir de
+                - generic [ref=f21e578]:
+                  - generic [ref=f21e579]: R$ 99,99
+                  - generic [ref=f21e580]: R$ 129,99
+            - generic [ref=f21e581]:
+              - generic [ref=f21e582]:
+                - button [ref=f21e583] [cursor=pointer]
+                - generic [ref=f21e585]: "1"
+                - button [ref=f21e586] [cursor=pointer]
+              - button "Comprar" [ref=f21e588] [cursor=pointer]
+        - generic [ref=f21e594]:
+          - generic [ref=f21e595] [cursor=pointer]:
+            - img "BLUSA DRY FIT" [ref=f21e596]
+            - generic [ref=f21e597]: Destaque
+            - button [ref=f21e598]
+          - generic [ref=f21e601]:
+            - generic [ref=f21e602]:
+              - heading "BLUSA DRY FIT" [level=3] [ref=f21e603] [cursor=pointer]
+              - generic [ref=f21e604]:
+                - generic [ref=f21e605]: a partir de
+                - generic [ref=f21e606]:
+                  - generic [ref=f21e607]: R$ 39,90
+                  - generic [ref=f21e608]: R$ 59,90
+            - generic [ref=f21e609]:
+              - generic [ref=f21e610]:
+                - button [ref=f21e611] [cursor=pointer]
+                - generic [ref=f21e613]: "1"
+                - button [ref=f21e614] [cursor=pointer]
+              - button "Comprar" [ref=f21e616] [cursor=pointer]
+        - generic [ref=f21e622]:
+          - generic [ref=f21e623] [cursor=pointer]:
+            - img "TOP REBECA" [ref=f21e624]
+            - generic [ref=f21e625]: Destaque
+            - button [ref=f21e626]
+          - generic [ref=f21e629]:
+            - generic [ref=f21e630]:
+              - heading "TOP REBECA" [level=3] [ref=f21e631] [cursor=pointer]
+              - generic [ref=f21e632]:
+                - generic [ref=f21e633]: a partir de
+                - generic [ref=f21e634]:
+                  - generic [ref=f21e635]: R$ 19,90
+                  - generic [ref=f21e636]: R$ 39,90
+            - generic [ref=f21e637]:
+              - generic [ref=f21e638]:
+                - button [ref=f21e639] [cursor=pointer]
+                - generic [ref=f21e641]: "1"
+                - button [ref=f21e642] [cursor=pointer]
+              - button "Comprar" [ref=f21e644] [cursor=pointer]
+        - generic [ref=f21e650]:
+          - generic [ref=f21e651] [cursor=pointer]:
+            - img "CAMISA POLIAMIDA" [ref=f21e652]
+            - generic [ref=f21e653]: Destaque
+            - button [ref=f21e654]
+          - generic [ref=f21e657]:
+            - generic [ref=f21e658]:
+              - heading "CAMISA POLIAMIDA" [level=3] [ref=f21e659] [cursor=pointer]
+              - generic [ref=f21e660]:
+                - generic [ref=f21e661]: a partir de
+                - generic [ref=f21e662]:
+                  - generic [ref=f21e663]: R$ 39,90
+                  - generic [ref=f21e664]: R$ 59,90
+            - generic [ref=f21e665]:
+              - generic [ref=f21e666]:
+                - button [ref=f21e667] [cursor=pointer]
+                - generic [ref=f21e669]: "1"
+                - button [ref=f21e670] [cursor=pointer]
+              - button "Comprar" [ref=f21e672] [cursor=pointer]
+        - generic [ref=f21e678]:
+          - generic [ref=f21e679] [cursor=pointer]:
+            - img "BERMUDA CICLISTA" [ref=f21e680]
+            - generic [ref=f21e681]: Destaque
+            - button [ref=f21e682]
+          - generic [ref=f21e685]:
+            - generic [ref=f21e686]:
+              - heading "BERMUDA CICLISTA" [level=3] [ref=f21e687] [cursor=pointer]
+              - generic [ref=f21e688]:
+                - generic [ref=f21e689]: a partir de
+                - generic [ref=f21e690]:
+                  - generic [ref=f21e691]: R$ 40,00
+                  - generic [ref=f21e692]: R$ 60,00
+            - generic [ref=f21e693]:
+              - generic [ref=f21e694]:
+                - button [ref=f21e695] [cursor=pointer]
+                - generic [ref=f21e697]: "1"
+                - button [ref=f21e698] [cursor=pointer]
+              - button "Comprar" [ref=f21e700] [cursor=pointer]
+        - generic [ref=f21e706]:
+          - generic [ref=f21e707] [cursor=pointer]:
+            - img "BLUSA MANGA LONGA SLIM" [ref=f21e708]
+            - generic [ref=f21e709]: Destaque
+            - button [ref=f21e710]
+          - generic [ref=f21e713]:
+            - generic [ref=f21e714]:
+              - heading "BLUSA MANGA LONGA SLIM" [level=3] [ref=f21e715] [cursor=pointer]
+              - generic [ref=f21e716]:
+                - generic [ref=f21e717]: a partir de
+                - generic [ref=f21e718]:
+                  - generic [ref=f21e719]: R$ 120,00
+                  - generic [ref=f21e720]: R$ 150,00
+            - generic [ref=f21e721]:
+              - generic [ref=f21e722]:
+                - button [ref=f21e723] [cursor=pointer]
+                - generic [ref=f21e725]: "1"
+                - button [ref=f21e726] [cursor=pointer]
+              - button "Comprar" [ref=f21e728] [cursor=pointer]
+        - generic [ref=f21e734]:
+          - generic [ref=f21e735] [cursor=pointer]:
+            - img "CONJUNTO BICOLOR SUPLEX POWER" [ref=f21e736]
+            - generic [ref=f21e737]: Destaque
+            - button [ref=f21e738]
+          - generic [ref=f21e741]:
+            - generic [ref=f21e742]:
+              - heading "CONJUNTO BICOLOR SUPLEX POWER" [level=3] [ref=f21e743] [cursor=pointer]
+              - generic [ref=f21e744]:
+                - generic [ref=f21e745]: a partir de
+                - generic [ref=f21e746]:
+                  - generic [ref=f21e747]: R$ 119,90
+                  - generic [ref=f21e748]: R$ 149,90
+            - generic [ref=f21e749]:
+              - generic [ref=f21e750]:
+                - button [ref=f21e751] [cursor=pointer]
+                - generic [ref=f21e753]: "1"
+                - button [ref=f21e754] [cursor=pointer]
+              - button "Comprar" [ref=f21e756] [cursor=pointer]
+        - generic [ref=f21e762]:
+          - generic [ref=f21e763] [cursor=pointer]:
+            - img "CONJUNTO SUZANA SUPLEX POWER" [ref=f21e764]
+            - generic [ref=f21e765]: Destaque
+            - button [ref=f21e766]
+          - generic [ref=f21e769]:
+            - generic [ref=f21e770]:
+              - heading "CONJUNTO SUZANA SUPLEX POWER" [level=3] [ref=f21e771] [cursor=pointer]
+              - generic [ref=f21e772]:
+                - generic [ref=f21e773]: a partir de
+                - generic [ref=f21e774]:
+                  - generic [ref=f21e775]: R$ 115,00
+                  - generic [ref=f21e776]: R$ 145,00
+            - generic [ref=f21e777]:
+              - generic [ref=f21e778]:
+                - button [ref=f21e779] [cursor=pointer]
+                - generic [ref=f21e781]: "1"
+                - button [ref=f21e782] [cursor=pointer]
+              - button "Comprar" [ref=f21e784] [cursor=pointer]
+        - generic [ref=f21e790]:
+          - generic [ref=f21e791] [cursor=pointer]:
+            - img "CONJUNTO SUZI SUPLEX POWER" [ref=f21e792]
+            - generic [ref=f21e793]: Destaque
+            - button [ref=f21e794]
+          - generic [ref=f21e797]:
+            - generic [ref=f21e798]:
+              - heading "CONJUNTO SUZI SUPLEX POWER" [level=3] [ref=f21e799] [cursor=pointer]
+              - generic [ref=f21e800]:
+                - generic [ref=f21e801]: a partir de
+                - generic [ref=f21e802]:
+                  - generic [ref=f21e803]: R$ 119,90
+                  - generic [ref=f21e804]: R$ 149,90
+            - generic [ref=f21e805]:
+              - generic [ref=f21e806]:
+                - button [ref=f21e807] [cursor=pointer]
+                - generic [ref=f21e809]: "1"
+                - button [ref=f21e810] [cursor=pointer]
+              - button "Comprar" [ref=f21e812] [cursor=pointer]
+        - generic [ref=f21e818]:
+          - generic [ref=f21e819] [cursor=pointer]:
+            - img "BLUSA DRY FIT" [ref=f21e820]
+            - generic [ref=f21e821]: Destaque
+            - button [ref=f21e822]
+          - generic [ref=f21e825]:
+            - generic [ref=f21e826]:
+              - heading "BLUSA DRY FIT" [level=3] [ref=f21e827] [cursor=pointer]
+              - generic [ref=f21e828]:
+                - generic [ref=f21e829]: a partir de
+                - generic [ref=f21e830]:
+                  - generic [ref=f21e831]: R$ 39,90
+                  - generic [ref=f21e832]: R$ 59,90
+            - generic [ref=f21e833]:
+              - generic [ref=f21e834]:
+                - button [ref=f21e835] [cursor=pointer]
+                - generic [ref=f21e837]: "1"
+                - button [ref=f21e838] [cursor=pointer]
+              - button "Comprar" [ref=f21e840] [cursor=pointer]
+        - generic [ref=f21e846]:
+          - generic [ref=f21e847] [cursor=pointer]:
+            - img "BLUSA DRY FIT" [ref=f21e848]
+            - generic [ref=f21e849]: Destaque
+            - button [ref=f21e850]
+          - generic [ref=f21e853]:
+            - generic [ref=f21e854]:
+              - heading "BLUSA DRY FIT" [level=3] [ref=f21e855] [cursor=pointer]
+              - generic [ref=f21e856]:
+                - generic [ref=f21e857]: a partir de
+                - generic [ref=f21e858]:
+                  - generic [ref=f21e859]: R$ 49,90
+                  - generic [ref=f21e860]: R$ 69,90
+            - generic [ref=f21e861]:
+              - generic [ref=f21e862]:
+                - button [ref=f21e863] [cursor=pointer]
+                - generic [ref=f21e865]: "1"
+                - button [ref=f21e866] [cursor=pointer]
+              - button "Comprar" [ref=f21e868] [cursor=pointer]
+        - generic [ref=f21e874]:
+          - generic [ref=f21e875] [cursor=pointer]:
+            - img "LISO 60" [ref=f21e876]
+            - generic [ref=f21e877]: Destaque
+            - button [ref=f21e878]
+          - generic [ref=f21e881]:
+            - generic [ref=f21e882]:
+              - heading "LISO 60" [level=3] [ref=f21e883] [cursor=pointer]
+              - generic [ref=f21e884]:
+                - generic [ref=f21e885]: a partir de
+                - generic [ref=f21e886]:
+                  - generic [ref=f21e887]: R$ 179,90
+                  - generic [ref=f21e888]: R$ 209,90
+            - generic [ref=f21e889]:
+              - generic [ref=f21e890]:
+                - button [ref=f21e891] [cursor=pointer]
+                - generic [ref=f21e893]: "1"
+                - button [ref=f21e894] [cursor=pointer]
+              - button "Comprar" [ref=f21e896] [cursor=pointer]
+        - generic [ref=f21e902]:
+          - generic [ref=f21e903] [cursor=pointer]:
+            - img "NITRO CARB" [ref=f21e904]
+            - generic [ref=f21e905]: Destaque
+            - button [ref=f21e906]
+          - generic [ref=f21e909]:
+            - generic [ref=f21e910]:
+              - heading "NITRO CARB" [level=3] [ref=f21e911] [cursor=pointer]
+              - generic [ref=f21e912]:
+                - generic [ref=f21e913]: a partir de
+                - generic [ref=f21e914]:
+                  - generic [ref=f21e915]: R$ 149,90
+                  - generic [ref=f21e916]: R$ 179,90
+            - generic [ref=f21e917]:
+              - generic [ref=f21e918]:
+                - button [ref=f21e919] [cursor=pointer]
+                - generic [ref=f21e921]: "1"
+                - button [ref=f21e922] [cursor=pointer]
+              - button "Comprar" [ref=f21e924] [cursor=pointer]
+        - generic [ref=f21e930]:
+          - generic [ref=f21e931] [cursor=pointer]:
+            - img "CREATINA GUMMIES" [ref=f21e932]
+            - generic [ref=f21e933]: Destaque
+            - button [ref=f21e934]
+          - generic [ref=f21e937]:
+            - generic [ref=f21e938]:
+              - heading "CREATINA GUMMIES" [level=3] [ref=f21e939] [cursor=pointer]
+              - generic [ref=f21e940]:
+                - generic [ref=f21e941]: a partir de
+                - generic [ref=f21e942]:
+                  - generic [ref=f21e943]: R$ 179,90
+                  - generic [ref=f21e944]: R$ 209,90
+            - generic [ref=f21e945]:
+              - generic [ref=f21e946]:
+                - button [ref=f21e947] [cursor=pointer]
+                - generic [ref=f21e949]: "1"
+                - button [ref=f21e950] [cursor=pointer]
+              - button "Comprar" [ref=f21e952] [cursor=pointer]
+        - generic [ref=f21e958]:
+          - generic [ref=f21e959] [cursor=pointer]:
+            - img "ACTION COFFEE" [ref=f21e960]
+            - generic [ref=f21e961]: Destaque
+            - button [ref=f21e962]
+          - generic [ref=f21e965]:
+            - generic [ref=f21e966]:
+              - heading "ACTION COFFEE" [level=3] [ref=f21e967] [cursor=pointer]
+              - generic [ref=f21e968]:
+                - generic [ref=f21e969]: a partir de
+                - generic [ref=f21e970]:
+                  - generic [ref=f21e971]: R$ 179,90
+                  - generic [ref=f21e972]: R$ 209,90
+            - generic [ref=f21e973]:
+              - generic [ref=f21e974]:
+                - button [ref=f21e975] [cursor=pointer]
+                - generic [ref=f21e977]: "1"
+                - button [ref=f21e978] [cursor=pointer]
+              - button "Comprar" [ref=f21e980] [cursor=pointer]
+        - generic [ref=f21e986]:
+          - generic [ref=f21e987] [cursor=pointer]:
+            - img "BLEND COLÁGENO" [ref=f21e988]
+            - generic [ref=f21e989]: Destaque
+            - button [ref=f21e990]
+          - generic [ref=f21e993]:
+            - generic [ref=f21e994]:
+              - heading "BLEND COLÁGENO" [level=3] [ref=f21e995] [cursor=pointer]
+              - generic [ref=f21e996]:
+                - generic [ref=f21e997]: a partir de
+                - generic [ref=f21e998]:
+                  - generic [ref=f21e999]: R$ 193,90
+                  - generic [ref=f21e1000]: R$ 223,90
+            - generic [ref=f21e1001]:
+              - generic [ref=f21e1002]:
+                - button [ref=f21e1003] [cursor=pointer]
+                - generic [ref=f21e1005]: "1"
+                - button [ref=f21e1006] [cursor=pointer]
+              - button "Comprar" [ref=f21e1008] [cursor=pointer]
+        - generic [ref=f21e1014]:
+          - generic [ref=f21e1015] [cursor=pointer]:
+            - img "CREATINA" [ref=f21e1016]
+            - generic [ref=f21e1017]: Destaque
+            - button [ref=f21e1018]
+          - generic [ref=f21e1021]:
+            - generic [ref=f21e1022]:
+              - heading "CREATINA" [level=3] [ref=f21e1023] [cursor=pointer]
+              - generic [ref=f21e1024]:
+                - generic [ref=f21e1025]: a partir de
+                - generic [ref=f21e1026]:
+                  - generic [ref=f21e1027]: R$ 159,90
+                  - generic [ref=f21e1028]: R$ 189,90
+            - generic [ref=f21e1029]:
+              - generic [ref=f21e1030]:
+                - button [ref=f21e1031] [cursor=pointer]
+                - generic [ref=f21e1033]: "1"
+                - button [ref=f21e1034] [cursor=pointer]
+              - button "Comprar" [ref=f21e1036] [cursor=pointer]
+        - generic [ref=f21e1042]:
+          - generic [ref=f21e1043] [cursor=pointer]:
+            - img "CHÁ ACTION" [ref=f21e1044]
+            - generic [ref=f21e1045]: Destaque
+            - button [ref=f21e1046]
+          - generic [ref=f21e1049]:
+            - generic [ref=f21e1050]:
+              - heading "CHÁ ACTION" [level=3] [ref=f21e1051] [cursor=pointer]
+              - generic [ref=f21e1052]:
+                - generic [ref=f21e1053]: a partir de
+                - generic [ref=f21e1054]:
+                  - generic [ref=f21e1055]: R$ 59,90
+                  - generic [ref=f21e1056]: R$ 89,90
+            - generic [ref=f21e1057]:
+              - generic [ref=f21e1058]:
+                - button [ref=f21e1059] [cursor=pointer]
+                - generic [ref=f21e1061]: "1"
+                - button [ref=f21e1062] [cursor=pointer]
+              - button "Comprar" [ref=f21e1064] [cursor=pointer]
+        - generic [ref=f21e1070]:
+          - generic [ref=f21e1071] [cursor=pointer]:
+            - img "SHORT FITNES" [ref=f21e1072]
+            - generic [ref=f21e1073]: Novidade
+            - button [ref=f21e1074]
+          - generic [ref=f21e1077]:
+            - generic [ref=f21e1078]:
+              - heading "SHORT FITNES" [level=3] [ref=f21e1079] [cursor=pointer]
+              - generic [ref=f21e1080]:
+                - generic [ref=f21e1081]: a partir de
+                - generic [ref=f21e1082]:
+                  - generic [ref=f21e1083]: R$ 119,90
+                  - generic [ref=f21e1084]: R$ 149,90
+            - generic [ref=f21e1085]:
+              - generic [ref=f21e1086]:
+                - button [ref=f21e1087] [cursor=pointer]
+                - generic [ref=f21e1089]: "1"
+                - button [ref=f21e1090] [cursor=pointer]
+              - button "Comprar" [ref=f21e1092] [cursor=pointer]
+        - generic [ref=f21e1098]:
+          - generic [ref=f21e1099] [cursor=pointer]:
+            - img "BLUSA FITNES" [ref=f21e1100]
+            - generic [ref=f21e1101]: Novidade
+            - button [ref=f21e1102]
+          - generic [ref=f21e1105]:
+            - generic [ref=f21e1106]:
+              - heading "BLUSA FITNES" [level=3] [ref=f21e1107] [cursor=pointer]
+              - generic [ref=f21e1108]:
+                - generic [ref=f21e1109]: a partir de
+                - generic [ref=f21e1110]:
+                  - generic [ref=f21e1111]: R$ 89,90
+                  - generic [ref=f21e1112]: R$ 119,90
+            - generic [ref=f21e1113]:
+              - generic [ref=f21e1114]:
+                - button [ref=f21e1115] [cursor=pointer]
+                - generic [ref=f21e1117]: "1"
+                - button [ref=f21e1118] [cursor=pointer]
+              - button "Comprar" [ref=f21e1120] [cursor=pointer]
+        - generic [ref=f21e1126]:
+          - generic [ref=f21e1127] [cursor=pointer]:
+            - img "TOP FITNES" [ref=f21e1128]
+            - generic [ref=f21e1129]: Destaque
+            - button [ref=f21e1130]
+          - generic [ref=f21e1133]:
+            - generic [ref=f21e1134]:
+              - heading "TOP FITNES" [level=3] [ref=f21e1135] [cursor=pointer]
+              - generic [ref=f21e1136]:
+                - generic [ref=f21e1137]: a partir de
+                - generic [ref=f21e1138]:
+                  - generic [ref=f21e1139]: R$ 79,99
+                  - generic [ref=f21e1140]: R$ 109,99
+            - generic [ref=f21e1141]:
+              - generic [ref=f21e1142]:
+                - button [ref=f21e1143] [cursor=pointer]
+                - generic [ref=f21e1145]: "1"
+                - button [ref=f21e1146] [cursor=pointer]
+              - button "Comprar" [ref=f21e1148] [cursor=pointer]
+        - generic [ref=f21e1154]:
+          - generic [ref=f21e1155] [cursor=pointer]:
+            - img "SHORT FITNES" [ref=f21e1156]
+            - generic [ref=f21e1157]: Destaque
+            - button [ref=f21e1158]
+          - generic [ref=f21e1161]:
+            - generic [ref=f21e1162]:
+              - heading "SHORT FITNES" [level=3] [ref=f21e1163] [cursor=pointer]
+              - generic [ref=f21e1164]:
+                - generic [ref=f21e1165]: a partir de
+                - generic [ref=f21e1166]:
+                  - generic [ref=f21e1167]: R$ 114,99
+                  - generic [ref=f21e1168]: R$ 144,99
+            - generic [ref=f21e1169]:
+              - generic [ref=f21e1170]:
+                - button [ref=f21e1171] [cursor=pointer]
+                - generic [ref=f21e1173]: "1"
+                - button [ref=f21e1174] [cursor=pointer]
+              - button "Comprar" [ref=f21e1176] [cursor=pointer]
+        - generic [ref=f21e1182]:
+          - generic [ref=f21e1183] [cursor=pointer]:
+            - img "TOP SEM COSTURA" [ref=f21e1184]
+            - generic [ref=f21e1185]: Novidade
+            - button [ref=f21e1186]
+          - generic [ref=f21e1189]:
+            - generic [ref=f21e1190]:
+              - heading "TOP SEM COSTURA" [level=3] [ref=f21e1191] [cursor=pointer]
+              - generic [ref=f21e1192]:
+                - generic [ref=f21e1193]: a partir de
+                - generic [ref=f21e1194]:
+                  - generic [ref=f21e1195]: R$ 59,99
+                  - generic [ref=f21e1196]: R$ 89,99
+            - generic [ref=f21e1197]:
+              - generic [ref=f21e1198]:
+                - button [ref=f21e1199] [cursor=pointer]
+                - generic [ref=f21e1201]: "1"
+                - button [ref=f21e1202] [cursor=pointer]
+              - button "Comprar" [ref=f21e1204] [cursor=pointer]
+        - generic [ref=f21e1210]:
+          - generic [ref=f21e1211] [cursor=pointer]:
+            - img "LEGGING SEM COSTURA" [ref=f21e1212]
+            - generic [ref=f21e1213]: Novidade
+            - button [ref=f21e1214]
+          - generic [ref=f21e1217]:
+            - generic [ref=f21e1218]:
+              - heading "LEGGING SEM COSTURA" [level=3] [ref=f21e1219] [cursor=pointer]
+              - generic [ref=f21e1220]:
+                - generic [ref=f21e1221]: a partir de
+                - generic [ref=f21e1222]:
+                  - generic [ref=f21e1223]: R$ 159,99
+                  - generic [ref=f21e1224]: R$ 189,99
+            - generic [ref=f21e1225]:
+              - generic [ref=f21e1226]:
+                - button [ref=f21e1227] [cursor=pointer]
+                - generic [ref=f21e1229]: "1"
+                - button [ref=f21e1230] [cursor=pointer]
+              - button "Comprar" [ref=f21e1232] [cursor=pointer]
+        - generic [ref=f21e1238]:
+          - generic [ref=f21e1239] [cursor=pointer]:
+            - img "LEGGING COM RECORTE" [ref=f21e1240]
+            - generic [ref=f21e1241]: Novidade
+            - button [ref=f21e1242]
+          - generic [ref=f21e1245]:
+            - generic [ref=f21e1246]:
+              - heading "LEGGING COM RECORTE" [level=3] [ref=f21e1247] [cursor=pointer]
+              - generic [ref=f21e1248]:
+                - generic [ref=f21e1249]: a partir de
+                - generic [ref=f21e1250]:
+                  - generic [ref=f21e1251]: R$ 169,90
+                  - generic [ref=f21e1252]: R$ 199,90
+            - generic [ref=f21e1253]:
+              - generic [ref=f21e1254]:
+                - button [ref=f21e1255] [cursor=pointer]
+                - generic [ref=f21e1257]: "1"
+                - button [ref=f21e1258] [cursor=pointer]
+              - button "Comprar" [ref=f21e1260] [cursor=pointer]
+        - generic [ref=f21e1266]:
+          - generic [ref=f21e1267] [cursor=pointer]:
+            - img "TOP BOJO REMOVÍVEL RECORTE" [ref=f21e1268]
+            - generic [ref=f21e1269]: Novidade
+            - button [ref=f21e1270]
+          - generic [ref=f21e1273]:
+            - generic [ref=f21e1274]:
+              - heading "TOP BOJO REMOVÍVEL RECORTE" [level=3] [ref=f21e1275] [cursor=pointer]
+              - generic [ref=f21e1276]:
+                - generic [ref=f21e1277]: a partir de
+                - generic [ref=f21e1278]:
+                  - generic [ref=f21e1279]: R$ 114,99
+                  - generic [ref=f21e1280]: R$ 144,99
+            - generic [ref=f21e1281]:
+              - generic [ref=f21e1282]:
+                - button [ref=f21e1283] [cursor=pointer]
+                - generic [ref=f21e1285]: "1"
+                - button [ref=f21e1286] [cursor=pointer]
+              - button "Comprar" [ref=f21e1288] [cursor=pointer]
+        - generic [ref=f21e1294]:
+          - generic [ref=f21e1295] [cursor=pointer]:
+            - img "BLUSA PROTEÇÃO SOLAR" [ref=f21e1296]
+            - generic [ref=f21e1297]: Destaque
+            - button [ref=f21e1298]
+          - generic [ref=f21e1301]:
+            - generic [ref=f21e1302]:
+              - heading "BLUSA PROTEÇÃO SOLAR" [level=3] [ref=f21e1303] [cursor=pointer]
+              - generic [ref=f21e1304]:
+                - generic [ref=f21e1305]: a partir de
+                - generic [ref=f21e1306]:
+                  - generic [ref=f21e1307]: R$ 99,90
+                  - generic [ref=f21e1308]: R$ 129,90
+            - generic [ref=f21e1309]:
+              - generic [ref=f21e1310]:
+                - button [ref=f21e1311] [cursor=pointer]
+                - generic [ref=f21e1313]: "1"
+                - button [ref=f21e1314] [cursor=pointer]
+              - button "Comprar" [ref=f21e1316] [cursor=pointer]
+        - generic [ref=f21e1322]:
+          - generic [ref=f21e1323] [cursor=pointer]:
+            - img "CALÇA COM BOLÇO" [ref=f21e1324]
+            - generic [ref=f21e1325]: Destaque
+            - button [ref=f21e1326]
+          - generic [ref=f21e1329]:
+            - generic [ref=f21e1330]:
+              - heading "CALÇA COM BOLÇO" [level=3] [ref=f21e1331] [cursor=pointer]
+              - generic [ref=f21e1332]:
+                - generic [ref=f21e1333]: a partir de
+                - generic [ref=f21e1334]:
+                  - generic [ref=f21e1335]: R$ 129,99
+                  - generic [ref=f21e1336]: R$ 159,99
+            - generic [ref=f21e1337]:
+              - generic [ref=f21e1338]:
+                - button [ref=f21e1339] [cursor=pointer]
+                - generic [ref=f21e1341]: "1"
+                - button [ref=f21e1342] [cursor=pointer]
+              - button "Comprar" [ref=f21e1344] [cursor=pointer]
+        - generic [ref=f21e1350]:
+          - generic [ref=f21e1351] [cursor=pointer]:
+            - img "ÓCULOS COM PROTEÇÃO SOLAR" [ref=f21e1352]
+            - generic [ref=f21e1353]: Destaque
+            - button [ref=f21e1354]
+          - generic [ref=f21e1357]:
+            - generic [ref=f21e1358]:
+              - heading "ÓCULOS COM PROTEÇÃO SOLAR" [level=3] [ref=f21e1359] [cursor=pointer]
+              - generic [ref=f21e1360]:
+                - generic [ref=f21e1361]: a partir de
+                - generic [ref=f21e1362]:
+                  - generic [ref=f21e1363]: R$ 99,99
+                  - generic [ref=f21e1364]: R$ 129,99
+            - generic [ref=f21e1365]:
+              - generic [ref=f21e1366]:
+                - button [ref=f21e1367] [cursor=pointer]
+                - generic [ref=f21e1369]: "1"
+                - button [ref=f21e1370] [cursor=pointer]
+              - button "Comprar" [ref=f21e1372] [cursor=pointer]
+        - generic [ref=f21e1378]:
+          - generic [ref=f21e1379] [cursor=pointer]:
+            - img "ÓCULOS DE SOL" [ref=f21e1380]
+            - generic [ref=f21e1381]: Destaque
+            - button [ref=f21e1382]
+          - generic [ref=f21e1385]:
+            - generic [ref=f21e1386]:
+              - heading "ÓCULOS DE SOL" [level=3] [ref=f21e1387] [cursor=pointer]
+              - generic [ref=f21e1388]:
+                - generic [ref=f21e1389]: a partir de
+                - generic [ref=f21e1390]:
+                  - generic [ref=f21e1391]: R$ 139,90
+                  - generic [ref=f21e1392]: R$ 169,90
+            - generic [ref=f21e1393]:
+              - generic [ref=f21e1394]:
+                - button [ref=f21e1395] [cursor=pointer]
+                - generic [ref=f21e1397]: "1"
+                - button [ref=f21e1398] [cursor=pointer]
+              - button "Comprar" [ref=f21e1400] [cursor=pointer]
+    - generic [ref=f21e1407]:
+      - img "Creatina 100% pura - Força que dura, desempenho que evolui" [ref=f21e1409] [cursor=pointer]
+      - button "Slide anterior" [ref=f21e1410] [cursor=pointer]
+      - button "Próximo slide" [ref=f21e1413] [cursor=pointer]
+      - generic [ref=f21e1416]:
+        - button "Ir para slide 1" [ref=f21e1417] [cursor=pointer]
+        - button "Ir para slide 2" [ref=f21e1418] [cursor=pointer]
+    - generic [ref=f21e1421]:
+      - generic [ref=f21e1426]:
+        - strong [ref=f21e1427]: Compra segura
+        - text: Dados protegidos durante toda a compra.
+      - generic [ref=f21e1431]:
+        - strong [ref=f21e1432]: Atendimento direto
+        - text: Fale com a loja pelo WhatsApp.
+      - generic [ref=f21e1439]:
+        - strong [ref=f21e1440]: Formas de entrega
+        - text: Consulte prazos e opções disponíveis.
+      - generic [ref=f21e1444]:
+        - strong [ref=f21e1445]: Informações da loja
+        - text: Conheça os dados da loja antes de comprar.
+  - contentinfo [ref=f21e1446]:
+    - generic [ref=f21e1447]:
+      - generic [ref=f21e1448]:
+        - generic [ref=f21e1450]:
+          - generic [ref=f21e1451]: NOVIDADES DA LOJA
+          - heading "Receba novidades e promoções" [level=3] [ref=f21e1452]
+          - paragraph [ref=f21e1453]: Cadastre seus dados e acompanhe as novidades da loja.
+        - generic [ref=f21e1454]:
+          - textbox "Seu nome" [ref=f21e1455]
+          - generic [ref=f21e1456]:
+            - generic [ref=f21e1457]: 🇧🇷 +55
+            - textbox "Seu WhatsApp" [ref=f21e1458]
+          - textbox "Seu e-mail" [ref=f21e1459]
+          - button "Eu quero" [ref=f21e1460] [cursor=pointer]
+      - generic [ref=f21e1461]:
+        - generic [ref=f21e1462]:
+          - img "Litran Logo" [ref=f21e1463] [cursor=pointer]
+          - generic [ref=f21e1464]:
+            - link [ref=f21e1465] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f21e1469] [cursor=pointer]:
+              - /url: https://wa.me/5566996210809
+            - link [ref=f21e1472] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f21e1475]:
+          - heading "Categorias da Loja" [level=4] [ref=f21e1476]
+          - list [ref=f21e1477]:
+            - listitem [ref=f21e1478]:
+              - button "INÍCIO" [ref=f21e1479] [cursor=pointer]
+            - listitem [ref=f21e1480]:
+              - button "MODA FITNESS" [ref=f21e1481] [cursor=pointer]
+            - listitem [ref=f21e1482]:
+              - button "SUPLEMENTOS" [ref=f21e1483] [cursor=pointer]
+            - listitem [ref=f21e1484]:
+              - button "MUAY THAI" [ref=f21e1485] [cursor=pointer]
+            - listitem [ref=f21e1486]:
+              - button "MMA" [ref=f21e1487] [cursor=pointer]
+            - listitem [ref=f21e1488]:
+              - button "JIU-JITSU" [ref=f21e1489] [cursor=pointer]
+        - generic [ref=f21e1490]:
+          - heading "Ajuda e atendimento" [level=4] [ref=f21e1491]
+          - list [ref=f21e1492]:
+            - listitem [ref=f21e1493]:
+              - generic [ref=f21e1496]: (66) 99621-0809
+            - listitem [ref=f21e1497]:
+              - generic [ref=f21e1501]: gabilitranmodas.p@gmail.com
+            - listitem [ref=f21e1502]:
+              - link "Atendimento via WhatsApp" [ref=f21e1503] [cursor=pointer]:
+                - /url: https://wa.me/5566996210809
+        - generic [ref=f21e1504]:
+          - heading "Pagamento e segurança" [level=4] [ref=f21e1505]
+          - paragraph [ref=f21e1506]: As opções disponíveis aparecem durante a finalização do pedido.
+          - generic [ref=f21e1511]:
+            - strong [ref=f21e1512]: Ambiente protegido por SSL
+            - text: Dados processados com segurança
+      - generic [ref=f21e1513]:
+        - generic [ref=f21e1514]:
+          - strong [ref=f21e1515]: LITRAN moda esportiva
+          - paragraph [ref=f21e1516]: Várzea Grande MT - MT • © 2026. Todos os direitos reservados.
+        - generic [ref=f21e1517]:
+          - text: loja virtual criada com
+          - strong [ref=f21e1518]: HDSoluções
+  - generic [ref=f21e1519]:
+    - link "Atendimento" [ref=f21e1520] [cursor=pointer]:
+      - /url: https://wa.me/5566996210809
+    - generic [ref=f21e1529] [cursor=pointer]:
+      - generic [ref=f21e1530]: Seu carrinho está vazio
+      - generic [ref=f21e1531]: Adicione produtos para continuar
+    - button "Finalizar pedido" [ref=f21e1532] [cursor=pointer]

@@ -1,0 +1,203 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: Frete Grátis em compras acima de R$ 150,00 para todo o Brasil!
+    - generic [ref=e13]: Parcele suas compras em até 6x sem juros no cartão!
+    - generic [ref=e17]: Bem-vindos à loja LITRAN moda esportiva! Dúvidas? Fale no WhatsApp!
+    - generic [ref=e19]: Tecnologia & Atendimento por HDSoluções
+    - generic [ref=e24]: Frete Grátis em compras acima de R$ 150,00 para todo o Brasil!
+    - generic [ref=e31]: Parcele suas compras em até 6x sem juros no cartão!
+  - banner [ref=e35]:
+    - generic [ref=e37]:
+      - generic [ref=e38]: Buscar Produtos
+      - link [ref=e45] [cursor=pointer]:
+        - /url: "#"
+        - img "Litran Moda Esportiva" [ref=e46]
+      - generic [ref=e47]:
+        - link "WhatsApp" [ref=e48] [cursor=pointer]:
+          - /url: https://wa.me/5566996210809
+        - button "Minha Conta" [ref=e51] [cursor=pointer]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: Minha
+            - generic [ref=e57]: Conta
+        - button "0" [ref=e58] [cursor=pointer]
+  - navigation [ref=e64]:
+    - list [ref=e66]:
+      - listitem [ref=e67]:
+        - button "INÍCIO" [ref=e68] [cursor=pointer]
+      - listitem [ref=e71]:
+        - button "MODA FITNESS ▾" [ref=e72] [cursor=pointer]:
+          - generic [ref=e73]: MODA FITNESS
+          - generic [ref=e74]: ▾
+      - listitem [ref=e75]:
+        - button "SUPLEMENTOS" [ref=e76] [cursor=pointer]
+      - listitem [ref=e78]:
+        - button "MUAY THAI ▾" [ref=e79] [cursor=pointer]:
+          - generic [ref=e80]: MUAY THAI
+          - generic [ref=e81]: ▾
+      - listitem [ref=e82]:
+        - button "MMA ▾" [ref=e83] [cursor=pointer]:
+          - generic [ref=e84]: MMA
+          - generic [ref=e85]: ▾
+      - listitem [ref=e86]:
+        - button "JIU-JITSU" [ref=e87] [cursor=pointer]
+      - listitem [ref=e89]:
+        - button "MAIS CATEGORIAS ▾" [ref=e90] [cursor=pointer]:
+          - generic [ref=e91]: MAIS CATEGORIAS
+          - generic [ref=e92]: ▾
+  - main [ref=e93]:
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96] [cursor=pointer]:
+          - img "Suplemento certo, resultado certo!" [ref=e97]
+          - generic [ref=e98]:
+            - generic [ref=e99]:
+              - generic [ref=e100]: LITRAN
+              - heading "Suplemento certo, resultado certo!" [level=2] [ref=e101]
+              - paragraph [ref=e102]: Você não treina para ser igual, treina para ser melhor.
+              - button "Confira Agora ➔" [ref=e103]
+            - generic [ref=e104]: CONFIRA AGORA
+        - button "Slide anterior" [ref=e105] [cursor=pointer]
+        - button "Próximo slide" [ref=e108] [cursor=pointer]
+        - generic [ref=e111]:
+          - button "Ir para slide 1" [ref=e112] [cursor=pointer]
+          - button "Ir para slide 2" [ref=e113] [cursor=pointer]
+          - button "Ir para slide 3" [ref=e114] [cursor=pointer]
+      - generic [ref=e116]:
+        - generic [ref=e117]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+        - generic [ref=e120]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+        - generic [ref=e123]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+      - generic [ref=e127]:
+        - generic [ref=e128] [cursor=pointer]
+        - generic [ref=e129] [cursor=pointer]
+        - generic [ref=e130] [cursor=pointer]
+        - generic [ref=e131] [cursor=pointer]
+    - generic [ref=e134]:
+      - button "MODA FITNESS MODA FITNESS" [ref=e135] [cursor=pointer]:
+        - img "MODA FITNESS" [ref=e137]
+        - generic [ref=e138]: MODA FITNESS
+      - button "SUPLEMENTOS SUPLEMENTOS" [ref=e139] [cursor=pointer]:
+        - img "SUPLEMENTOS" [ref=e141]
+        - generic [ref=e142]: SUPLEMENTOS
+      - button "MUAY THAI MUAY THAI" [ref=e143] [cursor=pointer]:
+        - img "MUAY THAI" [ref=e145]
+        - generic [ref=e146]: MUAY THAI
+      - button "MMA MMA" [ref=e147] [cursor=pointer]:
+        - img "MMA" [ref=e149]
+        - generic [ref=e150]: MMA
+      - button "JIU-JITSU JIU-JITSU" [ref=e151] [cursor=pointer]:
+        - img "JIU-JITSU" [ref=e153]
+        - generic [ref=e154]: JIU-JITSU
+      - button "CAMISETA CAMISETA" [ref=e155] [cursor=pointer]:
+        - img "CAMISETA" [ref=e157]
+        - generic [ref=e158]: CAMISETA
+      - button "BLUSA BLUSA" [ref=e159] [cursor=pointer]:
+        - img "BLUSA" [ref=e161]
+        - generic [ref=e162]: BLUSA
+      - button "ACESSÓRIOS ACESSÓRIOS" [ref=e163] [cursor=pointer]:
+        - img "ACESSÓRIOS" [ref=e165]
+        - generic [ref=e166]: ACESSÓRIOS
+    - generic [ref=e168]:
+      - generic [ref=e169]:
+        - generic [ref=e170]:
+          - heading "INÍCIO" [level=2] [ref=e171]
+          - paragraph [ref=e173]: 0 produto(s) encontrado(s)
+        - generic [ref=e174]:
+          - generic [ref=e176]: "Ordenar por:"
+          - combobox [ref=e177] [cursor=pointer]:
+            - option "Relevância" [selected]
+            - option "Menor Preço"
+            - option "Maior Preço"
+            - option "Melhores Avaliados"
+      - generic [ref=e178]:
+        - heading "Nenhum produto encontrado" [level=3] [ref=e184]
+        - paragraph [ref=e185]: Não encontramos produtos para o filtro ou busca informada. Tente selecionar outra categoria.
+    - generic [ref=e188] [cursor=pointer]:
+      - generic [ref=e191]:
+        - heading "Acelera a queima" [level=2] [ref=e192]
+        - generic [ref=e193]: 100% NATURAL
+      - img "Acelera a queima" [ref=e195]
+    - generic [ref=e198]:
+      - generic [ref=e203]:
+        - strong [ref=e204]: Compra segura
+        - text: Dados protegidos durante toda a compra.
+      - generic [ref=e208]:
+        - strong [ref=e209]: Atendimento direto
+        - text: Fale com a loja pelo WhatsApp.
+      - generic [ref=e216]:
+        - strong [ref=e217]: Formas de entrega
+        - text: Consulte prazos e opções disponíveis.
+      - generic [ref=e221]:
+        - strong [ref=e222]: Informações da loja
+        - text: Conheça os dados da loja antes de comprar.
+  - contentinfo [ref=e223]:
+    - generic [ref=e224]:
+      - generic [ref=e225]:
+        - generic [ref=e227]:
+          - generic [ref=e228]: NOVIDADES DA LOJA
+          - heading "Receba novidades e promoções" [level=3] [ref=e229]
+          - paragraph [ref=e230]: Cadastre seus dados e acompanhe as novidades da loja.
+        - generic [ref=e231]:
+          - textbox "Seu nome" [ref=e232]
+          - generic [ref=e233]:
+            - generic [ref=e234]: 🇧🇷 +55
+            - textbox "Seu WhatsApp" [ref=e235]
+          - textbox "Seu e-mail" [ref=e236]
+          - button "Eu quero" [ref=e237] [cursor=pointer]
+      - generic [ref=e238]:
+        - generic [ref=e239]:
+          - img "Litran Logo" [ref=e240]
+          - generic [ref=e241]:
+            - link [ref=e242] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=e246] [cursor=pointer]:
+              - /url: https://wa.me/5566996210809
+            - link [ref=e249] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e252]:
+          - heading "Ajuda e atendimento" [level=4] [ref=e253]
+          - list [ref=e254]:
+            - listitem [ref=e255]:
+              - generic [ref=e258]: (66) 99621-0809
+            - listitem [ref=e259]:
+              - generic [ref=e263]: gabilitranmodas.p@gmail.com
+            - listitem [ref=e264]:
+              - link "Informações da loja" [ref=e265] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e266]:
+          - heading "Políticas da loja" [level=4] [ref=e267]
+          - list [ref=e268]:
+            - listitem [ref=e269]:
+              - link "Formas de pagamento" [ref=e270] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e271]:
+              - link "Formas de entrega" [ref=e272] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e273]:
+              - link "Política de trocas" [ref=e274] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e275]:
+              - link "Termos de garantia" [ref=e276] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e277]:
+              - link "Sobre nós" [ref=e278] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e279]:
+          - heading "Pagamento e segurança" [level=4] [ref=e280]
+          - paragraph [ref=e281]: As opções disponíveis aparecem durante a finalização do pedido.
+          - generic [ref=e286]:
+            - strong [ref=e287]: Ambiente protegido por SSL
+            - text: Dados processados com segurança
+      - generic [ref=e288]:
+        - generic [ref=e289]:
+          - strong [ref=e290]: LITRAN moda esportiva
+          - paragraph [ref=e291]: Várzea Grande MT - MT • © 2026. Todos os direitos reservados.
+        - generic [ref=e292]:
+          - text: loja virtual criada com
+          - strong [ref=e293]: HDSoluções
+  - generic [ref=e294]:
+    - link "Atendimento" [ref=e295] [cursor=pointer]:
+      - /url: https://wa.me/5566996210809
+    - generic [ref=e304] [cursor=pointer]:
+      - generic [ref=e305]: Seu carrinho está vazio
+      - generic [ref=e306]: Adicione produtos para continuar
+    - button "Finalizar pedido" [ref=e307] [cursor=pointer]

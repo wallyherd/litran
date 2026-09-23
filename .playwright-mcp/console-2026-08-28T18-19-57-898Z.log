@@ -1,0 +1,138 @@
+[    1266ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css:0
+[    1280ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/base/catalogo.1.0.1.css:0
+[    1283ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/formas-entrega-pagamento/formas-entrega-pagamento.1.0.0.css:0
+[    1283ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/simulacao-frete/simulacao-frete.1.0.0.css:0
+[    1283ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/select-pais/select-pais.1.0.0.css:0
+[    1283ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/barra-finalizacao/barra-finalizacao.1.0.3.css:0
+[    1283ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/input-phone/input-phone.1.0.0.css:0
+[    1284ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/video-player/video-player.1.0.0.css:0
+[    1284ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/stories/stories.1.0.1.css:0
+[    1284ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/perfil-loja/perfil-loja.1.0.0.css:0
+[    1284ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/conta-visitante-popover/conta-visitante-popover.1.0.4.css:0
+[    1284ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/validacao-whatsapp/validacao-whatsapp.1.0.0.css:0
+[    1284ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/termos-politicas/termos-politicas.1.0.0.css:0
+[    1285ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/atendimento-flutuante/atendimento-flutuante.1.0.2.css:0
+[    1285ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/simulacao-frete/simulacao-frete.1.0.2.js:0
+[    1285ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/select-pais/select-pais.1.0.0.js:0
+[    1285ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/barra-finalizacao/barra-finalizacao.1.0.6.js:0
+[    1286ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/input-phone/input-phone.1.0.0.js:0
+[    1286ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/conta-visitante-popover/conta-visitante-popover.1.0.4.js:0
+[    1286ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/validacao-whatsapp/validacao-whatsapp.1.0.2.js:0
+[    1286ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/termos-politicas/termos-politicas.1.0.0.js:0
+[    1286ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/formas-entrega-pagamento/formas-entrega-pagamento.1.0.0.js:0
+[    1288ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/assets/icon/font-awesome/css/font-awesome.min.css:0
+[    1291ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/whatsapp-editor/css/whatsapp-editor.css:0
+[    1298ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/assets/css/style.css:0
+[    1298ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/select2/css/select2.min.css:0
+[    1300ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/bootstrap/css/bootstrap.min.css:0
+[    1300ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/video-js.min.css:0
+[    1300ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/vue/facilzap.1.0.1.min.js:0
+[    1330ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://arquivos.facilzap.app.br/logos/litran_quadrada_26021744439.png:0
+[    1463ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/atendimento-flutuante/atendimento-flutuante.1.0.4.js:0
+[    1464ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets-cdn.facilzap.app.br/componentes/catalogo/perfil-loja/perfil-loja.1.0.2.js:0
+[    1562ms] TypeError: Cannot read properties of undefined (reading 'FacilZap')
+    at https://litran.com.br/:2631:62
+[    1645ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/assets/icon/themify-icons/themify-icons.css:0
+[    1656ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/video.min.js:0
+[    1656ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/i18next/js/i18next.min.js:0
+[    1657ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/popper.js/js/popper.min.js:0
+[    1657ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/jquery/js/jquery.min.js:0
+[    1659ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/bootstrap/js/bootstrap.min.js:0
+[    1659ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/jquery-ui/js/jquery-ui.min.js:0
+[    1659ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/jquery-i18next/js/jquery-i18next.min.js:0
+[    1660ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/assets/js/common-pages.js:0
+[    1660ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/i18next-browser-languagedetector/js/i18nextBrowserLanguageDetector.min.js:0
+[    1660ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/i18next-xhr-backend/js/i18nextXHRBackend.min.js:0
+[    1660ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/jquery-slimscroll/js/jquery.slimscroll.js:0
+[    1660ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/assets/js/infinite-scroll.pkgd.min.js:0
+[    1660ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/select2/js/select2.full.min.js:0
+[    1660ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/painel/bower_components/whatsapp-editor/js/whatsapp-editor.js:0
+[    1661ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://assets.facilzap.app.br/fb/clientParamBuilder.bundle.js:0
+[    1661ms] [ERROR] Failed to load resource: net::ERR_SOCKET_NOT_CONNECTED @ https://assets.facilzap.app.br/intl-tel-input.utils.js:0
+[    1930ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://arquivos.facilzap.app.br/logos/litran_horizontal_26021744549.png:0
+[    2007ms] TypeError: Cannot read properties of undefined (reading 'fn')
+    at https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js:4:18544
+    at https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js:4:18818
+    at https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js:4:174
+    at https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.10.0/js/lightgallery-all.min.js:4:186
+[    2028ms] ReferenceError: jQuery is not defined
+    at https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js:4:15884
+[    2032ms] Uncaught ReferenceError: jQuery is not defined
+    at <anonymous> (https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/pt-BR.js:2:12)
+    at <anonymous> (https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/pt-BR.js:2:783)
+[    2034ms] ReferenceError: jQuery is not defined
+    at https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js:1:152
+    at https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js:1:160
+[    2042ms] TypeError: Cannot set properties of undefined (setting 'zoom')
+    at https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.6.1/jquery.zoom.min.js:7:93
+    at https://cdnjs.cloudflare.com/ajax/libs/jquery-zoom/1.6.1/jquery.zoom.min.js:7:1542
+[    2063ms] Uncaught ReferenceError: jQuery is not defined
+    at <anonymous> (https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js:7:135)
+    at <anonymous> (https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js:7:143)
+[    2117ms] jQuery not loaded!
+[    2118ms] ReferenceError: jQuery is not defined
+    at https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7-beta.23/bindings/inputmask.binding.min.js:1:23
+    at https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7-beta.23/bindings/inputmask.binding.min.js:1:479
+[    2119ms] Uncaught ReferenceError: jQuery is not defined
+    at <anonymous> (https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js:3:150)
+    at <anonymous> (https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js:3:158)
+[    2122ms] Uncaught ReferenceError: jQuery is not defined
+    at <anonymous> (https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js:3:174)
+    at <anonymous> (https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/additional-methods.min.js:3:182)
+[    2124ms] ReferenceError: jQuery is not defined
+    at https://cdnjs.cloudflare.com/ajax/libs/jquery.basictable/1.1.0/jquery.basictable.min.js:4:2572
+[    2195ms] Uncaught ReferenceError: $ is not defined
+    at <anonymous> (https://assets-cdn.facilzap.app.br/componentes/comum/footer-comum/documento.1.0.0.js:0:4536)
+[    2215ms] Uncaught ReferenceError: jQuery is not defined
+    at <anonymous> (https://cdn.datatables.net/1.13.11/js/jquery.dataTables.min.js:3:343)
+    at <anonymous> (https://cdn.datatables.net/1.13.11/js/jquery.dataTables.min.js:3:367)
+[    2215ms] Uncaught ReferenceError: jQuery is not defined
+    at <anonymous> (https://cdn.datatables.net/1.13.11/js/dataTables.bootstrap4.min.js:3:417)
+    at <anonymous> (https://cdn.datatables.net/1.13.11/js/dataTables.bootstrap4.min.js:3:441)
+[    2217ms] Uncaught ReferenceError: jQuery is not defined
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/datatables-responsive/2.5.1/dataTables.responsive.min.js:3:417)
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/datatables-responsive/2.5.1/dataTables.responsive.min.js:3:441)
+[    2217ms] Uncaught ReferenceError: jQuery is not defined
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/datatables.net-responsive-bs4/2.5.1/responsive.bootstrap4.min.js:3:522)
+    at <anonymous> (https://cdnjs.cloudflare.com/ajax/libs/datatables.net-responsive-bs4/2.5.1/responsive.bootstrap4.min.js:3:546)
+[    2218ms] Uncaught ReferenceError: $ is not defined
+    at <anonymous> (https://assets-cdn.facilzap.app.br/componentes/comum/footer-comum/datatable.1.0.0.js:0:56)
+[    2222ms] Uncaught ReferenceError: $ is not defined
+    at <anonymous> (https://assets-cdn.facilzap.app.br/componentes/comum/footer-comum/footer-comum.1.0.0.js:0:47)
+[    2234ms] Uncaught ReferenceError: $ is not defined
+    at <anonymous> (https://assets-cdn.facilzap.app.br/componentes/catalogo/carrinho-legado/carrinho-legado.1.0.1.js:0:21051)
+[    2234ms] ReferenceError: $ is not defined
+    at https://litran.com.br/:4421:1
+[    2259ms] ReferenceError: lojaPreset is not defined
+    at https://litran.com.br/:4898:25
+[    2261ms] Uncaught ReferenceError: lojaPreset is not defined
+    at <anonymous> (https://assets-cdn.facilzap.app.br/componentes/catalogo/carrinho/carrinho.1.0.5.js:324:556)
+[    2268ms] Uncaught ReferenceError: $ is not defined
+    at <anonymous> (https://assets-cdn.facilzap.app.br/componentes/catalogo/simulador-frete-legado/simulador-frete-legado.1.0.0.js:0:108)
+[    2273ms] ReferenceError: $ is not defined
+    at https://litran.com.br/:5095:1
+[    2275ms] ReferenceError: jQuery is not defined
+    at https://litran.com.br/:5213:8
+[    2412ms] ReferenceError: $ is not defined
+    at https://litran.com.br/:5248:5
+[    2414ms] ReferenceError: $ is not defined
+    at https://litran.com.br/:5788:5
+[    2777ms] Uncaught ReferenceError: lojaPreset is not defined
+    at <anonymous> (https://assets-cdn.facilzap.app.br/componentes/catalogo/instalar-pwa/instalar-pwa.1.0.3.js:57:278)
+    at <anonymous> (https://assets-cdn.facilzap.app.br/componentes/catalogo/instalar-pwa/instalar-pwa.1.0.3.js:57:371)
+[    6807ms] [WARNING] The resource https://assets.facilzap.app.br/painel/bower_components/select2/css/select2.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[    6807ms] [WARNING] The resource https://assets.facilzap.app.br/video-js.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[    6808ms] [WARNING] The resource https://assets.facilzap.app.br/painel/bower_components/whatsapp-editor/css/whatsapp-editor.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[    6808ms] [WARNING] The resource https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[    6808ms] [WARNING] The resource https://assets.facilzap.app.br/painel/assets/icon/themify-icons/themify-icons.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  148679ms] [ERROR] Failed to load resource: the server responded with a status of 405 () @ https://api.facilzap.app.br/v1/lojas/litran/produtos:0
+[  151748ms] [WARNING] The resource https://assets.facilzap.app.br/painel/bower_components/select2/css/select2.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  151748ms] [WARNING] The resource https://assets.facilzap.app.br/video-js.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  151749ms] [WARNING] The resource https://assets.facilzap.app.br/painel/bower_components/whatsapp-editor/css/whatsapp-editor.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  151749ms] [WARNING] The resource https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  151749ms] [WARNING] The resource https://assets.facilzap.app.br/painel/assets/icon/themify-icons/themify-icons.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  301559ms] [WARNING] The resource https://assets.facilzap.app.br/painel/bower_components/select2/css/select2.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  301559ms] [WARNING] The resource https://assets.facilzap.app.br/video-js.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  301560ms] [WARNING] The resource https://assets.facilzap.app.br/painel/bower_components/whatsapp-editor/css/whatsapp-editor.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  301560ms] [WARNING] The resource https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap4.min.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0
+[  301560ms] [WARNING] The resource https://assets.facilzap.app.br/painel/assets/icon/themify-icons/themify-icons.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://litran.com.br/:0

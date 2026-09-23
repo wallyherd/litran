@@ -1,0 +1,1083 @@
+- generic [active] [ref=f24e1]:
+  - dialog "cookieconsent" [ref=f24e2]:
+    - generic [ref=f24e3]:
+      - text: Este site usa cookies para garantir que você obtenha uma melhor experiência de uso.
+      - button "learn more about cookies" [ref=f24e4] [cursor=pointer]: Leia mais
+    - button "dismiss cookie message" [ref=f24e6] [cursor=pointer]: Compreendo!
+  - navigation [ref=f24e7]:
+    - generic [ref=f24e8]: Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp!
+    - generic [ref=f24e11]:
+      - text: 
+      - link "Ver stories da loja" [ref=f24e13] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=f24e17]:
+        - textbox "Buscar Produtos" [ref=f24e18]
+        - button "Buscar" [ref=f24e19] [cursor=pointer]
+        - button "Buscar" [ref=f24e21] [cursor=pointer]:
+          - generic [ref=f24e22]: 
+      - generic [ref=f24e23]:
+        - link "Entrar em contato via WhatsApp" [ref=f24e25] [cursor=pointer]:
+          - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+          - generic [ref=f24e26]: 
+        - link "Acessar minha conta" [ref=f24e28] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=f24e29]: 
+          - paragraph [ref=f24e30]: Minha Conta
+        - link "Ver carrinho de compras" [ref=f24e32] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=f24e33]: 
+          - paragraph [ref=f24e34]: "0"
+  - navigation [ref=f24e35]:
+    - list [ref=f24e37]:
+      - listitem [ref=f24e38]:
+        - link " INÍCIO" [ref=f24e39] [cursor=pointer]:
+          - /url: https://litran.com.br/c/varejo/66996210809
+          - generic [ref=f24e40]: 
+          - text: INÍCIO
+      - listitem [ref=f24e41]
+      - listitem [ref=f24e43]:
+        - link "MODA FITNESS" [ref=f24e44] [cursor=pointer]:
+          - /url: javascript:void(0)
+      - listitem [ref=f24e45]
+      - listitem [ref=f24e47]:
+        - link "SUPLEMENTOS" [ref=f24e48] [cursor=pointer]:
+          - /url: https://litran.com.br/c/varejo/categoria/409175/66996210809
+      - listitem [ref=f24e49]
+      - listitem [ref=f24e51]:
+        - link "MUAY THAI" [ref=f24e52] [cursor=pointer]:
+          - /url: javascript:void(0)
+      - listitem [ref=f24e53]
+      - listitem [ref=f24e55]:
+        - link "MMA" [ref=f24e56] [cursor=pointer]:
+          - /url: javascript:void(0)
+      - listitem [ref=f24e57]
+      - listitem [ref=f24e59]:
+        - link "JIU-JITSU" [ref=f24e60] [cursor=pointer]:
+          - /url: https://litran.com.br/c/varejo/categoria/367542/66996210809
+      - listitem [ref=f24e61]
+      - listitem [ref=f24e63]:
+        - link "MAIS CATEGORIAS" [ref=f24e64] [cursor=pointer]:
+          - /url: javascript:void(0)
+    - text:   
+  - generic [ref=f24e68]:
+    - generic [ref=f24e71]:
+      - generic [ref=f24e74]:
+        - generic [ref=f24e75]:
+          - group "5 / 5" [ref=f24e76]:
+            - img "Imagem 5" [ref=f24e78]
+          - group "1 / 5" [ref=f24e79]:
+            - link [ref=f24e80] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/367530/66996210809
+              - img "Imagem 1" [ref=f24e82]
+          - group "2 / 5" [ref=f24e83]:
+            - link [ref=f24e84] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/367530/66996210809
+              - img "Imagem 2" [ref=f24e86]
+          - group "3 / 5" [ref=f24e87]:
+            - link [ref=f24e88] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/367530/66996210809
+              - img "Imagem 3" [ref=f24e90]
+          - group "4 / 5" [ref=f24e91]:
+            - link [ref=f24e92] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/409175/66996210809
+              - img "Imagem 4" [ref=f24e94]
+          - group "5 / 5" [ref=f24e95]:
+            - img "Imagem 5" [ref=f24e97]
+          - group "1 / 5" [ref=f24e98]:
+            - link [ref=f24e99] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/367530/66996210809
+              - img "Imagem 1" [ref=f24e101]
+        - button "Previous slide" [ref=f24e102] [cursor=pointer]: prev
+        - button "Next slide" [ref=f24e103] [cursor=pointer]: next
+      - iframe [ref=f24e106]:
+        - generic [ref=f25e3]:
+          - generic [ref=f25e4]:
+            - generic [ref=f25e5]: 🚚
+            - text: Frete Grátis na primeira compra acima de R$ 150,00
+          - generic [ref=f25e6]:
+            - generic [ref=f25e7]: 🚚
+            - text: Frete Grátis na primeira compra acima de R$ 150,00
+          - generic [ref=f25e8]:
+            - generic [ref=f25e9]: 🚚
+            - text: Frete Grátis na primeira compra acima de R$ 150,00
+          - generic [ref=f25e10]:
+            - generic [ref=f25e11]: 🚚
+            - text: Frete Grátis na primeira compra acima de R$ 150,00
+          - generic [ref=f25e12]:
+            - generic [ref=f25e13]: 🚚
+            - text: Frete Grátis na primeira compra acima de R$ 150,00
+          - generic [ref=f25e14]:
+            - generic [ref=f25e15]: 🚚
+            - text: Frete Grátis na primeira compra acima de R$ 150,00
+          - generic [ref=f25e16]:
+            - generic [ref=f25e17]: 🚚
+            - text: Frete Grátis na primeira compra acima de R$ 150,00
+          - generic [ref=f25e18]:
+            - generic [ref=f25e19]: 🚚
+            - text: Frete Grátis na primeira compra acima de R$ 150,00
+      - iframe [ref=f24e109]:
+        
+      - generic [ref=f24e113]:
+        - generic [ref=f24e114]:
+          - group "1 / 8" [ref=f24e115]:
+            - link "MODA FITNESS" [ref=f24e116] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/367530/66996210809
+          - group "2 / 8" [ref=f24e119]:
+            - link "SUPLEMENTOS" [ref=f24e120] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/409175/66996210809
+          - group "3 / 8" [ref=f24e123]:
+            - link "MUAY THAI" [ref=f24e124] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/367534/66996210809
+          - group "4 / 8" [ref=f24e127]:
+            - link "MMA" [ref=f24e128] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/367539/66996210809
+          - group "5 / 8" [ref=f24e131]:
+            - link "JIU-JITSU" [ref=f24e132] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/367542/66996210809
+          - group "6 / 8" [ref=f24e135]:
+            - link "CAMISETA" [ref=f24e136] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/373302/66996210809
+          - group "7 / 8" [ref=f24e139]:
+            - link "BLUSA" [ref=f24e140] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/408793/66996210809
+          - group "8 / 8" [ref=f24e143]:
+            - link "ACESSÓRIOS" [ref=f24e144] [cursor=pointer]:
+              - /url: https://litran.com.br/c/varejo/categoria/409277/66996210809
+        - button "Previous slide" [ref=f24e147] [cursor=pointer]: prev
+        - button "Next slide" [disabled]: next
+      - generic [ref=f24e149]:
+        - heading "MAIS VENDIDOS" [level=3] [ref=f24e151]
+        - generic [ref=f24e152]:
+          - generic [ref=f24e153]:
+            - group "1 / 10" [ref=f24e154]:
+              - generic [ref=f24e158]:
+                - generic [ref=f24e160]:
+                  - generic [ref=f24e161]: Destaque
+                  - button "Curtir produto" [ref=f24e162] [cursor=pointer]:
+                    - generic [ref=f24e163]: 
+                  - generic [ref=f24e164]:
+                    - generic [ref=f24e165]:
+                      - group "1 / 3" [ref=f24e166] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e168] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e170] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e172] [cursor=pointer]: next
+                - link "BLUSA DRY FIT" [ref=f24e173] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214566/66996210809
+                - link [ref=f24e174] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214566/66996210809
+                  - paragraph [ref=f24e177]: R$ 39,90
+            - group "2 / 10" [ref=f24e178]:
+              - generic [ref=f24e182]:
+                - generic [ref=f24e184]:
+                  - generic [ref=f24e185]: Destaque
+                  - button "Curtir produto" [ref=f24e186] [cursor=pointer]:
+                    - generic [ref=f24e187]: 
+                  - generic [ref=f24e188]:
+                    - generic [ref=f24e189]:
+                      - group "1 / 2" [ref=f24e190] [cursor=pointer]
+                      - group "2 / 2" [ref=f24e192] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e194] [cursor=pointer]: next
+                - link "Blusa Tule Patricia" [ref=f24e195] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805329/66996210809
+                - link [ref=f24e196] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805329/66996210809
+                  - paragraph [ref=f24e199]: R$ 49,90
+            - group "3 / 10" [ref=f24e200]:
+              - generic [ref=f24e204]:
+                - generic [ref=f24e206]:
+                  - generic [ref=f24e207]: Destaque
+                  - button "Curtir produto" [ref=f24e208] [cursor=pointer]:
+                    - generic [ref=f24e209]: 
+                  - generic [ref=f24e210]:
+                    - generic [ref=f24e211]:
+                      - group "1 / 4" [ref=f24e212] [cursor=pointer]
+                      - group "2 / 4" [ref=f24e214] [cursor=pointer]
+                      - group "3 / 4" [ref=f24e216] [cursor=pointer]
+                      - group "4 / 4" [ref=f24e218] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e220] [cursor=pointer]: next
+                - link "Conjunto bicolor Larisa" [ref=f24e221] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3976846/66996210809
+                - link [ref=f24e222] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3976846/66996210809
+                  - paragraph [ref=f24e225]: R$ 139,90
+            - group "4 / 10" [ref=f24e226]:
+              - generic [ref=f24e230]:
+                - generic [ref=f24e232]:
+                  - generic [ref=f24e233]: Destaque
+                  - button "Curtir produto" [ref=f24e234] [cursor=pointer]:
+                    - generic [ref=f24e235]: 
+                  - generic [ref=f24e236]:
+                    - generic [ref=f24e237]:
+                      - group "1 / 7" [ref=f24e238] [cursor=pointer]
+                      - group "2 / 7" [ref=f24e240] [cursor=pointer]
+                      - group "3 / 7" [ref=f24e242] [cursor=pointer]
+                      - group "4 / 7" [ref=f24e244] [cursor=pointer]
+                      - group "5 / 7" [ref=f24e246] [cursor=pointer]
+                      - group "6 / 7" [ref=f24e248] [cursor=pointer]
+                      - group "7 / 7" [ref=f24e250] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e252] [cursor=pointer]: next
+                - link "Macacão Erica" [ref=f24e253] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805873/66996210809
+                - link [ref=f24e254] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805873/66996210809
+                  - paragraph [ref=f24e257]: R$ 125,90 R$ 149,90
+            - group "5 / 10" [ref=f24e258]:
+              - generic [ref=f24e262]:
+                - generic [ref=f24e264]:
+                  - generic [ref=f24e265]: Destaque
+                  - button "Curtir produto" [ref=f24e266] [cursor=pointer]:
+                    - generic [ref=f24e267]: 
+                  - generic [ref=f24e268]:
+                    - generic [ref=f24e269]:
+                      - group "1 / 2" [ref=f24e270] [cursor=pointer]
+                      - group "2 / 2" [ref=f24e272] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e274] [cursor=pointer]: next
+                - link "Conjunto Short Suzana" [ref=f24e275] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805309/66996210809
+                - link [ref=f24e276] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805309/66996210809
+                  - paragraph [ref=f24e279]: R$ 115,90
+            - group "6 / 10" [ref=f24e280]:
+              - generic [ref=f24e284]:
+                - generic [ref=f24e286]:
+                  - generic [ref=f24e287]: Destaque
+                  - button "Curtir produto" [ref=f24e288] [cursor=pointer]:
+                    - generic [ref=f24e289]: 
+                  - generic [ref=f24e290]:
+                    - generic [ref=f24e291]:
+                      - group "1 / 3" [ref=f24e292] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e294] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e296] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e298] [cursor=pointer]: next
+                - link "CONJUNTO SUZI SUPLEX POWER" [ref=f24e299] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214501/66996210809
+                - link [ref=f24e300] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214501/66996210809
+                  - paragraph [ref=f24e303]: a partir de R$ 119,90
+            - group "7 / 10" [ref=f24e304]:
+              - generic [ref=f24e308]:
+                - generic [ref=f24e310]:
+                  - generic [ref=f24e311]: Destaque
+                  - button "Curtir produto" [ref=f24e312] [cursor=pointer]:
+                    - generic [ref=f24e313]: 
+                  - generic [ref=f24e314]:
+                    - generic [ref=f24e315]:
+                      - group "1 / 3" [ref=f24e316] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e318] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e320] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e322] [cursor=pointer]: next
+                - link "CONJUNTO SUZANA SUPLex POWER" [ref=f24e323] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214465/66996210809
+                - link [ref=f24e324] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214465/66996210809
+                  - paragraph [ref=f24e327]: R$ 115,00
+            - group "8 / 10" [ref=f24e328]:
+              - generic [ref=f24e332]:
+                - generic [ref=f24e334]:
+                  - generic [ref=f24e335]: Destaque
+                  - button "Curtir produto" [ref=f24e336] [cursor=pointer]:
+                    - generic [ref=f24e337]: 
+                  - generic [ref=f24e338]:
+                    - generic [ref=f24e339]:
+                      - group "1 / 3" [ref=f24e340] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e342] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e344] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e346] [cursor=pointer]: next
+                - link "CONJUNTO BICOLOR SUPLeX POWER" [ref=f24e347] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4212150/66996210809
+                - link [ref=f24e348] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4212150/66996210809
+                  - paragraph [ref=f24e351]: a partir de R$ 119,90
+            - group "9 / 10" [ref=f24e352]:
+              - generic [ref=f24e356]:
+                - generic [ref=f24e358]:
+                  - generic [ref=f24e359]: Destaque
+                  - button "Curtir produto" [ref=f24e360] [cursor=pointer]:
+                    - generic [ref=f24e361]: 
+                  - link [ref=f24e362] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4051756/66996210809
+                - link "Top Rebeca" [ref=f24e364] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4051756/66996210809
+                - link [ref=f24e365] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4051756/66996210809
+                  - paragraph [ref=f24e368]: R$ 19,90
+            - group "10 / 10" [ref=f24e369]:
+              - generic [ref=f24e373]:
+                - generic [ref=f24e375]:
+                  - generic [ref=f24e376]: Destaque
+                  - button "Curtir produto" [ref=f24e377] [cursor=pointer]:
+                    - generic [ref=f24e378]: 
+                  - link [ref=f24e379] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4051632/66996210809
+                - link "Blusa dry fit" [ref=f24e381] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4051632/66996210809
+                - link [ref=f24e382] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4051632/66996210809
+                  - paragraph [ref=f24e385]: a partir de R$ 39,90
+          - button "Previous slide" [ref=f24e386] [cursor=pointer]: prev
+          - button "Next slide" [ref=f24e387] [cursor=pointer]: next
+      - generic [ref=f24e389]:
+        - heading "MODA FITNESS" [level=3] [ref=f24e391]
+        - generic [ref=f24e392]:
+          - generic [ref=f24e393]:
+            - group "1 / 11" [ref=f24e394]:
+              - generic [ref=f24e398]:
+                - generic [ref=f24e400]:
+                  - generic [ref=f24e401]: Destaque
+                  - button "Curtir produto" [ref=f24e402] [cursor=pointer]:
+                    - generic [ref=f24e403]: 
+                  - generic [ref=f24e404]:
+                    - generic [ref=f24e405]:
+                      - group "1 / 3" [ref=f24e406] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e408] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e410] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e412] [cursor=pointer]: next
+                - link "CONJUNTO BICOLOR SUPLex POWER" [ref=f24e413] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214384/66996210809
+                - link [ref=f24e414] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214384/66996210809
+                  - paragraph [ref=f24e417]: a partir de R$ 119,90
+                - generic [ref=f24e418]:
+                  - link "- 0 +" [ref=f24e419] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4214384/66996210809
+                    - generic [ref=f24e420]: "-"
+                    - generic [ref=f24e421]: "0"
+                    - generic [ref=f24e422]: +
+                  - link "textoBotao" [ref=f24e425] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4214384/66996210809
+                    - generic [ref=f24e426]: 
+                    - generic [ref=f24e427]: Comprar
+            - group "2 / 11" [ref=f24e428]:
+              - generic [ref=f24e432]:
+                - generic [ref=f24e434]:
+                  - generic [ref=f24e435]: Destaque
+                  - button "Curtir produto" [ref=f24e436] [cursor=pointer]:
+                    - generic [ref=f24e437]: 
+                  - generic [ref=f24e438]:
+                    - generic [ref=f24e439]:
+                      - group "1 / 3" [ref=f24e440] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e442] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e444] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e446] [cursor=pointer]: next
+                - link "BLUSA DRY FIT" [ref=f24e447] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214566/66996210809
+                - link [ref=f24e448] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214566/66996210809
+                  - paragraph [ref=f24e451]: R$ 39,90
+                - generic [ref=f24e452]:
+                  - link "- 0 +" [ref=f24e453] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4214566/66996210809
+                    - generic [ref=f24e454]: "-"
+                    - generic [ref=f24e455]: "0"
+                    - generic [ref=f24e456]: +
+                  - link "textoBotao" [ref=f24e459] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4214566/66996210809
+                    - generic [ref=f24e460]: 
+                    - generic [ref=f24e461]: Comprar
+            - group "3 / 11" [ref=f24e462]:
+              - generic [ref=f24e466]:
+                - generic [ref=f24e468]:
+                  - generic [ref=f24e469]: Destaque
+                  - button "Curtir produto" [ref=f24e470] [cursor=pointer]:
+                    - generic [ref=f24e471]: 
+                  - generic [ref=f24e472]:
+                    - generic [ref=f24e473]:
+                      - group "1 / 3" [ref=f24e474] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e476] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e478] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e480] [cursor=pointer]: next
+                - link "CONJUNTO FITNESS" [ref=f24e481] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214553/66996210809
+                - link [ref=f24e482] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4214553/66996210809
+                  - paragraph [ref=f24e485]: R$ 189,90
+                - generic [ref=f24e486]:
+                  - link "- 0 +" [ref=f24e487] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4214553/66996210809
+                    - generic [ref=f24e488]: "-"
+                    - generic [ref=f24e489]: "0"
+                    - generic [ref=f24e490]: +
+                  - link "textoBotao" [ref=f24e493] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4214553/66996210809
+                    - generic [ref=f24e494]: 
+                    - generic [ref=f24e495]: Comprar
+            - group "4 / 11" [ref=f24e496]:
+              - generic [ref=f24e500]:
+                - generic [ref=f24e502]:
+                  - generic [ref=f24e503]: Destaque
+                  - button "Curtir produto" [ref=f24e504] [cursor=pointer]:
+                    - generic [ref=f24e505]: 
+                  - generic [ref=f24e506]:
+                    - generic [ref=f24e507]:
+                      - group "1 / 3" [ref=f24e508] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e510] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e512] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e514] [cursor=pointer]: next
+                - link "SHORT FITNES" [ref=f24e515] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4363822/66996210809
+                - link [ref=f24e516] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4363822/66996210809
+                  - paragraph [ref=f24e519]: R$ 114,99
+                - generic [ref=f24e520]:
+                  - link "- 0 +" [ref=f24e521] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4363822/66996210809
+                    - generic [ref=f24e522]: "-"
+                    - generic [ref=f24e523]: "0"
+                    - generic [ref=f24e524]: +
+                  - link "textoBotao" [ref=f24e527] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4363822/66996210809
+                    - generic [ref=f24e528]: 
+                    - generic [ref=f24e529]: Comprar
+            - group "5 / 11" [ref=f24e530]:
+              - generic [ref=f24e534]:
+                - generic [ref=f24e536]:
+                  - generic [ref=f24e537]: Destaque
+                  - button "Curtir produto" [ref=f24e538] [cursor=pointer]:
+                    - generic [ref=f24e539]: 
+                  - generic [ref=f24e540]:
+                    - generic [ref=f24e541]:
+                      - group "1 / 3" [ref=f24e542] [cursor=pointer]
+                      - group "2 / 3" [ref=f24e544] [cursor=pointer]
+                      - group "3 / 3" [ref=f24e546] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e548] [cursor=pointer]: next
+                - link "TOP FITNES" [ref=f24e549] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4363820/66996210809
+                - link [ref=f24e550] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4363820/66996210809
+                  - paragraph [ref=f24e553]: R$ 79,99
+                - generic [ref=f24e554]:
+                  - link "- 0 +" [ref=f24e555] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4363820/66996210809
+                    - generic [ref=f24e556]: "-"
+                    - generic [ref=f24e557]: "0"
+                    - generic [ref=f24e558]: +
+                  - link "textoBotao" [ref=f24e561] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4363820/66996210809
+                    - generic [ref=f24e562]: 
+                    - generic [ref=f24e563]: Comprar
+            - group "6 / 11" [ref=f24e564]:
+              - generic [ref=f24e568]:
+                - generic [ref=f24e570]:
+                  - generic [ref=f24e571]: Destaque
+                  - button "Curtir produto" [ref=f24e572] [cursor=pointer]:
+                    - generic [ref=f24e573]: 
+                  - generic [ref=f24e574]:
+                    - generic [ref=f24e575]:
+                      - group "1 / 2" [ref=f24e576] [cursor=pointer]
+                      - group "2 / 2" [ref=f24e578] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e580] [cursor=pointer]: next
+                - link "Calça jogg rtectel" [ref=f24e581] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4050632/66996210809
+                - link [ref=f24e582] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4050632/66996210809
+                  - paragraph [ref=f24e585]: R$ 72,00
+                - generic [ref=f24e586]:
+                  - link "- 0 +" [ref=f24e587] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4050632/66996210809
+                    - generic [ref=f24e588]: "-"
+                    - generic [ref=f24e589]: "0"
+                    - generic [ref=f24e590]: +
+                  - link "textoBotao" [ref=f24e593] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4050632/66996210809
+                    - generic [ref=f24e594]: 
+                    - generic [ref=f24e595]: Comprar
+            - group "7 / 11" [ref=f24e596]:
+              - generic [ref=f24e600]:
+                - generic [ref=f24e602]:
+                  - generic [ref=f24e603]: Destaque
+                  - button "Curtir produto" [ref=f24e604] [cursor=pointer]:
+                    - generic [ref=f24e605]: 
+                  - generic [ref=f24e606]:
+                    - generic [ref=f24e607]:
+                      - group "1 / 2" [ref=f24e608] [cursor=pointer]
+                      - group "2 / 2" [ref=f24e610] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e612] [cursor=pointer]: next
+                - link "Conjunto Short Suzana" [ref=f24e613] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805309/66996210809
+                - link [ref=f24e614] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805309/66996210809
+                  - paragraph [ref=f24e617]: R$ 115,90
+                - generic [ref=f24e618]:
+                  - link "- 0 +" [ref=f24e619] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3805309/66996210809
+                    - generic [ref=f24e620]: "-"
+                    - generic [ref=f24e621]: "0"
+                    - generic [ref=f24e622]: +
+                  - link "textoBotao" [ref=f24e625] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3805309/66996210809
+                    - generic [ref=f24e626]: 
+                    - generic [ref=f24e627]: Comprar
+            - group "8 / 11" [ref=f24e628]:
+              - generic [ref=f24e632]:
+                - generic [ref=f24e634]:
+                  - generic [ref=f24e635]: Destaque
+                  - button "Curtir produto" [ref=f24e636] [cursor=pointer]:
+                    - generic [ref=f24e637]: 
+                  - generic [ref=f24e638]:
+                    - generic [ref=f24e639]:
+                      - group "1 / 5" [ref=f24e640] [cursor=pointer]
+                      - group "2 / 5" [ref=f24e642] [cursor=pointer]
+                      - group "3 / 5" [ref=f24e644] [cursor=pointer]
+                      - group "4 / 5" [ref=f24e646] [cursor=pointer]
+                      - group "5 / 5" [ref=f24e648] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e650] [cursor=pointer]: next
+                - link "Macaquinho Meia Coxa Lorrane" [ref=f24e651] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805111/66996210809
+                - link [ref=f24e652] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3805111/66996210809
+                  - paragraph [ref=f24e655]: R$ 100,00 R$ 115,00
+                - generic [ref=f24e656]:
+                  - link "- 0 +" [ref=f24e657] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3805111/66996210809
+                    - generic [ref=f24e658]: "-"
+                    - generic [ref=f24e659]: "0"
+                    - generic [ref=f24e660]: +
+                  - link "textoBotao" [ref=f24e663] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3805111/66996210809
+                    - generic [ref=f24e664]: 
+                    - generic [ref=f24e665]: Comprar
+            - group "9 / 11" [ref=f24e666]:
+              - generic [ref=f24e670]:
+                - generic [ref=f24e672]:
+                  - generic [ref=f24e673]: Destaque
+                  - button "Curtir produto" [ref=f24e674] [cursor=pointer]:
+                    - generic [ref=f24e675]: 
+                  - link [ref=f24e676] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4051906/66996210809
+                - link "Camisa poliamida" [ref=f24e678] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4051906/66996210809
+                - link [ref=f24e679] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4051906/66996210809
+                  - paragraph [ref=f24e682]: a partir de R$ 39,90
+                - generic [ref=f24e683]:
+                  - link "- 0 +" [ref=f24e684] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4051906/66996210809
+                    - generic [ref=f24e685]: "-"
+                    - generic [ref=f24e686]: "0"
+                    - generic [ref=f24e687]: +
+                  - link "textoBotao" [ref=f24e690] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4051906/66996210809
+                    - generic [ref=f24e691]: 
+                    - generic [ref=f24e692]: Comprar
+            - group "10 / 11" [ref=f24e693]:
+              - generic [ref=f24e697]:
+                - generic [ref=f24e699]:
+                  - generic [ref=f24e700]: Destaque
+                  - button "Curtir produto" [ref=f24e701] [cursor=pointer]:
+                    - generic [ref=f24e702]: 
+                  - generic [ref=f24e703]:
+                    - generic [ref=f24e704]:
+                      - group "1 / 5" [ref=f24e705] [cursor=pointer]
+                      - group "2 / 5" [ref=f24e707] [cursor=pointer]
+                      - group "3 / 5" [ref=f24e709] [cursor=pointer]
+                      - group "4 / 5" [ref=f24e711] [cursor=pointer]
+                      - group "5 / 5" [ref=f24e713] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e715] [cursor=pointer]: next
+                - link "Short Camila canelado" [ref=f24e716] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3993414/66996210809
+                - link [ref=f24e717] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3993414/66996210809
+                  - paragraph [ref=f24e720]: R$ 115,90
+                - generic [ref=f24e721]:
+                  - link "- 0 +" [ref=f24e722] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3993414/66996210809
+                    - generic [ref=f24e723]: "-"
+                    - generic [ref=f24e724]: "0"
+                    - generic [ref=f24e725]: +
+                  - link "textoBotao" [ref=f24e728] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3993414/66996210809
+                    - generic [ref=f24e729]: 
+                    - generic [ref=f24e730]: Comprar
+            - group "11 / 11" [ref=f24e731]:
+              - link " Ver Mais Produtos" [ref=f24e732] [cursor=pointer]:
+                - /url: https://litran.com.br/c/varejo/categoria/367530/66996210809
+                - generic [ref=f24e733]:
+                  - generic [ref=f24e734]: 
+                  - paragraph [ref=f24e735]: Ver MaisProdutos
+          - button "Previous slide" [ref=f24e736] [cursor=pointer]: prev
+          - button "Next slide" [ref=f24e737] [cursor=pointer]: next
+      - generic [ref=f24e739]:
+        - heading "MUAY THAI" [level=3] [ref=f24e741]
+        - generic [ref=f24e742]:
+          - generic [ref=f24e743]:
+            - group "1 / 4" [ref=f24e744]:
+              - generic [ref=f24e748]:
+                - generic [ref=f24e750]:
+                  - button "Curtir produto" [ref=f24e751] [cursor=pointer]:
+                    - generic [ref=f24e752]: 
+                  - generic [ref=f24e753]:
+                    - generic [ref=f24e754]:
+                      - group "1 / 2" [ref=f24e755] [cursor=pointer]
+                      - group "2 / 2" [ref=f24e757] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e759] [cursor=pointer]: next
+                - link "Short Muay Thai Curto" [ref=f24e760] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858407/66996210809
+                - link [ref=f24e761] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858407/66996210809
+                  - paragraph [ref=f24e764]: a partir de R$ 65,00
+                - generic [ref=f24e765]:
+                  - link "- 0 +" [ref=f24e766] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858407/66996210809
+                    - generic [ref=f24e767]: "-"
+                    - generic [ref=f24e768]: "0"
+                    - generic [ref=f24e769]: +
+                  - link "textoBotao" [ref=f24e772] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858407/66996210809
+                    - generic [ref=f24e773]: 
+                    - generic [ref=f24e774]: Comprar
+            - group "2 / 4" [ref=f24e775]:
+              - generic [ref=f24e779]:
+                - generic [ref=f24e781]:
+                  - button "Curtir produto" [ref=f24e782] [cursor=pointer]:
+                    - generic [ref=f24e783]: 
+                  - link [ref=f24e784] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858406/66996210809
+                - link "Short Muay Thai Curto" [ref=f24e786] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858406/66996210809
+                - link [ref=f24e787] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858406/66996210809
+                  - paragraph [ref=f24e790]: a partir de R$ 65,00
+                - generic [ref=f24e791]:
+                  - link "- 0 +" [ref=f24e792] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858406/66996210809
+                    - generic [ref=f24e793]: "-"
+                    - generic [ref=f24e794]: "0"
+                    - generic [ref=f24e795]: +
+                  - link "textoBotao" [ref=f24e798] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858406/66996210809
+                    - generic [ref=f24e799]: 
+                    - generic [ref=f24e800]: Comprar
+            - group "3 / 4" [ref=f24e801]:
+              - generic [ref=f24e805]:
+                - generic [ref=f24e807]:
+                  - button "Curtir produto" [ref=f24e808] [cursor=pointer]:
+                    - generic [ref=f24e809]: 
+                  - link [ref=f24e810] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858409/66996210809
+                - link "Short Muay Thai Preto" [ref=f24e812] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858409/66996210809
+                - link [ref=f24e813] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858409/66996210809
+                  - paragraph [ref=f24e816]: R$ 89,90
+                - generic [ref=f24e817]:
+                  - link "- 0 +" [ref=f24e818] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858409/66996210809
+                    - generic [ref=f24e819]: "-"
+                    - generic [ref=f24e820]: "0"
+                    - generic [ref=f24e821]: +
+                  - link "textoBotao" [ref=f24e824] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858409/66996210809
+                    - generic [ref=f24e825]: 
+                    - generic [ref=f24e826]: Comprar
+            - group "4 / 4" [ref=f24e827]:
+              - link " Ver Mais Produtos" [ref=f24e828] [cursor=pointer]:
+                - /url: https://litran.com.br/c/varejo/categoria/367534/66996210809
+                - generic [ref=f24e829]:
+                  - generic [ref=f24e830]: 
+                  - paragraph [ref=f24e831]: Ver MaisProdutos
+          - button "Previous slide" [disabled]: prev
+          - button "Next slide" [disabled]: next
+      - generic [ref=f24e833]:
+        - heading "MMA" [level=3] [ref=f24e835]
+        - generic [ref=f24e836]:
+          - generic [ref=f24e837]:
+            - group "1 / 3" [ref=f24e838]:
+              - generic [ref=f24e842]:
+                - generic [ref=f24e844]:
+                  - button "Curtir produto" [ref=f24e845] [cursor=pointer]:
+                    - generic [ref=f24e846]: 
+                  - generic [ref=f24e847]:
+                    - generic [ref=f24e848]:
+                      - group "1 / 6" [ref=f24e849] [cursor=pointer]
+                      - group "2 / 6" [ref=f24e851] [cursor=pointer]
+                      - group "3 / 6" [ref=f24e853] [cursor=pointer]
+                      - group "4 / 6" [ref=f24e855] [cursor=pointer]
+                      - group "5 / 6" [ref=f24e857] [cursor=pointer]
+                      - group "6 / 6" [ref=f24e859] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e861] [cursor=pointer]: next
+                - link "Short MMA Striker Gear" [ref=f24e862] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858402/66996210809
+                - link [ref=f24e863] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858402/66996210809
+                  - paragraph [ref=f24e866]: R$ 99,90
+                - generic [ref=f24e867]:
+                  - link "- 0 +" [ref=f24e868] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858402/66996210809
+                    - generic [ref=f24e869]: "-"
+                    - generic [ref=f24e870]: "0"
+                    - generic [ref=f24e871]: +
+                  - link "textoBotao" [ref=f24e874] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858402/66996210809
+                    - generic [ref=f24e875]: 
+                    - generic [ref=f24e876]: Comprar
+            - group "2 / 3" [ref=f24e877]:
+              - generic [ref=f24e881]:
+                - generic [ref=f24e883]:
+                  - button "Curtir produto" [ref=f24e884] [cursor=pointer]:
+                    - generic [ref=f24e885]: 
+                  - link [ref=f24e886] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858404/66996210809
+                - link "Short MMA Force" [ref=f24e888] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858404/66996210809
+                - link [ref=f24e889] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3858404/66996210809
+                  - paragraph [ref=f24e892]: a partir de R$ 69,90
+                - generic [ref=f24e893]:
+                  - link "- 0 +" [ref=f24e894] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858404/66996210809
+                    - generic [ref=f24e895]: "-"
+                    - generic [ref=f24e896]: "0"
+                    - generic [ref=f24e897]: +
+                  - link "textoBotao" [ref=f24e900] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3858404/66996210809
+                    - generic [ref=f24e901]: 
+                    - generic [ref=f24e902]: Comprar
+            - group "3 / 3" [ref=f24e903]:
+              - link " Ver Mais Produtos" [ref=f24e904] [cursor=pointer]:
+                - /url: https://litran.com.br/c/varejo/categoria/367539/66996210809
+                - generic [ref=f24e905]:
+                  - generic [ref=f24e906]: 
+                  - paragraph [ref=f24e907]: Ver MaisProdutos
+          - button "Previous slide" [disabled]: prev
+          - button "Next slide" [disabled]: next
+      - generic [ref=f24e909]:
+        - heading "ACESSÓRIOS" [level=3] [ref=f24e911]
+        - generic [ref=f24e912]:
+          - generic [ref=f24e913]:
+            - group "1 / 4" [ref=f24e914]:
+              - generic [ref=f24e918]:
+                - generic [ref=f24e920]:
+                  - generic [ref=f24e921]: Destaque
+                  - button "Curtir produto" [ref=f24e922] [cursor=pointer]:
+                    - generic [ref=f24e923]: 
+                  - generic [ref=f24e924]:
+                    - generic [ref=f24e925]:
+                      - group "1 / 5" [ref=f24e926] [cursor=pointer]
+                      - group "2 / 5" [ref=f24e928] [cursor=pointer]
+                      - group "3 / 5" [ref=f24e930] [cursor=pointer]
+                      - group "4 / 5" [ref=f24e932] [cursor=pointer]
+                      - group "5 / 5" [ref=f24e934] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e936] [cursor=pointer]: next
+                - link "ÓCULOS DE SOL" [ref=f24e937] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4367173/66996210809
+                - link [ref=f24e938] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4367173/66996210809
+                  - paragraph [ref=f24e941]: R$ 139,90
+                - generic [ref=f24e942]:
+                  - link "- 0 +" [ref=f24e943] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4367173/66996210809
+                    - generic [ref=f24e944]: "-"
+                    - generic [ref=f24e945]: "0"
+                    - generic [ref=f24e946]: +
+                  - link "textoBotao" [ref=f24e949] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4367173/66996210809
+                    - generic [ref=f24e950]: 
+                    - generic [ref=f24e951]: Comprar
+            - group "2 / 4" [ref=f24e952]:
+              - generic [ref=f24e956]:
+                - generic [ref=f24e958]:
+                  - generic [ref=f24e959]: Destaque
+                  - button "Curtir produto" [ref=f24e960] [cursor=pointer]:
+                    - generic [ref=f24e961]: 
+                  - generic [ref=f24e962]:
+                    - generic [ref=f24e963]:
+                      - group "1 / 7" [ref=f24e964] [cursor=pointer]
+                      - group "2 / 7" [ref=f24e966] [cursor=pointer]
+                      - group "3 / 7" [ref=f24e968] [cursor=pointer]
+                      - group "4 / 7" [ref=f24e970] [cursor=pointer]
+                      - group "5 / 7" [ref=f24e972] [cursor=pointer]
+                      - group "6 / 7" [ref=f24e974] [cursor=pointer]
+                      - group "7 / 7" [ref=f24e976] [cursor=pointer]
+                    - button "Previous slide" [disabled]: prev
+                    - button "Next slide" [ref=f24e978] [cursor=pointer]: next
+                - link "ÓCULOS COM PROTEÇÃO SOLAR" [ref=f24e979] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4364087/66996210809
+                - link [ref=f24e980] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/4364087/66996210809
+                  - paragraph [ref=f24e983]: R$ 99,99
+                - generic [ref=f24e984]:
+                  - link "- 0 +" [ref=f24e985] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4364087/66996210809
+                    - generic [ref=f24e986]: "-"
+                    - generic [ref=f24e987]: "0"
+                    - generic [ref=f24e988]: +
+                  - link "textoBotao" [ref=f24e991] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/4364087/66996210809
+                    - generic [ref=f24e992]: 
+                    - generic [ref=f24e993]: Comprar
+            - group "3 / 4" [ref=f24e994]:
+              - generic [ref=f24e998]:
+                - generic [ref=f24e1000]:
+                  - generic [ref=f24e1001]: Destaque
+                  - button "Curtir produto" [ref=f24e1002] [cursor=pointer]:
+                    - generic [ref=f24e1003]: 
+                  - link [ref=f24e1004] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3996268/66996210809
+                - link "FAIXA DE CABELO" [ref=f24e1006] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3996268/66996210809
+                - link [ref=f24e1007] [cursor=pointer]:
+                  - /url: https://litran.com.br/c/varejo/produto/3996268/66996210809
+                  - paragraph [ref=f24e1010]: R$ 18,00
+                - generic [ref=f24e1011]:
+                  - link "- 0 +" [ref=f24e1012] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3996268/66996210809
+                    - generic [ref=f24e1013]: "-"
+                    - generic [ref=f24e1014]: "0"
+                    - generic [ref=f24e1015]: +
+                  - link "textoBotao" [ref=f24e1018] [cursor=pointer]:
+                    - /url: https://litran.com.br/c/varejo/produto/3996268/66996210809
+                    - generic [ref=f24e1019]: 
+                    - generic [ref=f24e1020]: Comprar
+            - group "4 / 4" [ref=f24e1021]:
+              - link " Ver Mais Produtos" [ref=f24e1022] [cursor=pointer]:
+                - /url: https://litran.com.br/c/varejo/categoria/409277/66996210809
+                - generic [ref=f24e1023]:
+                  - generic [ref=f24e1024]: 
+                  - paragraph [ref=f24e1025]: Ver MaisProdutos
+          - button "Previous slide" [disabled]: prev
+          - button "Next slide" [disabled]: next
+      - generic [ref=f24e1028]:
+        - generic [ref=f24e1029]:
+          - group "2 / 2" [ref=f24e1030]:
+            - img "Imagem 2" [ref=f24e1032]
+          - group "1 / 2" [ref=f24e1033]:
+            - img "Imagem 1" [ref=f24e1035]
+          - group "2 / 2" [ref=f24e1036]:
+            - img "Imagem 2" [ref=f24e1038]
+          - group "1 / 2" [ref=f24e1039]:
+            - img "Imagem 1" [ref=f24e1041]
+        - button "Previous slide" [ref=f24e1042] [cursor=pointer]: prev
+        - button "Next slide" [ref=f24e1043] [cursor=pointer]: next
+    - generic [ref=f24e1044]:
+      - region "Central de atendimento":
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Central da loja
+                  - heading "Como podemos ajudar?" [level=2]
+                  - paragraph: Escolha uma opção para continuar.
+                - button "Fechar central de atendimento": ×
+              - generic:
+                - link "WhatsApp Converse diretamente com a equipe.":
+                  - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+                  - generic: 
+                  - generic:
+                    - strong: WhatsApp
+                    - generic: Converse diretamente com a equipe.
+                  - generic: 
+                - button "Rastrear pedido Acompanhe o andamento da entrega.":
+                  - generic: 
+                  - generic:
+                    - strong: Rastrear pedido
+                    - generic: Acompanhe o andamento da entrega.
+                  - generic: 
+                - generic:
+                  - generic: 
+                  - generic:
+                    - textbox:
+                      - /placeholder: ID do pedido
+                    - textbox:
+                      - /placeholder: CPF ou CNPJ do cliente
+                    - generic:
+                      - button: Buscar
+                - button "Informações da loja Conheça os dados e canais oficiais.":
+                  - generic: 
+                  - generic:
+                    - strong: Informações da loja
+                    - generic: Conheça os dados e canais oficiais.
+                  - generic: 
+        - button "Abrir central de atendimento":
+          - generic: 
+          - generic: Atendimento
+  - contentinfo "Rodapé da loja" [ref=f24e1045]:
+    - generic [ref=f24e1046]:
+      - region "Diferenciais da loja" [ref=f24e1047]:
+        - generic [ref=f24e1048]:
+          - article [ref=f24e1049]:
+            - generic [ref=f24e1050]: 
+            - generic [ref=f24e1052]:
+              - strong [ref=f24e1053]: Compra segura
+              - generic [ref=f24e1054]: Dados protegidos durante toda a compra.
+          - link "Atendimento direto Fale com a loja pelo WhatsApp." [ref=f24e1055] [cursor=pointer]:
+            - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+            - generic [ref=f24e1056]: 
+            - generic [ref=f24e1058]:
+              - strong [ref=f24e1059]: Atendimento direto
+              - generic [ref=f24e1060]: Fale com a loja pelo WhatsApp.
+          - link "Formas de entrega Consulte prazos e opções disponíveis." [ref=f24e1061] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=f24e1062]: 
+            - generic [ref=f24e1064]:
+              - strong [ref=f24e1065]: Formas de entrega
+              - generic [ref=f24e1066]: Consulte prazos e opções disponíveis.
+          - link "Informações da loja Conheça os dados da loja antes de comprar." [ref=f24e1067] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=f24e1068]: 
+            - generic [ref=f24e1070]:
+              - strong [ref=f24e1071]: Informações da loja
+              - generic [ref=f24e1072]: Conheça os dados da loja antes de comprar.
+      - region "Receba novidades da loja" [ref=f24e1073]:
+        - generic [ref=f24e1074]:
+          - generic [ref=f24e1075]: Novidades da loja
+          - heading "Receba novidades e promoções" [level=2] [ref=f24e1076]
+          - paragraph [ref=f24e1077]: Cadastre seus dados e acompanhe as novidades da loja.
+        - generic [ref=f24e1079]:
+          - generic [ref=f24e1080]:
+            - generic [ref=f24e1081]: 
+            - textbox [ref=f24e1082]:
+              - /placeholder: Seu nome
+          - generic [ref=f24e1085]:
+            - combobox "Telephone country code" [ref=f24e1087]:
+              - generic [ref=f24e1089]: "+55"
+            - textbox "Seu WhatsApp" [ref=f24e1091]
+          - generic [ref=f24e1092]:
+            - generic [ref=f24e1093]: 
+            - textbox [ref=f24e1094]:
+              - /placeholder: Seu e-mail
+          - button "Eu quero" [ref=f24e1095] [cursor=pointer]
+          - paragraph [ref=f24e1096]: Ao cadastrar, você concorda em receber comunicações da loja. É possível cancelar a qualquer momento.
+      - generic [ref=f24e1097]:
+        - generic [ref=f24e1098]:
+          - img "LITRAN moda esportiva" [ref=f24e1099]
+          - navigation "Redes sociais" [ref=f24e1100]:
+            - link "Visitar perfil do Instagram" [ref=f24e1101] [cursor=pointer]:
+              - /url: https://instagram.com/gabilitran
+              - generic [ref=f24e1102]: 
+            - link "Falar pelo WhatsApp" [ref=f24e1103] [cursor=pointer]:
+              - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+              - generic [ref=f24e1104]: 
+            - link "Visitar página no Facebook" [ref=f24e1105] [cursor=pointer]:
+              - /url: "https://facebook.com/Gabriela Litran carvalho "
+              - generic [ref=f24e1106]: 
+            - link "Visitar perfil do Portal FácilZap" [ref=f24e1107] [cursor=pointer]:
+              - /url: https://facilzap.app.br/loja/litran
+        - generic [ref=f24e1110]:
+          - heading "Ajuda e atendimento" [level=3] [ref=f24e1111]
+          - list [ref=f24e1112]:
+            - listitem [ref=f24e1113]:
+              - link " (66) 99621-0809" [ref=f24e1114] [cursor=pointer]:
+                - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+                - generic [ref=f24e1115]: 
+                - text: (66) 99621-0809
+            - listitem [ref=f24e1116]:
+              - link " gabilitranmodas@gmail.com" [ref=f24e1117] [cursor=pointer]:
+                - /url: mailto:gabilitranmodas@gmail.com
+                - generic [ref=f24e1118]: 
+                - text: gabilitranmodas@gmail.com
+            - listitem [ref=f24e1119]:
+              - link "Informações da loja" [ref=f24e1120] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=f24e1121]:
+          - heading "Políticas da loja" [level=3] [ref=f24e1122]
+          - list [ref=f24e1123]:
+            - listitem [ref=f24e1124]:
+              - link "Formas de pagamento" [ref=f24e1125] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=f24e1126]:
+              - link "Formas de entrega" [ref=f24e1127] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=f24e1128]:
+              - link "Política de fretes" [ref=f24e1129] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=f24e1130]:
+              - link "Termos de garantia" [ref=f24e1131] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=f24e1132]:
+              - link "llms.txt" [ref=f24e1133] [cursor=pointer]:
+                - /url: https://litran.com.br/llms.txt
+        - generic [ref=f24e1134]:
+          - heading "Pagamento e segurança" [level=3] [ref=f24e1135]
+          - paragraph [ref=f24e1136]: As opções disponíveis aparecem durante a finalização do pedido.
+          - img "PIX" [ref=f24e1138]
+          - generic [ref=f24e1142]:
+            - generic [ref=f24e1143]: Ambiente protegido por SSL
+            - generic [ref=f24e1147]: Dados processados com segurança
+      - text:            
+      - generic [ref=f24e1151]:
+        - generic [ref=f24e1152]:
+          - strong [ref=f24e1153]: LITRAN moda esportiva
+          - generic [ref=f24e1154]: Várzea Grande MT - MT
+          - generic [ref=f24e1155]: © 2026. Todos os direitos reservados.
+        - link [ref=f24e1156] [cursor=pointer]:
+          - /url: https://facilzap.com.br/cadastro?af=5290
+          - text: Loja virtual criada com
+          - img "FácilZap" [ref=f24e1157]
+  - text:   
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - strong: Seu carrinho está vazio
+                - generic: Adicione produtos para continuar
+          - generic:
+            - button "Ver carrinho":
+              - generic: 
+              - generic: "0"
+            - generic:
+              - button "Finalizar pedido Confira o pedido mínimo":
+                - generic:
+                  - strong: Finalizar pedido
+                  - generic: Confira o pedido mínimo
+                - generic: 
+  - text:            
+  - generic:
+    - complementary "Instalação do aplicativo da loja":
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic: 
+              - generic:
+                - strong: Instale o app da loja
+                - generic: Acesse esta loja mais rápido pelo seu dispositivo.
+              - button "Fechar instalação do aplicativo":
+                - generic: 
+            - generic:
+              - button "Instalar agora"
+              - button "Não sabe instalar?"
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic: "1"
+                    - generic:
+                      - strong: Clique em “Instalar agora”
+                      - generic: O navegador exibirá a confirmação.
+                  - generic:
+                    - generic: "2"
+                    - generic:
+                      - strong: Confirme a instalação
+                      - generic: Leva apenas alguns segundos.
+                  - generic:
+                    - generic: "3"
+                    - generic:
+                      - strong: Pronto
+                      - generic: O ícone ficará na tela inicial.
+      - button "Instale o app":
+        - generic: 
+  - text: 

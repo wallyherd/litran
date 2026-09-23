@@ -1,0 +1,232 @@
+- generic [active] [ref=f19e1]:
+  - navigation [ref=f19e2]:
+    - generic [ref=f19e3]: Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp! Bem-vindos à loja LITRAN moda esportiva ! Se tiver dúvidas, nos chame no WhatsApp!
+    - generic [ref=f19e6]:
+      - generic [ref=f19e7]:
+        - generic "Abrir menu de navegação" [ref=f19e8]
+        - generic "Pesquisar produtos"
+      - link "Ver stories da loja" [ref=f19e11] [cursor=pointer]:
+        - /url: javascript:void(0)
+      - generic [ref=f19e15]:
+        - textbox "Buscar Produtos" [ref=f19e16]
+        - button "Buscar" [ref=f19e17] [cursor=pointer]
+        - button "Buscar" [ref=f19e19]
+      - generic [ref=f19e20]:
+        - generic:
+          - link "Entrar em contato via WhatsApp":
+            - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+        - link "Acessar minha conta" [ref=f19e22] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - paragraph [ref=f19e23]: Minha Conta
+        - link "Ver carrinho de compras" [ref=f19e25] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - paragraph [ref=f19e26]
+          - generic [ref=f19e27]: "0"
+  - navigation [ref=f19e28]:
+    - list [ref=f19e30]:
+      - listitem [ref=f19e31]:
+        - link "INÍCIO" [ref=f19e32] [cursor=pointer]:
+          - /url: https://litran.com.br/c/varejo/66996210809
+      - listitem [ref=f19e33]
+      - listitem [ref=f19e35]:
+        - link "MODA FITNESS" [ref=f19e36] [cursor=pointer]:
+          - /url: javascript:void(0)
+      - listitem [ref=f19e37]
+      - listitem [ref=f19e39]:
+        - link "SUPLEMENTOS" [ref=f19e40] [cursor=pointer]:
+          - /url: https://litran.com.br/c/varejo/categoria/409175/66996210809
+      - listitem [ref=f19e41]
+      - listitem [ref=f19e43]:
+        - link "MUAY THAI" [ref=f19e44] [cursor=pointer]:
+          - /url: javascript:void(0)
+      - listitem [ref=f19e45]
+      - listitem [ref=f19e47]:
+        - link "MMA" [ref=f19e48] [cursor=pointer]:
+          - /url: javascript:void(0)
+      - listitem [ref=f19e49]
+      - listitem [ref=f19e51]:
+        - link "JIU-JITSU" [ref=f19e52] [cursor=pointer]:
+          - /url: https://litran.com.br/c/varejo/categoria/367542/66996210809
+      - listitem [ref=f19e53]
+      - listitem [ref=f19e55]:
+        - link "MAIS CATEGORIAS" [ref=f19e56] [cursor=pointer]:
+          - /url: javascript:void(0)
+  - contentinfo "Rodapé da loja" [ref=f19e64]:
+    - generic [ref=f19e65]:
+      - region "Diferenciais da loja" [ref=f19e66]:
+        - generic [ref=f19e67]:
+          - article [ref=f19e68]:
+            - generic [ref=f19e70]:
+              - strong [ref=f19e71]: Compra segura
+              - generic [ref=f19e72]: Dados protegidos durante toda a compra.
+          - link "Atendimento direto Fale com a loja pelo WhatsApp." [ref=f19e73] [cursor=pointer]:
+            - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+            - generic [ref=f19e75]:
+              - strong [ref=f19e76]: Atendimento direto
+              - generic [ref=f19e77]: Fale com a loja pelo WhatsApp.
+          - link "Formas de entrega Consulte prazos e opções disponíveis." [ref=f19e78] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=f19e80]:
+              - strong [ref=f19e81]: Formas de entrega
+              - generic [ref=f19e82]: Consulte prazos e opções disponíveis.
+          - link "Informações da loja Conheça os dados da loja antes de comprar." [ref=f19e83] [cursor=pointer]:
+            - /url: javascript:void(0)
+            - generic [ref=f19e85]:
+              - strong [ref=f19e86]: Informações da loja
+              - generic [ref=f19e87]: Conheça os dados da loja antes de comprar.
+      - region "Receba novidades da loja" [ref=f19e88]:
+        - generic [ref=f19e89]:
+          - generic [ref=f19e90]: Novidades da loja
+          - heading "Receba novidades e promoções" [level=2] [ref=f19e91]
+          - paragraph [ref=f19e92]: Cadastre seus dados e acompanhe as novidades da loja.
+        - generic [ref=f19e94]:
+          - textbox [ref=f19e96]:
+            - /placeholder: Seu nome
+          - textbox [ref=f19e99]:
+            - /placeholder: Seu e-mail
+          - button "Eu quero" [ref=f19e100] [cursor=pointer]
+          - paragraph [ref=f19e101]: Ao cadastrar, você concorda em receber comunicações da loja. É possível cancelar a qualquer momento.
+      - generic [ref=f19e102]:
+        - generic [ref=f19e103]:
+          - img "LITRAN moda esportiva" [ref=f19e104]
+          - navigation "Redes sociais" [ref=f19e105]:
+            - link "Visitar perfil do Instagram" [ref=f19e106] [cursor=pointer]:
+              - /url: https://instagram.com/gabilitran
+            - link "Falar pelo WhatsApp" [ref=f19e108] [cursor=pointer]:
+              - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+            - link "Visitar página no Facebook" [ref=f19e110] [cursor=pointer]:
+              - /url: "https://facebook.com/Gabriela Litran carvalho "
+            - link "Visitar perfil do Portal FácilZap" [ref=f19e112] [cursor=pointer]:
+              - /url: https://facilzap.app.br/loja/litran
+        - generic [ref=f19e115]:
+          - heading "Ajuda e atendimento" [level=3] [ref=f19e116]
+          - list [ref=f19e117]:
+            - listitem [ref=f19e118]:
+              - link "(66) 99621-0809" [ref=f19e119] [cursor=pointer]:
+                - /url: https://litran.com.br/redireciona/whatsapp/?link=phone%3D5566996210809%26text%3DOl%C3%A1%2C+LITRAN+moda+esportiva+%21+Acessei+seu+cat%C3%A1logo+e+gostaria+de+tirar+uma+d%C3%BAvida+sobre+o%28s%29+produto%28s%29.%250D%250A%250D%250AEstava+acessando+a+seguinte+p%C3%A1gina%3A+https%3A%2F%2Flitran.com.br%2F%250D%250A%250D%250A
+            - listitem [ref=f19e120]:
+              - link "gabilitranmodas@gmail.com" [ref=f19e121] [cursor=pointer]:
+                - /url: mailto:gabilitranmodas@gmail.com
+            - listitem [ref=f19e122]:
+              - link "Informações da loja" [ref=f19e123] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=f19e124]:
+          - heading "Políticas da loja" [level=3] [ref=f19e125]
+          - list [ref=f19e126]:
+            - listitem [ref=f19e127]:
+              - link "Formas de pagamento" [ref=f19e128] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=f19e129]:
+              - link "Formas de entrega" [ref=f19e130] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=f19e131]:
+              - link "Política de fretes" [ref=f19e132] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=f19e133]:
+              - link "Termos de garantia" [ref=f19e134] [cursor=pointer]:
+                - /url: javascript:void(0)
+            - listitem [ref=f19e135]:
+              - link "llms.txt" [ref=f19e136] [cursor=pointer]:
+                - /url: https://litran.com.br/llms.txt
+        - generic [ref=f19e137]:
+          - heading "Pagamento e segurança" [level=3] [ref=f19e138]
+          - paragraph [ref=f19e139]: As opções disponíveis aparecem durante a finalização do pedido.
+          - img "PIX" [ref=f19e141]
+          - generic [ref=f19e145]:
+            - generic [ref=f19e146]: Ambiente protegido por SSL
+            - generic [ref=f19e150]: Dados processados com segurança
+      - generic [ref=f19e154]:
+        - generic [ref=f19e155]:
+          - strong [ref=f19e156]: LITRAN moda esportiva
+          - generic [ref=f19e157]: Várzea Grande MT - MT
+          - generic [ref=f19e158]: © 2026. Todos os direitos reservados.
+        - link [ref=f19e159] [cursor=pointer]:
+          - /url: https://facilzap.com.br/cadastro?af=5290
+          - text: Loja virtual criada com
+          - img "FácilZap" [ref=f19e160]
+  - generic [ref=f19e163]:
+    - generic [ref=f19e164]:
+      - heading [level=5] [ref=f19e165]: Informações da Loja
+      - button [ref=f19e166]: ×
+    - generic [ref=f19e167]:
+      - strong [ref=f19e168]: "Nome da Empresa:"
+      - text: LITRAN moda esportiva
+      - strong [ref=f19e169]: "WhatsApp:"
+      - link [ref=f19e170] [cursor=pointer]:
+        - /url: https://api.whatsapp.com/send?phone=5566996210809
+        - text: "66996210809"
+      - strong [ref=f19e171]: "Email:"
+      - text: gabilitranmodas@gmail.com
+      - strong [ref=f19e172]: "Endereço:"
+      - text: Rua francisco de Assis número 252.-centro sul
+      - strong [ref=f19e173]: "Total de Pedidos:"
+      - text: "13"
+      - strong [ref=f19e174]: "Total de Produtos:"
+      - text: "52"
+      - strong [ref=f19e175]: "Total de Visualizações:"
+      - text: "43094"
+      - strong [ref=f19e176]: "Total de Curtidas:"
+      - text: "0"
+      - strong [ref=f19e177]: "Total de Perguntas:"
+      - text: "0"
+      - strong [ref=f19e178]: "Faz parte do FácilZap desde:"
+      - text: 12/02/2026
+    - button [ref=f19e180]: Fechar
+  - dialog "Buscar produtos" [ref=f19e181]:
+    - generic [ref=f19e185]:
+      - text: Buscar produtos
+      - generic [ref=f19e186]:
+        - searchbox "Buscar produtos" [ref=f19e187]
+        - button "Buscar" [ref=f19e188]
+  - generic [ref=f19e191]:
+    - generic [ref=f19e192]:
+      - heading [level=5] [ref=f19e193]: Seguir a Loja
+      - button [ref=f19e194]: ×
+    - button [ref=f19e196]: Seguir a Loja
+  - generic [ref=f19e199]:
+    - generic [ref=f19e200]:
+      - heading [level=5] [ref=f19e201]: Ativar Notificações da Loja
+      - button [ref=f19e202]: ×
+    - generic [ref=f19e204]:
+      - paragraph [ref=f19e205]: Vantagens de Ativar as Notificações da Loja
+      - list [ref=f19e206]:
+        - listitem [ref=f19e207]: Atualizações de pedidos
+        - listitem [ref=f19e208]: Promoções exclusivas
+        - listitem [ref=f19e209]: Novidades em primeira mão
+  - dialog [ref=f19e210]:
+    - generic [ref=f19e213]:
+      - heading [level=4]
+      - button "Close" [ref=f19e214]: ×
+  - dialog [ref=f19e215]:
+    - generic [ref=f19e218]:
+      - heading [level=4]
+      - button "Close" [ref=f19e219]: ×
+  - dialog [ref=f19e220]:
+    - generic [ref=f19e223]:
+      - heading [level=4]
+      - button "Close" [ref=f19e224]: ×
+  - dialog [ref=f19e225]:
+    - generic [ref=f19e228]:
+      - heading [level=4]
+      - button "Close" [ref=f19e229]: ×
+  - generic [ref=f19e232]:
+    - generic [ref=f19e233]:
+      - heading [level=5] [ref=f19e234]: Calcular Frete
+      - button [ref=f19e235]: ×
+    - generic [ref=f19e236]:
+      - generic [ref=f19e237]: Você poderá selecionar a forma de entrega desejada ao finalizar o pedido.
+      - generic [ref=f19e239]:
+        - paragraph [ref=f19e241]: Demais Formas de Entrega
+        - generic [ref=f19e243]:
+          - generic [ref=f19e245]:
+            - radio [ref=f19e246]
+            - text: COMBINAR COM VENDEDOR
+          - generic [ref=f19e248]:
+            - radio [ref=f19e249]
+            - text: EXCURSÃO
+          - generic [ref=f19e251]:
+            - radio [ref=f19e252]
+            - text: MOTOBOY
+          - generic [ref=f19e254]:
+            - radio [ref=f19e255]
+            - text: ÔNIBUS

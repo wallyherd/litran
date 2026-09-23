@@ -1,0 +1,5 @@
+[     509ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_RESET @ https://cdn.tailwindcss.com/:0
+[     617ms] ReferenceError: tailwind is not defined
+    at http://localhost:3000/:25:7
+[     883ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=039be7d1:21548
+[   52092ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=039be7d1:21548

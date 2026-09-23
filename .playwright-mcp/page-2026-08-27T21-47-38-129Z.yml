@@ -1,0 +1,396 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: Frete Grátis em compras acima de R$ 150,00 para todo o Brasil!
+    - generic [ref=e13]: Parcele suas compras em até 6x sem juros no cartão!
+    - generic [ref=e17]: Bem-vindos à loja LITRAN moda esportiva! Dúvidas? Fale no WhatsApp
+    - generic [ref=e21]: Tecnologia & Atendimento por HDSoluções
+    - generic [ref=e26]: Frete Grátis em compras acima de R$ 150,00 para todo o Brasil!
+    - generic [ref=e33]: Parcele suas compras em até 6x sem juros no cartão!
+  - banner [ref=e37]:
+    - generic [ref=e39]:
+      - generic [ref=e40]:
+        - button "Abrir menu mobile" [ref=e41]
+        - button "Buscar produtos" [ref=e43]
+      - link "Litran Logo LITRANModa Esportiva" [ref=e48] [cursor=pointer]:
+        - /url: "#"
+        - img "Litran Logo"
+        - generic [ref=e49]: LITRANModa Esportiva
+      - generic [ref=e51]:
+        - text: Buscar produtos no catálogo Litran...
+        - generic [ref=e52]: IA
+      - generic [ref=e59]:
+        - link "Ajuda / Zap" [ref=e60] [cursor=pointer]:
+          - /url: https://wa.me/5566996210809
+        - button "MinhaConta" [ref=e63]
+        - button "Ver carrinho" [ref=e68]: Carrinho
+  - navigation [ref=e73]:
+    - list [ref=e75]:
+      - listitem [ref=e76]:
+        - button "Todos os Produtos" [ref=e77]
+      - listitem [ref=e78]:
+        - button "MODA FITNESS" [ref=e79]
+      - listitem [ref=e80]:
+        - button "MUAY THAI" [ref=e81]
+      - listitem [ref=e82]:
+        - button "MMA" [ref=e83]
+      - listitem [ref=e84]:
+        - button "JIU-JITSU" [ref=e85]
+      - listitem [ref=e86]:
+        - button "SUPLEMENTOS" [ref=e87]
+      - listitem [ref=e88]:
+        - button "CAMISETAS" [ref=e89]
+      - listitem [ref=e90]:
+        - button "ACESSÓRIOS" [ref=e91]
+  - main [ref=e92]:
+    - generic [ref=e95]:
+      - generic [ref=e97]:
+        - text: LANÇAMENTO 2026
+        - heading "COLEÇÃO FITNESS & PERFORMANCE" [level=2] [ref=e98]
+        - paragraph [ref=e99]: Tecnologia de compressão e alta elasticidade para seus treinos pesados
+        - button "Ver Coleção" [ref=e101]
+      - generic [ref=e105]:
+        - text: FIGHT GEAR
+        - 'heading "LINHA COMBATE: MUAY THAI & MMA" [level=2] [ref=e106]'
+        - paragraph [ref=e107]: Shorts anatômicos, luvas reforçadas e rashguards profissionais
+        - button "Garanta o Seu" [ref=e109]
+      - generic [ref=e113]:
+        - text: PROMOÇÃO ESPECIAL
+        - heading "FRETE GRÁTIS EM COMPRAS ACIMA DE R$ 150" [level=2] [ref=e114]
+        - paragraph [ref=e115]: Enviamos para todo o Brasil com rastreamento seguro via HDSoluções
+        - button "Aproveitar Agora" [ref=e117]
+      - button "Slide anterior" [ref=e120]
+      - button "Próximo slide" [ref=e123]
+      - generic [ref=e126]:
+        - button "Ir para slide 1" [ref=e127]
+        - button "Ir para slide 2" [ref=e128]
+        - button "Ir para slide 3" [ref=e129]
+    - generic [ref=e131]:
+      - heading "Navegue por Categorias" [level=3] [ref=e132]
+      - generic [ref=e133]:
+        - button [ref=e134]:
+          - generic [ref=e135]:
+            - img "Moda Fitness"
+          - text: Moda Fitness
+        - button [ref=e136]:
+          - generic [ref=e137]:
+            - img "Muay Thai"
+          - text: Muay Thai
+        - button [ref=e138]:
+          - generic [ref=e139]:
+            - img "MMA & Fight"
+          - text: MMA & Fight
+        - button [ref=e140]:
+          - generic [ref=e141]:
+            - img "Jiu-Jitsu"
+          - text: Jiu-Jitsu
+        - button [ref=e142]:
+          - generic [ref=e143]:
+            - img "Suplementos"
+          - text: Suplementos
+        - button [ref=e144]:
+          - generic [ref=e145]:
+            - img "Acessórios"
+          - text: Acessórios
+    - generic [ref=e147]:
+      - generic [ref=e148]:
+        - generic [ref=e149]:
+          - heading "Todos os Produtos" [level=2] [ref=e150]
+          - paragraph [ref=e151]: 8 produto(s) encontrado(s)
+        - generic [ref=e152]:
+          - text: "Ordenar por:"
+          - combobox [ref=e154]:
+            - option "Relevância" [selected]
+            - option "Menor Preço"
+            - option "Maior Preço"
+            - option "Melhores Avaliados"
+      - generic [ref=e155]:
+        - generic [ref=e156]:
+          - generic [ref=e157]:
+            - img "Conjunto Fitness Seamless Sculpt Vermelho Rubro"
+            - generic [ref=e158]:
+              - generic [ref=e159]: "-21%"
+              - text: NOVO
+            - button "Espiar produto" [ref=e160]
+          - generic [ref=e164]:
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - text: FEMININO
+                - generic [ref=e167]: "4.9"
+              - heading "Conjunto Fitness Seamless Sculpt Vermelho Rubro" [level=3] [ref=e170]
+              - generic [ref=e171]:
+                - text: "Tam:"
+                - button "P" [ref=e172]
+                - button "M" [ref=e173]
+                - button "G" [ref=e174]
+                - button "GG" [ref=e175]
+            - generic [ref=e176]:
+              - generic [ref=e177]:
+                - generic [ref=e178]: R$ 189,90
+                - generic [ref=e179]: R$ 149,90
+                - paragraph [ref=e181]:
+                  - text: ou
+                  - strong [ref=e182]: 6x de R$ 24,98
+                  - text: sem juros
+              - button "Comprar" [ref=e183]
+        - generic [ref=e188]:
+          - generic [ref=e189]:
+            - img "Shorts Muay Thai Tradicional Litran Combat Gold"
+            - generic [ref=e190]: "-14%"
+            - button "Espiar produto" [ref=e192]
+          - generic [ref=e196]:
+            - generic [ref=e197]:
+              - generic [ref=e198]:
+                - text: MASCULINO
+                - generic [ref=e199]: "5"
+              - heading "Shorts Muay Thai Tradicional Litran Combat Gold" [level=3] [ref=e202]
+              - generic [ref=e203]:
+                - text: "Tam:"
+                - button "P" [ref=e204]
+                - button "M" [ref=e205]
+                - button "G" [ref=e206]
+                - button "GG" [ref=e207]
+            - generic [ref=e208]:
+              - generic [ref=e209]:
+                - generic [ref=e210]: R$ 139,90
+                - generic [ref=e211]: R$ 119,90
+                - paragraph [ref=e213]:
+                  - text: ou
+                  - strong [ref=e214]: 6x de R$ 19,98
+                  - text: sem juros
+              - button "Comprar" [ref=e215]
+        - generic [ref=e220]:
+          - generic [ref=e221]:
+            - img "Rashguard MMA Pro Compression Manga Longa Black"
+            - generic [ref=e222]:
+              - generic [ref=e223]: "-18%"
+              - text: NOVO
+            - button "Espiar produto" [ref=e224]
+          - generic [ref=e228]:
+            - generic [ref=e229]:
+              - generic [ref=e230]:
+                - text: MASCULINO
+                - generic [ref=e231]: "4.8"
+              - heading "Rashguard MMA Pro Compression Manga Longa Black" [level=3] [ref=e234]
+              - generic [ref=e235]:
+                - text: "Tam:"
+                - button "P" [ref=e236]
+                - button "M" [ref=e237]
+                - button "G" [ref=e238]
+                - button "GG" [ref=e239]
+            - generic [ref=e240]:
+              - generic [ref=e241]:
+                - generic [ref=e242]: R$ 169,90
+                - generic [ref=e243]: R$ 139,90
+                - paragraph [ref=e245]:
+                  - text: ou
+                  - strong [ref=e246]: 6x de R$ 23,32
+                  - text: sem juros
+              - button "Comprar" [ref=e247]
+        - generic [ref=e252]:
+          - generic [ref=e253]:
+            - img "Kimono Jiu-Jitsu Litran Gold Weave 100% Algodão"
+            - generic [ref=e254]: "-13%"
+            - button "Espiar produto" [ref=e256]
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - generic [ref=e262]:
+                - text: UNISSEX
+                - generic [ref=e263]: "4.9"
+              - heading "Kimono Jiu-Jitsu Litran Gold Weave 100% Algodão" [level=3] [ref=e266]
+              - generic [ref=e267]:
+                - text: "Tam:"
+                - button "A1" [ref=e268]
+                - button "A2" [ref=e269]
+                - button "A3" [ref=e270]
+                - button "A4" [ref=e271]
+            - generic [ref=e272]:
+              - generic [ref=e273]:
+                - generic [ref=e274]: R$ 449,90
+                - generic [ref=e275]: R$ 389,90
+                - paragraph [ref=e277]:
+                  - text: ou
+                  - strong [ref=e278]: 6x de R$ 64,98
+                  - text: sem juros
+              - button "Comprar" [ref=e279]
+        - generic [ref=e284]:
+          - generic [ref=e285]:
+            - img "100% Whey Protein Isolate Litran Nutrition 900g"
+            - generic [ref=e286]:
+              - generic [ref=e287]: "-20%"
+              - text: NOVO
+            - button "Espiar produto" [ref=e288]
+          - generic [ref=e292]:
+            - generic [ref=e293]:
+              - generic [ref=e294]:
+                - text: SUPLEMENTOS
+                - generic [ref=e295]: "4.7"
+              - heading "100% Whey Protein Isolate Litran Nutrition 900g" [level=3] [ref=e298]
+              - generic [ref=e299]:
+                - text: "Tam:"
+                - button "Chocolate" [ref=e300]
+                - button "Baunilha" [ref=e301]
+                - button "Morango" [ref=e302]
+            - generic [ref=e303]:
+              - generic [ref=e304]:
+                - generic [ref=e305]: R$ 199,90
+                - generic [ref=e306]: R$ 159,90
+                - paragraph [ref=e308]:
+                  - text: ou
+                  - strong [ref=e309]: 6x de R$ 26,65
+                  - text: sem juros
+              - button "Comprar" [ref=e310]
+        - generic [ref=e315]:
+          - generic [ref=e316]:
+            - img "Top Fitness Bojo Removível Strappy Back Dark Red"
+            - generic [ref=e317]: "-22%"
+            - button "Espiar produto" [ref=e319]
+          - generic [ref=e323]:
+            - generic [ref=e324]:
+              - generic [ref=e325]:
+                - text: FEMININO
+                - generic [ref=e326]: "4.9"
+              - heading "Top Fitness Bojo Removível Strappy Back Dark Red" [level=3] [ref=e329]
+              - generic [ref=e330]:
+                - text: "Tam:"
+                - button "P" [ref=e331]
+                - button "M" [ref=e332]
+                - button "G" [ref=e333]
+            - generic [ref=e334]:
+              - generic [ref=e335]:
+                - generic [ref=e336]: R$ 89,90
+                - generic [ref=e337]: R$ 69,90
+                - paragraph [ref=e339]:
+                  - text: ou
+                  - strong [ref=e340]: 6x de R$ 11,65
+                  - text: sem juros
+              - button "Comprar" [ref=e341]
+        - generic [ref=e346]:
+          - generic [ref=e347]:
+            - img "Camiseta Dry-Fit Litran Performance Oversized"
+            - generic [ref=e348]:
+              - generic [ref=e349]: "-20%"
+              - text: NOVO
+            - button "Espiar produto" [ref=e350]
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - generic [ref=e356]:
+                - text: MASCULINO
+                - generic [ref=e357]: "4.8"
+              - heading "Camiseta Dry-Fit Litran Performance Oversized" [level=3] [ref=e360]
+              - generic [ref=e361]:
+                - text: "Tam:"
+                - button "P" [ref=e362]
+                - button "M" [ref=e363]
+                - button "G" [ref=e364]
+                - button "GG" [ref=e365]
+            - generic [ref=e366]:
+              - generic [ref=e367]:
+                - generic [ref=e368]: R$ 99,90
+                - generic [ref=e369]: R$ 79,90
+                - paragraph [ref=e371]:
+                  - text: ou
+                  - strong [ref=e372]: 6x de R$ 13,32
+                  - text: sem juros
+              - button "Comprar" [ref=e373]
+        - generic [ref=e378]:
+          - generic [ref=e379]:
+            - img "Luva de Boxe e Muay Thai Litran Pro 12oz / 14oz"
+            - generic [ref=e380]: "-17%"
+            - button "Espiar produto" [ref=e382]
+          - generic [ref=e386]:
+            - generic [ref=e387]:
+              - generic [ref=e388]:
+                - text: ARTES MARCIAIS
+                - generic [ref=e389]: "5"
+              - heading "Luva de Boxe e Muay Thai Litran Pro 12oz / 14oz" [level=3] [ref=e392]
+              - generic [ref=e393]:
+                - text: "Tam:"
+                - button "12 oz" [ref=e394]
+                - button "14 oz" [ref=e395]
+                - button "16 oz" [ref=e396]
+            - generic [ref=e397]:
+              - generic [ref=e398]:
+                - generic [ref=e399]: R$ 229,90
+                - generic [ref=e400]: R$ 189,90
+                - paragraph [ref=e402]:
+                  - text: ou
+                  - strong [ref=e403]: 6x de R$ 31,65
+                  - text: sem juros
+              - button "Comprar" [ref=e404]
+    - generic [ref=e411]:
+      - generic [ref=e419]:
+        - strong [ref=e420]: Frete Grátis
+        - text: Em compras acima de R$ 150
+      - generic [ref=e425]:
+        - strong [ref=e426]: Até 6x Sem Juros
+        - text: No cartão de crédito
+      - generic [ref=e432]:
+        - strong [ref=e433]: Compra Segura
+        - text: Ambiente criptografado
+      - generic [ref=e438]:
+        - strong [ref=e439]: Suporte Rápido
+        - text: Atendimento via WhatsApp
+  - contentinfo [ref=e440]:
+    - generic [ref=e441]:
+      - generic [ref=e442]:
+        - generic [ref=e443]:
+          - text: Fique por dentro das novidades
+          - heading "Assine a nossa Newsletter" [level=3] [ref=e444]
+          - paragraph [ref=e445]: Receba ofertas exclusivas, cupons de desconto e lançamentos da linha de Moda Esportiva e Artes Marciais.
+        - generic [ref=e446]:
+          - textbox "Digite seu e-mail" [ref=e447]
+          - button "Inscrever" [ref=e448]
+      - generic [ref=e452]:
+        - generic [ref=e453]:
+          - generic [ref=e454]:
+            - img "Litran"
+            - text: LITRAN
+          - paragraph [ref=e455]: Sua loja especializada em moda fitness, artigos para artes marciais (Muay Thai, MMA, Jiu-Jitsu) e suplementação esportiva de alta performance.
+          - generic [ref=e456]:
+            - link "WhatsApp" [ref=e457] [cursor=pointer]:
+              - /url: https://wa.me/5566996210809
+            - link "Instagram" [ref=e460] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=e464]:
+          - heading "Categorias" [level=4] [ref=e465]
+          - list [ref=e466]:
+            - listitem [ref=e467]:
+              - button "Moda Fitness Feminino & Masculino" [ref=e468]
+            - listitem [ref=e469]:
+              - button "Shorts & Equipamentos Muay Thai" [ref=e470]
+            - listitem [ref=e471]:
+              - button "Rashguards & Linha MMA" [ref=e472]
+            - listitem [ref=e473]:
+              - button "Kimonos Jiu-Jitsu Trançados" [ref=e474]
+            - listitem [ref=e475]:
+              - button "Suplementação & Proteínas" [ref=e476]
+        - generic [ref=e477]:
+          - heading "Institucional" [level=4] [ref=e478]
+          - list [ref=e479]:
+            - listitem [ref=e480]:
+              - link "Sobre Nós" [ref=e481] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e482]:
+              - link "Política de Entregas & Frete Grátis" [ref=e483] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e484]:
+              - link "Trocas e Devoluções" [ref=e485] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e486]:
+              - link "Termos e Condições de Compra" [ref=e487] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e488]:
+              - link "Fale Conosco" [ref=e489] [cursor=pointer]:
+                - /url: "#"
+        - generic [ref=e490]:
+          - heading "Formas de Pagamento" [level=4] [ref=e491]
+          - generic [ref=e492]: PIX (5% OFF)Cartão até 6xBoleto Bancário
+          - generic [ref=e493]:
+            - paragraph [ref=e494]: Tecnologia & E-commerce por
+            - link "HDSoluções" [ref=e495] [cursor=pointer]:
+              - /url: https://hdsolucoes.com.br
+      - generic [ref=e496]:
+        - paragraph [ref=e497]: © 2026 LITRAN moda esportiva. Todos os direitos reservados.
+        - generic [ref=e498]:
+          - text: Desenvolvido e mantido por
+          - strong [ref=e499]: HDSoluções

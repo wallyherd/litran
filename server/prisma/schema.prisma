@@ -1,0 +1,362 @@
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "rhel-openssl-1.0.x", "rhel-openssl-3.0.x"]
+}
+
+model User {
+  id               String   @id @default(uuid())
+  name             String
+  email            String   @unique
+  password         String
+  role             String   @default("VENDEDOR") // PROPRIETARIA, GERENTE, VENDEDOR, OPERADOR_CAIXA
+  discountLimitPct Float    @default(5.0)
+  commissionPct    Float    @default(0.0)
+  isBlocked        Boolean  @default(false)
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  auditLogs           AuditLog[]
+  inventoryMovements  InventoryMovement[]
+  sales               Sale[]
+  cashSessions        CashSession[]
+  cashMovements       CashMovement[]
+  creditApprovals     CreditAccount[]     @relation("CreditApprover")
+  exchanges           Exchange[]
+  installmentPayments InstallmentPayment[]
+}
+
+model AuditLog {
+  id            String   @id @default(uuid())
+  userId        String?
+  user          User?    @relation(fields: [userId], references: [id])
+  action        String
+  entity        String
+  entityId      String?
+  previousValue String?
+  newValue      String?
+  reason        String?
+  ipAddress     String?
+  createdAt     DateTime @default(now())
+}
+
+model Category {
+  id        String    @id @default(uuid())
+  name      String    @unique
+  icon      String?
+  products  Product[]
+  createdAt DateTime  @default(now())
+}
+
+model Product {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  videoUrl    String?
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id])
+  brand       String   @default("Litran")
+  isActive    Boolean  @default(true)
+  sku         String   @unique
+  barcode     String?  @unique
+  price       Float
+  promoPrice  Float?
+  costPrice   Float    @default(0.0)
+  minStock    Int      @default(2)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  variants      ProductVariant[]
+  images        ProductImage[]
+  balances      InventoryBalance[]
+  movements     InventoryMovement[]
+  saleItems     SaleItem[]
+  exchangeItems ExchangeItem[]
+}
+
+model ProductVariant {
+  id        String   @id @default(uuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  sku       String   @unique
+  barcode   String?  @unique
+  size      String
+  color     String?
+  price     Float?
+  costPrice Float?
+  createdAt DateTime @default(now())
+
+  balances      InventoryBalance[]
+  movements     InventoryMovement[]
+  saleItems     SaleItem[]
+  exchangeItems ExchangeItem[]
+}
+
+model ProductImage {
+  id        String  @id @default(uuid())
+  productId String
+  product   Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+  url       String
+  isPrimary Boolean @default(false)
+}
+
+model InventoryLocation {
+  id        String              @id @default(uuid())
+  name      String              @default("Estoque Central - Balcão Litran")
+  isMain    Boolean             @default(true)
+  balances  InventoryBalance[]
+  movements InventoryMovement[]
+}
+
+model InventoryBalance {
+  id           String            @id @default(uuid())
+  locationId   String
+  location     InventoryLocation @relation(fields: [locationId], references: [id])
+  productId    String
+  product      Product           @relation(fields: [productId], references: [id])
+  variantId    String?
+  variant      ProductVariant?   @relation(fields: [variantId], references: [id])
+  physicalQty  Int               @default(0)
+  reservedQty  Int               @default(0)
+  availableQty Int               @default(0)
+
+  @@unique([locationId, productId, variantId])
+}
+
+model InventoryMovement {
+  id              String            @id @default(uuid())
+  productId       String
+  product         Product           @relation(fields: [productId], references: [id])
+  variantId       String?
+  variant         ProductVariant?   @relation(fields: [variantId], references: [id])
+  locationId      String
+  location        InventoryLocation @relation(fields: [locationId], references: [id])
+  type            String            // ENTRADA_MERCADORIA, VENDA_PDV, VENDA_ONLINE, RESERVA_PEDIDO, LIBERACAO_RESERVA, CANCELAMENTO, TROCA, DEVOLUCAO, AJUSTE_POSITIVO, AJUSTE_NEGATIVO
+  qty             Int
+  previousBalance Int
+  newBalance      Int
+  reason          String?
+  userId          String
+  user            User              @relation(fields: [userId], references: [id])
+  saleId          String?
+  createdAt       DateTime          @default(now())
+}
+
+model Customer {
+  id           String   @id @default(uuid())
+  name         String
+  cpf          String?  @unique
+  phone        String?
+  email        String?
+  address      String?
+  birthDate    String?
+  notes        String?
+  promoConsent Boolean  @default(true)
+  isBlocked    Boolean  @default(false)
+  creditLimit  Float    @default(500.00)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  sales         Sale[]
+  creditAccount CreditAccount?
+  exchanges     Exchange[]
+  storeCredits  StoreCredit[]
+}
+
+model CreditAccount {
+  id               String   @id @default(uuid())
+  customerId       String   @unique
+  customer         Customer @relation(fields: [customerId], references: [id])
+  creditLimit      Float    @default(500.00)
+  usedCredit       Float    @default(0.0)
+  approvedByUserId String?
+  approvedByUser   User?    @relation("CreditApprover", fields: [approvedByUserId], references: [id])
+  createdAt        DateTime @default(now())
+
+  installments CreditInstallment[]
+}
+
+model CreditInstallment {
+  id                String    @id @default(uuid())
+  creditAccountId   String
+  creditAccount     CreditAccount @relation(fields: [creditAccountId], references: [id])
+  saleId            String
+  sale              Sale      @relation(fields: [saleId], references: [id])
+  installmentNumber Int
+  amount            Float
+  balance           Float
+  dueDate           DateTime
+  paidAt            DateTime?
+  status            String    @default("PENDENTE") // PENDENTE, PARCIAL, PAGA, ATRASADA, CANCELADA
+  createdAt         DateTime  @default(now())
+
+  payments InstallmentPayment[]
+}
+
+model InstallmentPayment {
+  id            String            @id @default(uuid())
+  installmentId String
+  installment   CreditInstallment @relation(fields: [installmentId], references: [id])
+  cashSessionId String
+  amount        Float
+  paymentType   String            @default("DINHEIRO")
+  paidAt        DateTime          @default(now())
+  userId        String
+  user          User              @relation(fields: [userId], references: [id])
+}
+
+model CashRegister {
+  id       String        @id @default(uuid())
+  name     String        @default("Caixa Balcão 01")
+  code     String        @unique @default("CX01")
+  sessions CashSession[]
+}
+
+model CashSession {
+  id               String       @id @default(uuid())
+  cashRegisterId   String
+  cashRegister     CashRegister @relation(fields: [cashRegisterId], references: [id])
+  userId           String
+  user             User         @relation(fields: [userId], references: [id])
+  status           String       @default("ABERTO") // ABERTO, FECHADO
+  initialAmount    Float        @default(0.0)
+  closedAmount     Float?
+  expectedAmount   Float?
+  divergence       Float?
+  divergenceReason String?
+  openedAt         DateTime     @default(now())
+  closedAt         DateTime?
+
+  sales         Sale[]
+  cashMovements CashMovement[]
+  payments      Payment[]
+}
+
+model CashMovement {
+  id            String      @id @default(uuid())
+  cashSessionId String
+  cashSession   CashSession @relation(fields: [cashSessionId], references: [id])
+  type          String      // VENDA, RECEBIMENTO_CREDIARIO, SUPRIMENTO, SANGRIA, ESTORNO, TROCA
+  amount        Float
+  description   String?
+  userId        String
+  user          User        @relation(fields: [userId], references: [id])
+  createdAt     DateTime    @default(now())
+}
+
+model Sale {
+  id            String       @id @default(uuid())
+  code          String       @unique
+  locationId    String       @default("main")
+  userId        String
+  user          User         @relation(fields: [userId], references: [id])
+  customerId    String?
+  customer      Customer?    @relation(fields: [customerId], references: [id])
+  cashSessionId String?
+  cashSession   CashSession? @relation(fields: [cashSessionId], references: [id])
+  subtotal      Float
+  discount      Float        @default(0.0)
+  total         Float
+  status        String       @default("CONCLUIDA") // CONCLUIDA, CANCELADA
+  channel       String       @default("PDV") // PDV, ONLINE
+  createdAt     DateTime     @default(now())
+
+  items              SaleItem[]
+  payments           Payment[]
+  creditInstallments CreditInstallment[]
+  exchanges          Exchange[]
+}
+
+model SaleItem {
+  id          String          @id @default(uuid())
+  saleId      String
+  sale        Sale            @relation(fields: [saleId], references: [id], onDelete: Cascade)
+  productId   String
+  product     Product         @relation(fields: [productId], references: [id])
+  variantId   String?
+  variant     ProductVariant? @relation(fields: [variantId], references: [id])
+  productName String
+  productSku  String
+  qty         Int
+  unitPrice   Float
+  discount    Float           @default(0.0)
+  totalPrice  Float
+  unitCost    Float           @default(0.0)
+}
+
+model Payment {
+  id            String       @id @default(uuid())
+  saleId        String
+  sale          Sale         @relation(fields: [saleId], references: [id], onDelete: Cascade)
+  cashSessionId String?
+  cashSession   CashSession? @relation(fields: [cashSessionId], references: [id])
+  type          String       // DINHEIRO, PIX, DEBITO, CREDITO, CREDIARIO
+  amount        Float
+  cardBrand     String?
+  installments  Int          @default(1)
+  authCode      String?
+  changeAmount  Float        @default(0.0)
+  feeRatePct    Float?       @default(0.0)
+  feeAmount     Float?       @default(0.0)
+  feePayer      String?      @default("LOJA") // LOJA ou CLIENTE
+  netAmount     Float?
+  createdAt     DateTime     @default(now())
+}
+
+model Exchange {
+  id               String    @id @default(uuid())
+  code             String    @unique
+  originalSaleId   String
+  originalSale     Sale      @relation(fields: [originalSaleId], references: [id])
+  customerId       String?
+  customer         Customer? @relation(fields: [customerId], references: [id])
+  userId           String
+  user             User      @relation(fields: [userId], references: [id])
+  reason           String
+  condition        String    @default("NOVO")
+  returningToStock Boolean   @default(true)
+  creditAmount     Float
+  diffAmount       Float     @default(0.0)
+  createdAt        DateTime  @default(now())
+
+  items       ExchangeItem[]
+  storeCredit StoreCredit?
+}
+
+model ExchangeItem {
+  id         String          @id @default(uuid())
+  exchangeId String
+  exchange   Exchange        @relation(fields: [exchangeId], references: [id], onDelete: Cascade)
+  productId  String
+  product    Product         @relation(fields: [productId], references: [id])
+  variantId  String?
+  variant    ProductVariant? @relation(fields: [variantId], references: [id])
+  qty        Int
+  unitPrice  Float
+}
+
+model StoreCredit {
+  id             String    @id @default(uuid())
+  customerId     String
+  customer       Customer  @relation(fields: [customerId], references: [id])
+  exchangeId     String?   @unique
+  exchange       Exchange? @relation(fields: [exchangeId], references: [id])
+  code           String    @unique
+  originalAmount Float
+  currentBalance Float
+  expiresAt      DateTime
+  isUsed         Boolean   @default(false)
+  createdAt      DateTime  @default(now())
+}
+
+model Setting {
+  id        String   @id @default(uuid())
+  key       String   @unique
+  value     String
+  updatedAt DateTime @updatedAt
+}

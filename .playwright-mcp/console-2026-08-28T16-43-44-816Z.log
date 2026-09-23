@@ -1,0 +1,51 @@
+[    1672ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:21548
+[    2117ms] [WARNING] ⚠️ React Router Future Flag Warning: React Router will begin wrapping state updates in `React.startTransition` in v7. You can use the `v7_startTransition` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_starttransition. @ http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4414
+[    2117ms] [WARNING] ⚠️ React Router Future Flag Warning: Relative route resolution within Splat routes is changing in v7. You can use the `v7_relativeSplatPath` future flag to opt-in early. For more information, see https://reactrouter.com/v6/upgrading/future#v7_relativesplatpath. @ http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4414
+[   71593ms] ReferenceError: STORE_CONFIG is not defined
+    at ProductModal (http://localhost:3000/src/components/ProductModal.jsx?t=1787935188455:546:40)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14580:28)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15922:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[   71613ms] ReferenceError: STORE_CONFIG is not defined
+    at ProductModal (http://localhost:3000/src/components/ProductModal.jsx?t=1787935188455:546:40)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14580:28)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15922:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3672:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3697:24)
+    at invokeGuardedCallback (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:3731:39)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19763:15)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+[   71617ms] [ERROR] The above error occurred in the <ProductModal> component:
+
+    at ProductModal (http://localhost:3000/src/components/ProductModal.jsx?t=1787935188455:22:32)
+    at div
+    at StoreView (http://localhost:3000/src/App.jsx?t=1787935188455:42:47)
+    at RenderedRoute (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4110:5)
+    at Routes (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4580:5)
+    at Router (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:4523:15)
+    at BrowserRouter (http://localhost:3000/node_modules/.vite/deps/react-router-dom.js?v=6b37fdfd:5261:5)
+    at CartProvider (http://localhost:3000/src/context/CartContext.jsx?t=1787935016524:21:32)
+    at AuthProvider (http://localhost:3000/src/context/AuthContext.jsx:20:32)
+    at App
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14029
+[   71636ms] ReferenceError: STORE_CONFIG is not defined
+    at ProductModal (http://localhost:3000/src/components/ProductModal.jsx?t=1787935188455:546:40)
+    at renderWithHooks (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:11546:26)
+    at updateFunctionComponent (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:14580:28)
+    at beginWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:15922:22)
+    at beginWork$1 (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19751:22)
+    at performUnitOfWork (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19196:20)
+    at workLoopSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19135:13)
+    at renderRootSync (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:19114:15)
+    at recoverFromConcurrentError (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:18734:28)
+    at performSyncWorkOnRoot (http://localhost:3000/node_modules/.vite/deps/chunk-BCXODTBQ.js?v=6b37fdfd:18877:28)

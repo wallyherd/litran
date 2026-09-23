@@ -1,0 +1,365 @@
+- generic [ref=f16e3]:
+  - generic [ref=f16e5]:
+    - generic [ref=f16e6]: Frete Grátis em compras acima de R$ 150,00 para todo o Brasil!
+    - generic [ref=f16e13]: Parcele suas compras em até 6x sem juros no cartão!
+    - generic [ref=f16e17]: Bem-vindos à loja LITRAN moda esportiva! Dúvidas? Fale no WhatsApp!
+    - generic [ref=f16e19]: Tecnologia & Atendimento por HDSoluções
+    - generic [ref=f16e24]: Frete Grátis em compras acima de R$ 150,00 para todo o Brasil!
+    - generic [ref=f16e31]: Parcele suas compras em até 6x sem juros no cartão!
+  - banner [ref=f16e35]:
+    - generic [ref=f16e37]:
+      - generic [ref=f16e38]: Buscar Produtos
+      - link [ref=f16e45] [cursor=pointer]:
+        - /url: "#"
+        - img "Litran Moda Esportiva" [ref=f16e46]
+      - generic [ref=f16e47]:
+        - link "WhatsApp" [ref=f16e48] [cursor=pointer]:
+          - /url: https://wa.me/5566996210809
+        - button "Minha Conta" [ref=f16e51] [cursor=pointer]:
+          - generic [ref=f16e55]:
+            - generic [ref=f16e56]: Minha
+            - generic [ref=f16e57]: Conta
+        - button "0" [ref=f16e58] [cursor=pointer]
+  - navigation [ref=f16e64]:
+    - list [ref=f16e66]:
+      - listitem [ref=f16e67]:
+        - button "INÍCIO" [ref=f16e68] [cursor=pointer]
+      - listitem [ref=f16e71]:
+        - button "MODA FITNESS ▾" [ref=f16e72] [cursor=pointer]:
+          - generic [ref=f16e73]: MODA FITNESS
+          - generic [ref=f16e74]: ▾
+      - listitem [ref=f16e75]:
+        - button "SUPLEMENTOS" [ref=f16e76] [cursor=pointer]
+      - listitem [ref=f16e78]:
+        - button "MUAY THAI ▾" [ref=f16e79] [cursor=pointer]:
+          - generic [ref=f16e80]: MUAY THAI
+          - generic [ref=f16e81]: ▾
+      - listitem [ref=f16e82]:
+        - button "MMA ▾" [ref=f16e83] [cursor=pointer]:
+          - generic [ref=f16e84]: MMA
+          - generic [ref=f16e85]: ▾
+      - listitem [ref=f16e86]:
+        - button "JIU-JITSU" [ref=f16e87] [cursor=pointer]
+      - listitem [ref=f16e89]:
+        - button "MAIS CATEGORIAS ▾" [ref=f16e90] [cursor=pointer]:
+          - generic [ref=f16e91]: MAIS CATEGORIAS
+          - generic [ref=f16e92]: ▾
+  - main [ref=f16e93]:
+    - generic [ref=f16e94]:
+      - generic [ref=f16e95]:
+        - img "Frete Grátis na primeira compra acima de 150,00" [ref=f16e97] [cursor=pointer]
+        - button "Slide anterior" [ref=f16e98] [cursor=pointer]
+        - button "Próximo slide" [ref=f16e101] [cursor=pointer]
+        - generic [ref=f16e104]:
+          - button "Ir para slide 1" [ref=f16e105] [cursor=pointer]
+          - button "Ir para slide 2" [ref=f16e106] [cursor=pointer]
+          - button "Ir para slide 3" [ref=f16e107] [cursor=pointer]
+          - button "Ir para slide 4" [ref=f16e108] [cursor=pointer]
+          - button "Ir para slide 5" [ref=f16e109] [cursor=pointer]
+      - generic [ref=f16e111]:
+        - generic [ref=f16e112]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+        - generic [ref=f16e115]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+        - generic [ref=f16e118]: FRETE GRÁTIS NA PRIMEIRA COMPRA ACIMA DE R$ 150,00
+      - generic [ref=f16e122]:
+        - generic [ref=f16e123] [cursor=pointer]
+        - generic [ref=f16e124] [cursor=pointer]
+        - generic [ref=f16e125] [cursor=pointer]
+        - generic [ref=f16e126] [cursor=pointer]
+    - generic [ref=f16e129]:
+      - button "MODA FITNESS MODA FITNESS" [ref=f16e130] [cursor=pointer]:
+        - img "MODA FITNESS" [ref=f16e132]
+        - generic [ref=f16e133]: MODA FITNESS
+      - button "SUPLEMENTOS SUPLEMENTOS" [ref=f16e134] [cursor=pointer]:
+        - img "SUPLEMENTOS" [ref=f16e136]
+        - generic [ref=f16e137]: SUPLEMENTOS
+      - button "MUAY THAI MUAY THAI" [ref=f16e138] [cursor=pointer]:
+        - img "MUAY THAI" [ref=f16e140]
+        - generic [ref=f16e141]: MUAY THAI
+      - button "JIU-JITSU JIU-JITSU" [ref=f16e142] [cursor=pointer]:
+        - img "JIU-JITSU" [ref=f16e144]
+        - generic [ref=f16e145]: JIU-JITSU
+      - button "MMA MMA" [ref=f16e146] [cursor=pointer]:
+        - img "MMA" [ref=f16e148]
+        - generic [ref=f16e149]: MMA
+      - button "CAMISETA CAMISETA" [ref=f16e150] [cursor=pointer]:
+        - img "CAMISETA" [ref=f16e152]
+        - generic [ref=f16e153]: CAMISETA
+      - button "BLUSA BLUSA" [ref=f16e154] [cursor=pointer]:
+        - img "BLUSA" [ref=f16e156]
+        - generic [ref=f16e157]: BLUSA
+      - button "ACESSÓRIOS ACESSÓRIOS" [ref=f16e158] [cursor=pointer]:
+        - img "ACESSÓRIOS" [ref=f16e160]
+        - generic [ref=f16e161]: ACESSÓRIOS
+    - generic [ref=f16e163]:
+      - generic [ref=f16e164]:
+        - generic [ref=f16e165]:
+          - heading "TODOS OS PRODUTOS DA LOJA" [level=2] [ref=f16e166]
+          - paragraph [ref=f16e168]: Mostrando 9 produto(s) disponível(is)
+        - generic [ref=f16e169]:
+          - generic [ref=f16e171]: "Ordenar por:"
+          - combobox [ref=f16e172] [cursor=pointer]:
+            - option "Relevância" [selected]
+            - option "Menor Preço"
+            - option "Maior Preço"
+            - option "Melhores Avaliados"
+      - generic [ref=f16e173]:
+        - generic [ref=f16e174]:
+          - generic [ref=f16e175] [cursor=pointer]:
+            - img "CONJUNTO BICOLOR SUPLEX POWER" [ref=f16e176]
+            - generic [ref=f16e177]: Destaque
+            - button [ref=f16e178]
+          - generic [ref=f16e181]:
+            - generic [ref=f16e182]:
+              - heading "CONJUNTO BICOLOR SUPLEX POWER" [level=3] [ref=f16e183] [cursor=pointer]
+              - generic [ref=f16e184]:
+                - generic [ref=f16e185]: a partir de
+                - generic [ref=f16e186]:
+                  - generic [ref=f16e187]: R$ 119,90
+                  - generic [ref=f16e188]: R$ 149,00
+            - generic [ref=f16e189]:
+              - generic [ref=f16e190]:
+                - button [ref=f16e191] [cursor=pointer]
+                - generic [ref=f16e193]: "1"
+                - button [ref=f16e194] [cursor=pointer]
+              - button "Comprar" [ref=f16e196] [cursor=pointer]
+        - generic [ref=f16e202]:
+          - generic [ref=f16e203] [cursor=pointer]:
+            - img "SHORT DUPLO MASCULINO PROTEÇÃO UV" [ref=f16e204]
+            - generic [ref=f16e205]: Destaque
+            - button [ref=f16e206]
+          - generic [ref=f16e209]:
+            - generic [ref=f16e210]:
+              - heading "SHORT DUPLO MASCULINO PROTEÇÃO UV" [level=3] [ref=f16e211] [cursor=pointer]
+              - generic [ref=f16e212]:
+                - generic [ref=f16e213]: a partir de
+                - generic [ref=f16e214]:
+                  - generic [ref=f16e215]: R$ 49,90
+                  - generic [ref=f16e216]: R$ 69,90
+            - generic [ref=f16e217]:
+              - generic [ref=f16e218]:
+                - button [ref=f16e219] [cursor=pointer]
+                - generic [ref=f16e221]: "1"
+                - button [ref=f16e222] [cursor=pointer]
+              - button "Comprar" [ref=f16e224] [cursor=pointer]
+        - generic [ref=f16e230]:
+          - generic [ref=f16e231] [cursor=pointer]:
+            - img "TOP FITNESS SUSTENTAÇÃO REFORÇADA" [ref=f16e232]
+            - generic [ref=f16e233]: Destaque
+            - button [ref=f16e234]
+          - generic [ref=f16e237]:
+            - generic [ref=f16e238]:
+              - heading "TOP FITNESS SUSTENTAÇÃO REFORÇADA" [level=3] [ref=f16e239] [cursor=pointer]
+              - generic [ref=f16e240]:
+                - generic [ref=f16e241]: a partir de
+                - generic [ref=f16e242]:
+                  - generic [ref=f16e243]: R$ 79,90
+                  - generic [ref=f16e244]: R$ 89,90
+            - generic [ref=f16e245]:
+              - generic [ref=f16e246]:
+                - button [ref=f16e247] [cursor=pointer]
+                - generic [ref=f16e249]: "1"
+                - button [ref=f16e250] [cursor=pointer]
+              - button "Comprar" [ref=f16e252] [cursor=pointer]
+        - generic [ref=f16e258]:
+          - generic [ref=f16e259] [cursor=pointer]:
+            - img "CREATINA 100% PURA ACTION MAX 300G" [ref=f16e260]
+            - generic [ref=f16e261]: Destaque
+            - button [ref=f16e262]
+          - generic [ref=f16e265]:
+            - generic [ref=f16e266]:
+              - heading "CREATINA 100% PURA ACTION MAX 300G" [level=3] [ref=f16e267] [cursor=pointer]
+              - generic [ref=f16e268]:
+                - generic [ref=f16e269]: a partir de
+                - generic [ref=f16e270]:
+                  - generic [ref=f16e271]: R$ 99,90
+                  - generic [ref=f16e272]: R$ 129,90
+            - generic [ref=f16e273]:
+              - generic [ref=f16e274]:
+                - button [ref=f16e275] [cursor=pointer]
+                - generic [ref=f16e277]: "1"
+                - button [ref=f16e278] [cursor=pointer]
+              - button "Comprar" [ref=f16e280] [cursor=pointer]
+        - generic [ref=f16e286]:
+          - generic [ref=f16e287] [cursor=pointer]:
+            - img "MY SLIM SILVER 30 CAPS - TERMOGÊNICO" [ref=f16e288]
+            - generic [ref=f16e289]: Destaque
+            - button [ref=f16e290]
+          - generic [ref=f16e293]:
+            - generic [ref=f16e294]:
+              - heading "MY SLIM SILVER 30 CAPS - TERMOGÊNICO" [level=3] [ref=f16e295] [cursor=pointer]
+              - generic [ref=f16e296]:
+                - generic [ref=f16e297]: a partir de
+                - generic [ref=f16e298]:
+                  - generic [ref=f16e299]: R$ 119,90
+                  - generic [ref=f16e300]: R$ 149,90
+            - generic [ref=f16e301]:
+              - generic [ref=f16e302]:
+                - button [ref=f16e303] [cursor=pointer]
+                - generic [ref=f16e305]: "1"
+                - button [ref=f16e306] [cursor=pointer]
+              - button "Comprar" [ref=f16e308] [cursor=pointer]
+        - generic [ref=f16e314]:
+          - generic [ref=f16e315] [cursor=pointer]:
+            - img "CHÁ ACTION MAX SUPER CONCENTRADO 150G" [ref=f16e316]
+            - generic [ref=f16e317]: Destaque
+            - button [ref=f16e318]
+          - generic [ref=f16e321]:
+            - generic [ref=f16e322]:
+              - heading "CHÁ ACTION MAX SUPER CONCENTRADO 150G" [level=3] [ref=f16e323] [cursor=pointer]
+              - generic [ref=f16e324]:
+                - generic [ref=f16e325]: a partir de
+                - generic [ref=f16e326]:
+                  - generic [ref=f16e327]: R$ 59,90
+                  - generic [ref=f16e328]: R$ 79,90
+            - generic [ref=f16e329]:
+              - generic [ref=f16e330]:
+                - button [ref=f16e331] [cursor=pointer]
+                - generic [ref=f16e333]: "1"
+                - button [ref=f16e334] [cursor=pointer]
+              - button "Comprar" [ref=f16e336] [cursor=pointer]
+        - generic [ref=f16e342]:
+          - generic [ref=f16e343] [cursor=pointer]:
+            - img "CALÇÃO MUAY THAI PRETO E DOURADO OFICIAL" [ref=f16e344]
+            - generic [ref=f16e345]: Destaque
+            - button [ref=f16e346]
+          - generic [ref=f16e349]:
+            - generic [ref=f16e350]:
+              - heading "CALÇÃO MUAY THAI PRETO E DOURADO OFICIAL" [level=3] [ref=f16e351] [cursor=pointer]
+              - generic [ref=f16e352]:
+                - generic [ref=f16e353]: a partir de
+                - generic [ref=f16e354]:
+                  - generic [ref=f16e355]: R$ 89,90
+                  - generic [ref=f16e356]: R$ 119,90
+            - generic [ref=f16e357]:
+              - generic [ref=f16e358]:
+                - button [ref=f16e359] [cursor=pointer]
+                - generic [ref=f16e361]: "1"
+                - button [ref=f16e362] [cursor=pointer]
+              - button "Comprar" [ref=f16e364] [cursor=pointer]
+        - generic [ref=f16e370]:
+          - generic [ref=f16e371] [cursor=pointer]:
+            - img "BERMUDA DE COMBATE MMA SPRAWL LITRAN" [ref=f16e372]
+            - generic [ref=f16e373]: Destaque
+            - button [ref=f16e374]
+          - generic [ref=f16e377]:
+            - generic [ref=f16e378]:
+              - heading "BERMUDA DE COMBATE MMA SPRAWL LITRAN" [level=3] [ref=f16e379] [cursor=pointer]
+              - generic [ref=f16e380]:
+                - generic [ref=f16e381]: a partir de
+                - generic [ref=f16e382]:
+                  - generic [ref=f16e383]: R$ 99,90
+                  - generic [ref=f16e384]: R$ 129,90
+            - generic [ref=f16e385]:
+              - generic [ref=f16e386]:
+                - button [ref=f16e387] [cursor=pointer]
+                - generic [ref=f16e389]: "1"
+                - button [ref=f16e390] [cursor=pointer]
+              - button "Comprar" [ref=f16e392] [cursor=pointer]
+        - generic [ref=f16e398]:
+          - generic [ref=f16e399] [cursor=pointer]:
+            - img "KIMONO JIU-JITSU TRANÇADO LEVE ADULTO" [ref=f16e400]
+            - generic [ref=f16e401]: Destaque
+            - button [ref=f16e402]
+          - generic [ref=f16e405]:
+            - generic [ref=f16e406]:
+              - heading "KIMONO JIU-JITSU TRANÇADO LEVE ADULTO" [level=3] [ref=f16e407] [cursor=pointer]
+              - generic [ref=f16e408]:
+                - generic [ref=f16e409]: a partir de
+                - generic [ref=f16e410]:
+                  - generic [ref=f16e411]: R$ 349,90
+                  - generic [ref=f16e412]: R$ 399,90
+            - generic [ref=f16e413]:
+              - generic [ref=f16e414]:
+                - button [ref=f16e415] [cursor=pointer]
+                - generic [ref=f16e417]: "1"
+                - button [ref=f16e418] [cursor=pointer]
+              - button "Comprar" [ref=f16e420] [cursor=pointer]
+    - generic [ref=f16e427]:
+      - img "Creatina 100% pura - Força que dura, desempenho que evolui" [ref=f16e429] [cursor=pointer]
+      - button "Slide anterior" [ref=f16e430] [cursor=pointer]
+      - button "Próximo slide" [ref=f16e433] [cursor=pointer]
+      - generic [ref=f16e436]:
+        - button "Ir para slide 1" [ref=f16e437] [cursor=pointer]
+        - button "Ir para slide 2" [ref=f16e438] [cursor=pointer]
+    - generic [ref=f16e441]:
+      - generic [ref=f16e446]:
+        - strong [ref=f16e447]: Compra segura
+        - text: Dados protegidos durante toda a compra.
+      - generic [ref=f16e451]:
+        - strong [ref=f16e452]: Atendimento direto
+        - text: Fale com a loja pelo WhatsApp.
+      - generic [ref=f16e459]:
+        - strong [ref=f16e460]: Formas de entrega
+        - text: Consulte prazos e opções disponíveis.
+      - generic [ref=f16e464]:
+        - strong [ref=f16e465]: Informações da loja
+        - text: Conheça os dados da loja antes de comprar.
+  - contentinfo [ref=f16e466]:
+    - generic [ref=f16e467]:
+      - generic [ref=f16e468]:
+        - generic [ref=f16e470]:
+          - generic [ref=f16e471]: NOVIDADES DA LOJA
+          - heading "Receba novidades e promoções" [level=3] [ref=f16e472]
+          - paragraph [ref=f16e473]: Cadastre seus dados e acompanhe as novidades da loja.
+        - generic [ref=f16e474]:
+          - textbox "Seu nome" [ref=f16e475]
+          - generic [ref=f16e476]:
+            - generic [ref=f16e477]: 🇧🇷 +55
+            - textbox "Seu WhatsApp" [ref=f16e478]
+          - textbox "Seu e-mail" [ref=f16e479]
+          - button "Eu quero" [ref=f16e480] [cursor=pointer]
+      - generic [ref=f16e481]:
+        - generic [ref=f16e482]:
+          - img "Litran Logo" [ref=f16e483] [cursor=pointer]
+          - generic [ref=f16e484]:
+            - link [ref=f16e485] [cursor=pointer]:
+              - /url: "#"
+            - link [ref=f16e489] [cursor=pointer]:
+              - /url: https://wa.me/5566996210809
+            - link [ref=f16e492] [cursor=pointer]:
+              - /url: "#"
+        - generic [ref=f16e495]:
+          - heading "Categorias da Loja" [level=4] [ref=f16e496]
+          - list [ref=f16e497]:
+            - listitem [ref=f16e498]:
+              - button "INÍCIO" [ref=f16e499] [cursor=pointer]
+            - listitem [ref=f16e500]:
+              - button "MODA FITNESS" [ref=f16e501] [cursor=pointer]
+            - listitem [ref=f16e502]:
+              - button "SUPLEMENTOS" [ref=f16e503] [cursor=pointer]
+            - listitem [ref=f16e504]:
+              - button "MUAY THAI" [ref=f16e505] [cursor=pointer]
+            - listitem [ref=f16e506]:
+              - button "MMA" [ref=f16e507] [cursor=pointer]
+            - listitem [ref=f16e508]:
+              - button "JIU-JITSU" [ref=f16e509] [cursor=pointer]
+        - generic [ref=f16e510]:
+          - heading "Ajuda e atendimento" [level=4] [ref=f16e511]
+          - list [ref=f16e512]:
+            - listitem [ref=f16e513]:
+              - generic [ref=f16e516]: (66) 99621-0809
+            - listitem [ref=f16e517]:
+              - generic [ref=f16e521]: gabilitranmodas.p@gmail.com
+            - listitem [ref=f16e522]:
+              - link "Atendimento via WhatsApp" [ref=f16e523] [cursor=pointer]:
+                - /url: https://wa.me/5566996210809
+        - generic [ref=f16e524]:
+          - heading "Pagamento e segurança" [level=4] [ref=f16e525]
+          - paragraph [ref=f16e526]: As opções disponíveis aparecem durante a finalização do pedido.
+          - generic [ref=f16e531]:
+            - strong [ref=f16e532]: Ambiente protegido por SSL
+            - text: Dados processados com segurança
+      - generic [ref=f16e533]:
+        - generic [ref=f16e534]:
+          - strong [ref=f16e535]: LITRAN moda esportiva
+          - paragraph [ref=f16e536]: Várzea Grande MT - MT • © 2026. Todos os direitos reservados.
+        - generic [ref=f16e537]:
+          - text: loja virtual criada com
+          - strong [ref=f16e538]: HDSoluções
+  - generic [ref=f16e539]:
+    - link "Atendimento" [ref=f16e540] [cursor=pointer]:
+      - /url: https://wa.me/5566996210809
+    - generic [ref=f16e549] [cursor=pointer]:
+      - generic [ref=f16e550]: Seu carrinho está vazio
+      - generic [ref=f16e551]: Adicione produtos para continuar
+    - button "Finalizar pedido" [ref=f16e552] [cursor=pointer]
