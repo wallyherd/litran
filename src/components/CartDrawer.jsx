@@ -12,6 +12,7 @@ export const CartDrawer = () => {
     removeFromCart,
     updateQuantity,
     subtotal,
+    discountPercent,
     discountValue,
     total,
     remainingForFreeShipping,
@@ -26,15 +27,19 @@ export const CartDrawer = () => {
 
   const [couponInput, setCouponInput] = useState('');
   const [couponMessage, setCouponMessage] = useState(null);
+  const [applyingCoupon, setApplyingCoupon] = useState(false);
   const [showCheckoutForm, setShowCheckoutForm] = useState(false);
 
   if (!isCartOpen) return null;
 
-  const handleApplyCoupon = (e) => {
+  const handleApplyCoupon = async (e) => {
     e.preventDefault();
     if (!couponInput) return;
-    const res = applyCoupon(couponInput);
+    setApplyingCoupon(true);
+    setCouponMessage(null);
+    const res = await applyCoupon(couponInput);
     setCouponMessage(res);
+    setApplyingCoupon(false);
   };
 
   const handleCustomerChange = (field, value) => {
@@ -271,9 +276,10 @@ export const CartDrawer = () => {
                 />
                 <button
                   type="submit"
-                  className="bg-neutral-800 hover:bg-neutral-700 text-white text-xs font-bold px-3 py-2 rounded-lg border border-white/10 transition-colors flex items-center gap-1"
+                  disabled={applyingCoupon}
+                  className="bg-neutral-800 hover:bg-neutral-700 disabled:opacity-50 text-white text-xs font-bold px-3 py-2 rounded-lg border border-white/10 transition-colors flex items-center gap-1"
                 >
-                  <Tag size={14} /> Aplicar
+                  <Tag size={14} /> {applyingCoupon ? '...' : 'Aplicar'}
                 </button>
               </form>
             )}
@@ -285,9 +291,12 @@ export const CartDrawer = () => {
             )}
 
             {coupon && (
-              <div className="flex items-center justify-between text-xs text-green-400 bg-green-950/40 p-2 rounded border border-green-800/40">
-                <span>Cupom <strong>{coupon}</strong> aplicado</span>
-                <button onClick={removeCoupon} className="text-xs underline hover:text-red-400">
+              <div className="flex items-center justify-between text-xs text-green-400 bg-green-950/40 p-2.5 rounded-lg border border-green-800/40">
+                <div className="flex items-center gap-2">
+                  <Tag size={14} className="text-green-400" />
+                  <span>Cupom <strong>{coupon}</strong> ({discountPercent}% OFF) aplicado</span>
+                </div>
+                <button onClick={removeCoupon} className="text-xs text-red-400 underline hover:text-red-300">
                   Remover
                 </button>
               </div>
@@ -300,8 +309,8 @@ export const CartDrawer = () => {
                 <span>R$ {subtotal.toFixed(2).replace('.', ',')}</span>
               </div>
               {discountValue > 0 && (
-                <div className="flex justify-between text-green-400">
-                  <span>Desconto:</span>
+                <div className="flex justify-between text-green-400 font-semibold">
+                  <span>Desconto ({coupon} - {discountPercent}%):</span>
                   <span>- R$ {discountValue.toFixed(2).replace('.', ',')}</span>
                 </div>
               )}

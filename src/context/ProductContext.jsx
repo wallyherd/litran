@@ -22,27 +22,44 @@ export const ProductProvider = ({ children }) => {
             .replace(/[\u0300-\u036f]/g, '')
             .replace(/\s+/g, '-');
 
+          const prodColorImages = p.colorImages || {};
           const formattedVariations = (p.variants && p.variants.length > 0)
-            ? p.variants.map((v) => ({
-                id: v.id || v.sku,
-                name: `${v.color ? v.color.trim() + ' ' : ''}${v.size.trim()}`,
-                price: v.price || p.price,
-                sku: v.sku,
-                stockAvailable: v.stockAvailable ?? v.stockQty ?? 0
-              }))
+            ? p.variants.map((v) => {
+                const colorImg = v.imageUrl || (v.color && prodColorImages[v.color]) || null;
+                return {
+                  id: v.id || v.sku,
+                  name: `${v.color ? v.color.trim() + ' ' : ''}${v.size ? v.size.trim() : ''}`.trim() || 'Único',
+                  size: v.size ? v.size.trim() : '',
+                  color: v.color ? v.color.trim() : '',
+                  imageUrl: colorImg,
+                  price: v.price || p.price,
+                  sku: v.sku,
+                  stockAvailable: v.stockAvailable ?? v.stockQty ?? 0
+                };
+              })
             : [
                 {
                   id: `var_${p.id}`,
                   name: 'Único',
+                  size: 'Único',
+                  color: '',
+                  imageUrl: null,
                   price: p.price,
                   sku: p.sku,
                   stockAvailable: p.stockAvailable || 0
                 }
               ];
 
-          const imgList = p.images && p.images.length > 0
-            ? p.images.map((img) => img.url)
+          const imgList = (p.images && p.images.length > 0)
+            ? p.images.map((img) => (typeof img === 'string' ? img : img.url))
             : ['/products/1782932993_cef0f46b5f0890b8fd0b.webp'];
+
+          // Adiciona também na lista de imagens as fotos cadastradas por cor
+          Object.values(prodColorImages).forEach((cUrl) => {
+            if (cUrl && typeof cUrl === 'string' && !imgList.includes(cUrl)) {
+              imgList.push(cUrl);
+            }
+          });
 
           return {
             id: p.id,
@@ -58,10 +75,11 @@ export const ProductProvider = ({ children }) => {
             description: p.description || '',
             images: imgList,
             video: p.videoUrl || null,
+            colorImages: prodColorImages,
             stockAvailable: p.stockAvailable,
             variations: formattedVariations,
             sizes: (p.variants && p.variants.length > 0)
-              ? Array.from(new Set(p.variants.map((v) => v.size)))
+              ? Array.from(new Set(p.variants.map((v) => v.size).filter(Boolean)))
               : ['Único']
           };
         });

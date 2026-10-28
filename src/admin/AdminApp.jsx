@@ -8,7 +8,7 @@ import {
   ExternalLink, Phone, Mail, MapPin, Tag, ArrowUpRight, ArrowDownRight,
   UserCheck, UserX, Shield, Lock, Percent, FileText, Info, HelpCircle,
   TrendingUp, Layers, CreditCard, Menu, X, Calculator, Sliders, Check,
-  Upload, Image as ImageIcon, Sparkles, FileSpreadsheet, CheckCheck
+  Upload, Image as ImageIcon, Sparkles, FileSpreadsheet, CheckCheck, Copy, Camera, Palette
 } from 'lucide-react';
 import { API_BASE } from '../config/api';
 
@@ -33,6 +33,31 @@ export function AdminApp() {
   });
   const [auditLogs, setAuditLogs] = useState([]);
   const [movements, setMovements] = useState([]);
+
+  // Cupons & Descontos Promocionais
+  const [coupons, setCoupons] = useState([]);
+  const [loadingCoupons, setLoadingCoupons] = useState(false);
+  const [couponSearch, setCouponSearch] = useState('');
+  const [couponForm, setCouponForm] = useState({
+    code: '',
+    discountPercent: '20',
+    description: '',
+    isActive: true
+  });
+  const [creatingCoupon, setCreatingCoupon] = useState(false);
+  const [selectedCouponForSale, setSelectedCouponForSale] = useState(null);
+  const [showRecordSaleModal, setShowRecordSaleModal] = useState(false);
+  const [saleRecordForm, setSaleRecordForm] = useState({
+    saleCode: '',
+    customerName: '',
+    amount: '',
+    discountValue: '',
+    notes: ''
+  });
+  const [recordingSale, setRecordingSale] = useState(false);
+  const [showHistoryModal, setShowHistoryModal] = useState(false);
+  const [selectedCouponForHistory, setSelectedCouponForHistory] = useState(null);
+  const [copiedCouponCode, setCopiedCouponCode] = useState(null);
 
   // Configuração de Taxas da Maquininha por Bandeira (1x até 18x)
   const defaultBrandRates = {
@@ -122,8 +147,9 @@ export function AdminApp() {
   const [modalErrorMsg, setModalErrorMsg] = useState('');
   const [productForm, setProductForm] = useState({
     name: '', description: '', categoryId: '', brand: 'Litran', sku: '',
-    barcode: '', price: '', promoPrice: '', costPrice: '', minStock: '2', stockQty: '15', image: '', variants: []
+    barcode: '', price: '', promoPrice: '', costPrice: '', minStock: '2', stockQty: '15', image: '', variants: [], colorImages: {}
   });
+  const [newColorInput, setNewColorInput] = useState('');
 
   // Modal Importador de Planilha (Excel / CSV)
   const [showImportModal, setShowImportModal] = useState(false);
@@ -205,6 +231,9 @@ export function AdminApp() {
       if (activeTab === 'fees') {
         fetchPaymentFees();
       }
+      if (activeTab === 'coupons') {
+        fetchCoupons();
+      }
       if (activeTab === 'audit') {
         const res = await fetch(`${API_BASE}/api/audit`, {
           headers: { Authorization: `Bearer ${token}` }
@@ -213,6 +242,141 @@ export function AdminApp() {
       }
     } catch (e) {
       console.error(e);
+    }
+  };
+
+  const fetchCoupons = async () => {
+    try {
+      setLoadingCoupons(true);
+      const res = await fetch(`${API_BASE}/api/coupons`);
+      if (res.ok) {
+        const data = await res.json();
+        if (data.coupons) {
+          setCoupons(data.coupons);
+        }
+      }
+    } catch (err) {
+      console.error('Erro ao buscar cupons:', err);
+    } finally {
+      setLoadingCoupons(false);
+    }
+  };
+
+  const handleCreateCoupon = async (e) => {
+    e.preventDefault();
+    setErrorMsg('');
+    setSuccessMsg('');
+    try {
+      setCreatingCoupon(true);
+      const res = await fetch(`${API_BASE}/api/coupons`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {})
+        },
+        body: JSON.stringify(couponForm)
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Erro ao criar cupom');
+      setSuccessMsg(data.message || `Cupom ${data.coupon?.code} criado com sucesso!`);
+      setCouponForm({ code: '', discountPercent: '20', description: '', isActive: true });
+      if (data.coupons) setCoupons(data.coupons);
+      else fetchCoupons();
+    } catch (err) {
+      setErrorMsg(err.message);
+    } finally {
+      setCreatingCoupon(false);
+    }
+  };
+
+  const handleToggleCoupon = async (couponItem) => {
+    try {
+      const res = await fetch(`${API_BASE}/api/coupons/${couponItem.id}`, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {})
+        },
+        body: JSON.stringify({ isActive: !couponItem.isActive })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Erro ao alterar status');
+      setSuccessMsg(`Cupom ${couponItem.code} ${!couponItem.isActive ? 'ativado' : 'desativado'} com sucesso!`);
+      if (data.coupons) setCoupons(data.coupons);
+      else fetchCoupons();
+    } catch (err) {
+      setErrorMsg(err.message);
+    }
+  };
+
+  const handleDeleteCoupon = async (couponItem) => {
+    if (!window.confirm(`Tem certeza que deseja excluir o código de desconto "${couponItem.code}"?`)) return;
+    try {
+      const res = await fetch(`${API_BASE}/api/coupons/${couponItem.id}`, {
+        method: 'DELETE',
+        headers: {
+          ...(token ? { Authorization: `Bearer ${token}` } : {})
+        }
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Erro ao excluir');
+      setSuccessMsg(data.message || 'Cupom removido com sucesso!');
+      if (data.coupons) setCoupons(data.coupons);
+      else fetchCoupons();
+    } catch (err) {
+      setErrorMsg(err.message);
+    }
+  };
+
+  const handleRecordSale = async (e) => {
+    if (e) e.preventDefault();
+    if (!selectedCouponForSale) return;
+    try {
+      setRecordingSale(true);
+      const res = await fetch(`${API_BASE}/api/coupons/${selectedCouponForSale.id}/sales`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {})
+        },
+        body: JSON.stringify({
+          ...saleRecordForm,
+          reportedBy: user?.name || 'Administrador'
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Erro ao registrar venda');
+      setSuccessMsg(data.message || 'Venda registrada no cupom!');
+      setShowRecordSaleModal(false);
+      setSaleRecordForm({ saleCode: '', customerName: '', amount: '', discountValue: '', notes: '' });
+      if (data.coupons) setCoupons(data.coupons);
+      else fetchCoupons();
+    } catch (err) {
+      setErrorMsg(err.message);
+    } finally {
+      setRecordingSale(false);
+    }
+  };
+
+  const handleQuickAddSale = async (couponItem) => {
+    try {
+      const res = await fetch(`${API_BASE}/api/coupons/${couponItem.id}/sales`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          ...(token ? { Authorization: `Bearer ${token}` } : {})
+        },
+        body: JSON.stringify({
+          reportedBy: user?.name || 'Administrador'
+        })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Erro ao registrar venda rápida');
+      setSuccessMsg(`+1 venda informada no cupom ${couponItem.code}! Total de vendas: ${data.coupon?.salesCount || (couponItem.salesCount + 1)}.`);
+      if (data.coupons) setCoupons(data.coupons);
+      else fetchCoupons();
+    } catch (err) {
+      setErrorMsg(err.message);
     }
   };
 
@@ -420,6 +584,66 @@ export function AdminApp() {
       setProductForm(prev => ({ ...prev, image: event.target.result }));
     };
     reader.readAsDataURL(file);
+  };
+
+  // Upload e manipulação de Fotos por Variação de Cor
+  const handleColorImageUpload = (colorName, file) => {
+    if (!file || !colorName || !colorName.trim()) return;
+    const cleanColor = colorName.trim();
+    if (file.size > 15 * 1024 * 1024) {
+      setModalErrorMsg('A imagem para a cor deve ter no máximo 15MB.');
+      return;
+    }
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      setProductForm(prev => ({
+        ...prev,
+        colorImages: {
+          ...(prev.colorImages || {}),
+          [cleanColor]: event.target.result
+        }
+      }));
+    };
+    reader.readAsDataURL(file);
+  };
+
+  const handleSetColorImageUrl = (colorName, url) => {
+    if (!colorName || !colorName.trim()) return;
+    const cleanColor = colorName.trim();
+    setProductForm(prev => ({
+      ...prev,
+      colorImages: {
+        ...(prev.colorImages || {}),
+        [cleanColor]: (url || '').trim()
+      }
+    }));
+  };
+
+  const handleRemoveColorImage = (colorName) => {
+    if (!colorName) return;
+    const cleanColor = colorName.trim();
+    setProductForm(prev => {
+      const next = { ...(prev.colorImages || {}) };
+      delete next[cleanColor];
+      return { ...prev, colorImages: next };
+    });
+  };
+
+  const handleAddCustomColor = (colorName) => {
+    if (!colorName || !colorName.trim()) return;
+    const cleanColor = colorName.trim();
+    setProductForm(prev => {
+      const current = prev.colorImages || {};
+      if (current[cleanColor] !== undefined) return prev;
+      return {
+        ...prev,
+        colorImages: {
+          ...current,
+          [cleanColor]: ''
+        }
+      };
+    });
+    setNewColorInput('');
   };
 
   // Manipulação da Grade de Variações
@@ -638,15 +862,20 @@ export function AdminApp() {
         : `${API_BASE}/api/products`;
       const method = isEditing ? 'PUT' : 'POST';
 
-      const formattedVariants = (productForm.variants || []).map(v => ({
-        id: v.id,
-        sku: v.sku,
-        size: (v.size || 'M').trim(),
-        color: (v.color || '').trim(),
-        stockQty: Math.max(0, parseInt(v.stockQty || 0) || 0),
-        price: v.price ? parseFloat(v.price) : parseFloat(productForm.price || 0),
-        costPrice: v.costPrice ? parseFloat(v.costPrice) : parseFloat(productForm.costPrice || 0)
-      }));
+      const formattedVariants = (productForm.variants || []).map(v => {
+        const vColor = (v.color || '').trim();
+        const vImg = v.imageUrl || (productForm.colorImages && vColor ? productForm.colorImages[vColor] : null) || null;
+        return {
+          id: v.id,
+          sku: v.sku,
+          size: (v.size || 'M').trim(),
+          color: vColor,
+          imageUrl: vImg,
+          stockQty: Math.max(0, parseInt(v.stockQty || 0) || 0),
+          price: v.price ? parseFloat(v.price) : parseFloat(productForm.price || 0),
+          costPrice: v.costPrice ? parseFloat(v.costPrice) : parseFloat(productForm.costPrice || 0)
+        };
+      });
 
       const targetCategoryId = productForm.categoryId || (categories.length > 0 ? categories[0].id : undefined);
 
@@ -663,6 +892,7 @@ export function AdminApp() {
         minStock: parseInt(productForm.minStock || 2),
         stockQty: parseInt(productForm.stockQty || 0),
         image: productForm.image || undefined,
+        colorImages: productForm.colorImages || {},
         variants: formattedVariants
       };
 
@@ -1016,12 +1246,21 @@ export function AdminApp() {
     return name.includes(q) || email.includes(q) || role.includes(q);
   });
 
+  const filteredCoupons = coupons.filter(c => {
+    const q = (couponSearch || '').toLowerCase();
+    return (
+      c.code.toLowerCase().includes(q) ||
+      (c.description && c.description.toLowerCase().includes(q))
+    );
+  });
+
   const navTabs = [
     { id: 'dashboard', label: 'Dashboard Executivo', icon: LayoutDashboard },
     { id: 'products', label: 'Produtos & Variações', icon: Package },
     { id: 'inventory', label: 'Estoque Central', icon: Boxes },
     { id: 'customers', label: 'Clientes & Crediário', icon: Users },
     { id: 'users', label: 'Equipe & Funcionários', icon: UserCheck },
+    { id: 'coupons', label: 'Descontos & Cupons', icon: Tag },
     { id: 'fees', label: 'Taxas da Maquininha', icon: Percent },
     { id: 'reports', label: 'Relatórios & CSV', icon: BarChart3 },
     { id: 'audit', label: 'Logs de Auditoria', icon: ShieldCheck }
@@ -1833,6 +2072,7 @@ export function AdminApp() {
                           minStock: '2',
                           stockQty: '10',
                           image: '',
+                          colorImages: {},
                           variants: [
                             { size: 'P', color: '', stockQty: '2' },
                             { size: 'M', color: '', stockQty: '4' },
@@ -1934,12 +2174,21 @@ export function AdminApp() {
                               <button
                                 onClick={() => {
                                   setEditingProduct(p);
+                                  const loadedColorImages = p.colorImages ? { ...p.colorImages } : {};
+                                  if (p.variants && Array.isArray(p.variants)) {
+                                    p.variants.forEach(v => {
+                                      if (v.color && v.imageUrl && !loadedColorImages[v.color.trim()]) {
+                                        loadedColorImages[v.color.trim()] = v.imageUrl;
+                                      }
+                                    });
+                                  }
                                   const loadedVariants = (p.variants && p.variants.length > 0)
                                     ? p.variants.map(v => ({
                                         id: v.id,
                                         sku: v.sku,
                                         size: v.size,
                                         color: v.color || '',
+                                        imageUrl: v.imageUrl || (v.color ? loadedColorImages[v.color.trim()] : null) || null,
                                         stockQty: String(v.stockQty ?? v.stockAvailable ?? 0),
                                         price: v.price ? String(v.price) : String(p.price),
                                         costPrice: v.costPrice ? String(v.costPrice) : String(p.costPrice)
@@ -1958,6 +2207,7 @@ export function AdminApp() {
                                     minStock: String(p.minStock),
                                     stockQty: String(p.stockAvailable || 0),
                                     image: primaryImg || '',
+                                    colorImages: loadedColorImages,
                                     variants: loadedVariants
                                   });
                                   setShowProductModal(true);
@@ -2484,6 +2734,360 @@ export function AdminApp() {
           </div>
         )}
 
+        {/* ========================================================
+            ABA: DESCONTOS & CUPONS PROMOCIONAIS
+        ======================================================== */}
+        {activeTab === 'coupons' && (
+          <div className="space-y-6 w-full animate-fade-in">
+            {/* Header */}
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <div>
+                  <h2 className="text-lg sm:text-xl font-black uppercase text-white flex items-center gap-2">
+                    <Tag size={20} className="text-[#942620]" />
+                    Gestão de Descontos & Códigos Promocionais
+                  </h2>
+                  <p className="text-xs text-gray-400 mt-0.5">
+                    Crie códigos de desconto com porcentagens personalizadas para seus clientes aplicarem no carrinho e acompanhe as vendas realizadas com cada cupom.
+                  </p>
+                </div>
+
+                <button
+                  onClick={fetchCoupons}
+                  className="self-start sm:self-auto bg-neutral-900 hover:bg-neutral-800 text-gray-300 hover:text-white border border-white/10 text-xs font-bold px-3 py-2 rounded-xl flex items-center gap-1.5 transition-colors"
+                >
+                  <RefreshCw size={14} className={loadingCoupons ? 'animate-spin' : ''} />
+                  <span>Atualizar</span>
+                </button>
+              </div>
+
+              {/* Info Banner */}
+              <div className="bg-neutral-900/80 border border-white/10 rounded-2xl p-4 mt-3 flex items-start gap-3">
+                <Info size={18} className="text-[#dfa666] shrink-0 mt-0.5" />
+                <div className="text-xs text-gray-300 space-y-1">
+                  <p className="font-bold text-white">Como funcionam os Cupons Litran?</p>
+                  <p>
+                    Qualquer código criado nesta aba fica disponível imediatamente para os clientes inserirem no carrinho de compras. O pedido via WhatsApp já menciona o código utilizado e o desconto percentual e monetário aplicado. Você pode registrar aqui cada venda realizada e visualizar o número total de vendas de cada cupom.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Metrics Cards */}
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+              <div className="p-4 bg-neutral-900 border border-white/10 rounded-2xl">
+                <span className="text-xs text-gray-400 font-bold block uppercase">Total de Cupons Criados</span>
+                <span className="text-2xl sm:text-3xl font-black text-white block mt-1">
+                  {coupons.length}
+                </span>
+                <p className="text-[11px] text-gray-500 mt-1">Códigos promocionais configurados</p>
+              </div>
+
+              <div className="p-4 bg-neutral-900 border border-white/10 rounded-2xl">
+                <span className="text-xs text-gray-400 font-bold block uppercase">Cupons Ativos</span>
+                <span className="text-2xl sm:text-3xl font-black text-emerald-400 block mt-1">
+                  {coupons.filter(c => c.isActive).length}
+                </span>
+                <p className="text-[11px] text-emerald-400/80 mt-1">Habilitados para uso no carrinho</p>
+              </div>
+
+              <div className="p-4 bg-neutral-900 border border-[#dfa666]/30 rounded-2xl bg-gradient-to-br from-neutral-900 to-[#dfa666]/5">
+                <span className="text-xs text-[#dfa666] font-bold block uppercase">Total de Vendas Realizadas</span>
+                <span className="text-2xl sm:text-3xl font-black text-[#dfa666] block mt-1">
+                  {coupons.reduce((acc, c) => acc + (c.salesCount || 0), 0)}
+                </span>
+                <p className="text-[11px] text-gray-400 mt-1">Vendas informadas com cupons</p>
+              </div>
+            </div>
+
+            {/* Form: Criar Novo Cupom de Desconto */}
+            <div className="bg-neutral-900 border border-white/15 rounded-3xl p-5 sm:p-6 shadow-xl space-y-4">
+              <div className="flex items-center justify-between border-b border-white/10 pb-3">
+                <div>
+                  <h3 className="text-sm sm:text-base font-black uppercase text-white flex items-center gap-2">
+                    <Sparkles size={18} className="text-[#dfa666]" />
+                    Criar Novo Código de Desconto
+                  </h3>
+                  <p className="text-[11px] text-gray-400">
+                    Defina o código (ex: LITRAN20) e a porcentagem de desconto equivalente que será aplicada.
+                  </p>
+                </div>
+              </div>
+
+              <form onSubmit={handleCreateCoupon} className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-end">
+                  
+                  {/* Código do Cupom */}
+                  <div className="md:col-span-4">
+                    <label className="block text-xs font-bold uppercase text-gray-300 mb-1.5">
+                      Código do Cupom *
+                    </label>
+                    <div className="flex items-center bg-black border border-white/15 rounded-xl px-3 py-2.5 focus-within:border-[#942620]">
+                      <Tag size={16} className="text-[#942620] mr-2 shrink-0" />
+                      <input
+                        type="text"
+                        required
+                        placeholder="Ex: LITRAN20, VERAO15..."
+                        value={couponForm.code}
+                        onChange={(e) => setCouponForm({ ...couponForm, code: e.target.value.toUpperCase().replace(/[^A-Z0-9_-]/g, '') })}
+                        className="bg-transparent text-white text-xs font-black uppercase tracking-wider w-full focus:outline-none placeholder-gray-600"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Porcentagem de Desconto */}
+                  <div className="md:col-span-4">
+                    <div className="flex items-center justify-between mb-1.5">
+                      <label className="text-xs font-bold uppercase text-gray-300">
+                        Porcentagem de Desconto *
+                      </label>
+                      <span className="text-xs font-black text-emerald-400 bg-emerald-950/60 border border-emerald-500/30 px-2 py-0.5 rounded-md">
+                        {couponForm.discountPercent || 0}% OFF
+                      </span>
+                    </div>
+
+                    <div className="flex items-center gap-2 bg-black border border-white/15 rounded-xl px-3 py-1.5">
+                      <Percent size={15} className="text-emerald-400 shrink-0" />
+                      <input
+                        type="range"
+                        min="1"
+                        max="100"
+                        step="1"
+                        value={couponForm.discountPercent || '20'}
+                        onChange={(e) => setCouponForm({ ...couponForm, discountPercent: e.target.value })}
+                        className="w-full accent-emerald-500 cursor-pointer"
+                      />
+                      <input
+                        type="number"
+                        min="1"
+                        max="100"
+                        step="0.5"
+                        required
+                        value={couponForm.discountPercent}
+                        onChange={(e) => setCouponForm({ ...couponForm, discountPercent: e.target.value })}
+                        className="w-14 bg-neutral-900 border border-white/10 rounded-lg text-center text-xs font-black text-white p-1 focus:outline-none"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Descrição / Campanha */}
+                  <div className="md:col-span-4">
+                    <label className="block text-xs font-bold uppercase text-gray-300 mb-1.5">
+                      Descrição / Finalidade (Opcional)
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Ex: Campanha de Redes Sociais, Clientes VIP..."
+                      value={couponForm.description}
+                      onChange={(e) => setCouponForm({ ...couponForm, description: e.target.value })}
+                      className="bg-black border border-white/15 text-white text-xs px-3 py-2.5 rounded-xl w-full focus:outline-none focus:border-[#942620] placeholder-gray-600"
+                    />
+                  </div>
+                </div>
+
+                {/* Botões de Atalho Rápido de Porcentagem */}
+                <div className="flex items-center gap-1.5 flex-wrap pt-1">
+                  <span className="text-[11px] text-gray-400 font-bold mr-1">Atalhos rápidos:</span>
+                  {['5', '10', '15', '20', '25', '30', '50'].map((pct) => (
+                    <button
+                      key={pct}
+                      type="button"
+                      onClick={() => setCouponForm({ ...couponForm, discountPercent: pct })}
+                      className={`text-xs px-2.5 py-1 rounded-lg font-extrabold transition-all ${
+                        String(couponForm.discountPercent) === pct
+                          ? 'bg-emerald-600 text-white shadow'
+                          : 'bg-black text-gray-400 hover:text-white border border-white/10'
+                      }`}
+                    >
+                      {pct}%
+                    </button>
+                  ))}
+                </div>
+
+                <div className="pt-2 flex justify-end">
+                  <button
+                    type="submit"
+                    disabled={creatingCoupon}
+                    className="bg-[#942620] hover:bg-red-700 disabled:opacity-50 text-white text-xs font-black uppercase tracking-wider px-6 py-3 rounded-xl transition-all shadow-lg flex items-center gap-2 cursor-pointer"
+                  >
+                    <Plus size={16} />
+                    <span>{creatingCoupon ? 'Criando Cupom...' : 'Criar Código de Desconto'}</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            {/* Lista de Códigos de Desconto Criados */}
+            <div className="space-y-4">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                <div className="flex items-center gap-2">
+                  <h3 className="text-sm sm:text-base font-black uppercase text-white">
+                    Códigos de Desconto Criados ({filteredCoupons.length})
+                  </h3>
+                </div>
+
+                {/* Campo de Busca */}
+                <div className="relative w-full sm:w-64">
+                  <Search size={14} className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
+                  <input
+                    type="text"
+                    placeholder="Buscar código ou descrição..."
+                    value={couponSearch}
+                    onChange={(e) => setCouponSearch(e.target.value)}
+                    className="w-full bg-neutral-900 border border-white/10 rounded-xl pl-9 pr-3 py-2 text-xs text-white placeholder-gray-500 focus:outline-none focus:border-[#942620]"
+                  />
+                </div>
+              </div>
+
+              {filteredCoupons.length === 0 ? (
+                <div className="bg-neutral-900 border border-white/10 rounded-2xl p-10 text-center space-y-2">
+                  <Tag size={36} className="text-gray-600 mx-auto mb-2" />
+                  <p className="text-sm font-bold text-white">Nenhum cupom encontrado</p>
+                  <p className="text-xs text-gray-400 max-w-sm mx-auto">
+                    {couponSearch
+                      ? 'Nenhum cupom corresponde à sua busca. Tente outro termo.'
+                      : 'Cadastre seu primeiro código de desconto no formulário acima.'}
+                  </p>
+                </div>
+              ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  {filteredCoupons.map((item) => (
+                    <div
+                      key={item.id}
+                      className={`p-4 rounded-2xl border transition-all flex flex-col justify-between space-y-3.5 relative overflow-hidden ${
+                        item.isActive
+                          ? 'bg-neutral-900/90 border-white/15 hover:border-white/30'
+                          : 'bg-neutral-950/80 border-white/5 opacity-70'
+                      }`}
+                    >
+                      {/* Top Bar do Card */}
+                      <div className="flex items-start justify-between gap-2">
+                        <div className="space-y-1">
+                          {/* Código Estilizado */}
+                          <div className="flex items-center gap-2">
+                            <span className="font-mono text-base font-black uppercase tracking-wider text-white bg-black px-3 py-1 rounded-xl border border-white/20 shadow-inner flex items-center gap-1.5">
+                              <Tag size={13} className="text-[#942620]" />
+                              {item.code}
+                            </span>
+                            <button
+                              onClick={() => {
+                                navigator.clipboard.writeText(item.code);
+                                setCopiedCouponCode(item.code);
+                                setTimeout(() => setCopiedCouponCode(null), 1500);
+                              }}
+                              title="Copiar código"
+                              className="text-gray-400 hover:text-white p-1 rounded-lg bg-white/5 transition-colors"
+                            >
+                              {copiedCouponCode === item.code ? (
+                                <Check size={14} className="text-emerald-400" />
+                              ) : (
+                                <Copy size={14} />
+                              )}
+                            </button>
+                          </div>
+                          {item.description && (
+                            <p className="text-[11px] text-gray-400 line-clamp-2">
+                              {item.description}
+                            </p>
+                          )}
+                        </div>
+
+                        {/* Badge de Porcentagem */}
+                        <div className="text-right shrink-0">
+                          <span className="text-xs font-black uppercase text-emerald-400 bg-emerald-950/80 border border-emerald-500/40 px-2.5 py-1 rounded-xl shadow inline-block">
+                            {item.discountPercent}% OFF
+                          </span>
+                        </div>
+                      </div>
+
+                      {/* Contador de Vendas Realizadas (Destaque Principal) */}
+                      <div className="bg-black/60 border border-white/10 rounded-xl p-3 flex items-center justify-between">
+                        <div>
+                          <span className="text-[10px] uppercase font-bold text-gray-400 block">
+                            Vendas Realizadas
+                          </span>
+                          <span className="text-lg font-black text-[#dfa666] flex items-center gap-1 mt-0.5">
+                            🔥 {item.salesCount || 0} {item.salesCount === 1 ? 'venda' : 'vendas'}
+                          </span>
+                        </div>
+
+                        <div className="flex items-center gap-1">
+                          {/* Botão + 1 Venda Rápida */}
+                          <button
+                            onClick={() => handleQuickAddSale(item)}
+                            title="Adicionar +1 venda realizada instantaneamente"
+                            className="bg-emerald-700/80 hover:bg-emerald-600 text-white text-[11px] font-black px-2.5 py-1.5 rounded-lg flex items-center gap-1 transition-colors shadow"
+                          >
+                            <Plus size={12} /> 1 Venda
+                          </button>
+
+                          {/* Botão Informar Venda com Detalhes */}
+                          <button
+                            onClick={() => {
+                              setSelectedCouponForSale(item);
+                              setSaleRecordForm({
+                                saleCode: '',
+                                customerName: '',
+                                amount: '',
+                                discountValue: '',
+                                notes: ''
+                              });
+                              setShowRecordSaleModal(true);
+                            }}
+                            title="Informar detalhes da venda realizada (comanda, cliente, valor)"
+                            className="bg-[#942620] hover:bg-red-700 text-white text-[11px] font-bold px-2.5 py-1.5 rounded-lg flex items-center gap-1 transition-colors shadow"
+                          >
+                            + Informar
+                          </button>
+                        </div>
+                      </div>
+
+                      {/* Botões de Ações e Status */}
+                      <div className="pt-2 border-t border-white/10 flex items-center justify-between text-xs gap-2">
+                        {/* Toggle Status Ativo / Inativo */}
+                        <button
+                          onClick={() => handleToggleCoupon(item)}
+                          className={`text-[11px] font-bold px-2.5 py-1 rounded-lg flex items-center gap-1.5 transition-colors ${
+                            item.isActive
+                              ? 'bg-emerald-950/70 text-emerald-300 border border-emerald-500/30'
+                              : 'bg-neutral-800 text-gray-400 border border-white/10'
+                          }`}
+                        >
+                          <span className={`w-2 h-2 rounded-full ${item.isActive ? 'bg-emerald-400 animate-pulse' : 'bg-gray-500'}`} />
+                          <span>{item.isActive ? 'Ativo' : 'Inativo'}</span>
+                        </button>
+
+                        <div className="flex items-center gap-2">
+                          {/* Ver Histórico de Vendas */}
+                          <button
+                            onClick={() => {
+                              setSelectedCouponForHistory(item);
+                              setShowHistoryModal(true);
+                            }}
+                            className="text-xs text-gray-300 hover:text-white underline font-semibold flex items-center gap-1"
+                          >
+                            <FileText size={13} />
+                            <span>Vendas ({item.sales?.length || item.salesCount || 0})</span>
+                          </button>
+
+                          {/* Excluir Cupom */}
+                          <button
+                            onClick={() => handleDeleteCoupon(item)}
+                            title="Excluir Cupom"
+                            className="p-1.5 text-gray-500 hover:text-red-400 hover:bg-neutral-800 rounded-lg transition-colors"
+                          >
+                            <Trash2 size={14} />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
       </main>
 
       {/* ========================================================
@@ -2761,13 +3365,24 @@ export function AdminApp() {
                         {productForm.variants.map((v, idx) => (
                           <tr key={idx} className="hover:bg-neutral-900/60">
                             <td className="p-2">
-                              <input
-                                type="text"
-                                value={v.color || ''}
-                                onChange={(e) => handleUpdateVariant(idx, 'color', e.target.value)}
-                                placeholder="Ex: Preto, Bordô, Terra..."
-                                className="w-full bg-black border border-white/10 rounded-lg px-2.5 py-1.5 text-white text-xs focus:outline-none focus:border-[#942620]"
-                              />
+                              <div className="flex items-center gap-1.5">
+                                {v.color && productForm.colorImages && productForm.colorImages[v.color.trim()] && (
+                                  <div className="w-7 h-7 rounded-md overflow-hidden bg-black border border-white/20 shrink-0 shadow-sm" title={`Foto cadastrada para ${v.color}`}>
+                                    <img
+                                      src={productForm.colorImages[v.color.trim()]}
+                                      alt={v.color}
+                                      className="w-full h-full object-cover"
+                                    />
+                                  </div>
+                                )}
+                                <input
+                                  type="text"
+                                  value={v.color || ''}
+                                  onChange={(e) => handleUpdateVariant(idx, 'color', e.target.value)}
+                                  placeholder="Ex: Preto, Bordô, Terra..."
+                                  className="w-full bg-black border border-white/10 rounded-lg px-2.5 py-1.5 text-white text-xs focus:outline-none focus:border-[#942620]"
+                                />
+                              </div>
                             </td>
                             <td className="p-2">
                               <input
@@ -2838,6 +3453,138 @@ export function AdminApp() {
                 </div>
               )}
             </div>
+
+            {/* SEÇÃO 3.1: FOTOS POR VARIAÇÃO DE COR */}
+            {(() => {
+              const detectedColors = Array.from(new Set([
+                ...Object.keys(productForm.colorImages || {}),
+                ...(productForm.variants || []).map(v => (v.color || '').trim()).filter(Boolean)
+              ]));
+
+              return (
+                <div className="bg-black/40 border border-white/10 rounded-2xl p-3.5 space-y-3">
+                  <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-white/10 pb-2.5">
+                    <div>
+                      <label className="block text-xs font-bold uppercase tracking-wider text-[#dfa666] flex items-center gap-1.5">
+                        <Camera size={14} /> Fotos das Variações de Cor
+                      </label>
+                      <p className="text-[11px] text-gray-400">
+                        Cadastre a foto específica de cada cor. Na loja, ao clicar na cor, o cliente verá a foto correspondente instantaneamente!
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Campo para adicionar nova cor manualmente */}
+                  <div className="flex items-center gap-2 bg-neutral-900/80 p-2.5 rounded-xl border border-white/5">
+                    <Palette size={14} className="text-[#dfa666] shrink-0" />
+                    <input
+                      type="text"
+                      value={newColorInput}
+                      onChange={(e) => setNewColorInput(e.target.value)}
+                      placeholder="Adicionar foto para outra cor (ex: Rosa Pink, Azul Royal, Cinza Mescla)..."
+                      className="bg-black border border-white/10 rounded-lg px-2.5 py-1 text-white text-xs flex-1 focus:outline-none focus:border-[#dfa666]"
+                      onKeyDown={(e) => {
+                        if (e.key === 'Enter') {
+                          e.preventDefault();
+                          handleAddCustomColor(newColorInput);
+                        }
+                      }}
+                    />
+                    <button
+                      type="button"
+                      onClick={() => handleAddCustomColor(newColorInput)}
+                      disabled={!newColorInput.trim()}
+                      className="bg-[#dfa666] hover:bg-[#c99557] disabled:opacity-40 text-black font-black text-xs px-3 py-1.5 rounded-lg flex items-center gap-1 transition-colors"
+                    >
+                      <Plus size={13} /> Adicionar Cor
+                    </button>
+                  </div>
+
+                  {detectedColors.length > 0 ? (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                      {detectedColors.map((colName, cIdx) => {
+                        const imgUrl = (productForm.colorImages || {})[colName];
+                        const inputId = `color-img-file-${cIdx}`;
+
+                        return (
+                          <div
+                            key={colName}
+                            className={`p-3 rounded-xl border transition-all flex items-center gap-3 ${
+                              imgUrl
+                                ? 'bg-neutral-900/90 border-emerald-500/40 shadow-sm'
+                                : 'bg-neutral-900/40 border-white/10'
+                            }`}
+                          >
+                            {/* Preview ou Dropzone */}
+                            <div className="w-16 h-16 rounded-xl bg-black border border-white/10 overflow-hidden flex items-center justify-center shrink-0 relative group">
+                              {imgUrl ? (
+                                <img
+                                  src={imgUrl}
+                                  alt={colName}
+                                  className="w-full h-full object-cover"
+                                />
+                              ) : (
+                                <div className="text-gray-500 flex flex-col items-center justify-center text-[10px]">
+                                  <Camera size={18} className="opacity-50" />
+                                  <span className="text-[9px] mt-0.5">Sem foto</span>
+                                </div>
+                              )}
+                            </div>
+
+                            {/* Detalhes da Cor e Ações */}
+                            <div className="flex-1 min-w-0 space-y-1">
+                              <div className="flex items-center justify-between gap-1">
+                                <span className="text-xs font-black text-white uppercase truncate flex items-center gap-1.5">
+                                  <span className="w-2.5 h-2.5 rounded-full bg-[#dfa666] inline-block shrink-0" />
+                                  {colName}
+                                </span>
+                                {imgUrl && (
+                                  <span className="text-[10px] text-emerald-400 font-bold bg-emerald-950/80 px-1.5 py-0.5 rounded border border-emerald-800 shrink-0">
+                                    ✓ Foto Vinculada
+                                  </span>
+                                )}
+                              </div>
+
+                              <input
+                                type="file"
+                                id={inputId}
+                                accept="image/png, image/jpeg, image/jpg, image/webp"
+                                onChange={(e) => handleColorImageUpload(colName, e.target.files?.[0])}
+                                className="hidden"
+                              />
+
+                              <div className="flex items-center gap-1.5 pt-1">
+                                <label
+                                  htmlFor={inputId}
+                                  className="cursor-pointer bg-neutral-800 hover:bg-neutral-700 text-white text-[10px] font-bold px-2 py-1 rounded flex items-center gap-1 transition-colors"
+                                >
+                                  <Upload size={11} /> {imgUrl ? 'Trocar Foto' : 'Upload Foto'}
+                                </label>
+
+                                {imgUrl && (
+                                  <button
+                                    type="button"
+                                    onClick={() => handleRemoveColorImage(colName)}
+                                    className="bg-red-950/80 hover:bg-red-900 border border-red-800 text-red-300 text-[10px] font-bold px-1.5 py-1 rounded flex items-center gap-0.5 transition-colors"
+                                    title="Remover foto desta cor"
+                                  >
+                                    <Trash2 size={11} />
+                                  </button>
+                                )}
+                              </div>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  ) : (
+                    <div className="text-center py-4 bg-neutral-900/30 rounded-xl border border-dashed border-white/10 text-xs text-gray-400">
+                      Nenhuma cor informada na grade de variações acima. Digite as cores na grade ou use o campo acima para vincular fotos de cores.
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
 
             {/* SEÇÃO 4: DESCRIÇÃO COMERCIAL */}
             <div>
@@ -3521,6 +4268,213 @@ export function AdminApp() {
               </button>
               <button onClick={handleStockAdjust} className="flex-1 py-2.5 bg-[#942620] hover:bg-red-700 font-bold text-xs rounded-xl text-white shadow">
                 Gravar Ajuste
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================
+          MODAL: INFORMAR VENDA REALIZADA COM CUPOM
+      ======================================================== */}
+      {showRecordSaleModal && selectedCouponForSale && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 animate-fade-in">
+          <form
+            onSubmit={handleRecordSale}
+            className="bg-neutral-900 border border-white/20 rounded-2xl p-5 sm:p-6 max-w-md w-full space-y-4 shadow-2xl"
+          >
+            <div className="flex items-center justify-between border-b border-white/10 pb-3">
+              <div>
+                <h3 className="text-sm sm:text-base font-black uppercase text-white flex items-center gap-2">
+                  <Tag size={16} className="text-[#942620]" />
+                  Informar Venda Realizada
+                </h3>
+                <p className="text-[11px] text-gray-400">
+                  Cupom: <strong className="text-white font-mono">{selectedCouponForSale.code}</strong> ({selectedCouponForSale.discountPercent}% OFF)
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowRecordSaleModal(false)}
+                className="p-1 text-gray-400 hover:text-white"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <div className="space-y-3">
+              <div>
+                <label className="block text-xs font-bold text-gray-300 mb-1">
+                  Código da Venda / Comanda (Opcional)
+                </label>
+                <input
+                  type="text"
+                  placeholder="Ex: VND-104, Comanda 12, Pedido WhatsApp..."
+                  value={saleRecordForm.saleCode}
+                  onChange={(e) => setSaleRecordForm({ ...saleRecordForm, saleCode: e.target.value })}
+                  className="w-full bg-black border border-white/15 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-[#942620]"
+                />
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-gray-300 mb-1">
+                  Nome do Cliente (Opcional)
+                </label>
+                <input
+                  type="text"
+                  placeholder="Nome do cliente que utilizou o cupom"
+                  value={saleRecordForm.customerName}
+                  onChange={(e) => setSaleRecordForm({ ...saleRecordForm, customerName: e.target.value })}
+                  className="w-full bg-black border border-white/15 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-[#942620]"
+                />
+              </div>
+
+              <div className="grid grid-cols-2 gap-2">
+                <div>
+                  <label className="block text-xs font-bold text-gray-300 mb-1">
+                    Valor da Venda (R$)
+                  </label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    min="0"
+                    placeholder="0,00"
+                    value={saleRecordForm.amount}
+                    onChange={(e) => setSaleRecordForm({ ...saleRecordForm, amount: e.target.value })}
+                    className="w-full bg-black border border-white/15 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-[#942620]"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-gray-300 mb-1">
+                    Desconto Aplicado (R$)
+                  </label>
+                  <input
+                    type="number"
+                    step="0.01"
+                    min="0"
+                    placeholder="0,00"
+                    value={saleRecordForm.discountValue}
+                    onChange={(e) => setSaleRecordForm({ ...saleRecordForm, discountValue: e.target.value })}
+                    className="w-full bg-black border border-white/15 rounded-xl px-3 py-2 text-emerald-400 font-bold text-xs focus:outline-none focus:border-[#942620]"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-xs font-bold text-gray-300 mb-1">
+                  Observações (Opcional)
+                </label>
+                <textarea
+                  rows={2}
+                  placeholder="Anotações sobre a venda ou itens comprados..."
+                  value={saleRecordForm.notes}
+                  onChange={(e) => setSaleRecordForm({ ...saleRecordForm, notes: e.target.value })}
+                  className="w-full bg-black border border-white/15 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-[#942620]"
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-2 pt-2 border-t border-white/10">
+              <button
+                type="button"
+                onClick={() => setShowRecordSaleModal(false)}
+                className="flex-1 py-2.5 bg-neutral-800 hover:bg-neutral-700 text-white rounded-xl text-xs font-bold"
+              >
+                Cancelar
+              </button>
+              <button
+                type="submit"
+                disabled={recordingSale}
+                className="flex-1 py-2.5 bg-[#942620] hover:bg-red-700 disabled:opacity-50 text-white rounded-xl text-xs font-black shadow flex items-center justify-center gap-1 cursor-pointer"
+              >
+                {recordingSale ? 'Gravando...' : 'Salvar Venda Realizada'}
+              </button>
+            </div>
+          </form>
+        </div>
+      )}
+
+      {/* ========================================================
+          MODAL: HISTÓRICO DE VENDAS REALIZADAS DO CUPOM
+      ======================================================== */}
+      {showHistoryModal && selectedCouponForHistory && (
+        <div className="fixed inset-0 bg-black/85 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4 animate-fade-in">
+          <div className="bg-neutral-900 border border-white/20 rounded-2xl p-5 sm:p-6 max-w-2xl w-full space-y-4 max-h-[90vh] overflow-y-auto shadow-2xl">
+            <div className="flex items-center justify-between border-b border-white/10 pb-3">
+              <div>
+                <h3 className="text-sm sm:text-base font-black uppercase text-white flex items-center gap-2">
+                  <FileText size={18} className="text-[#dfa666]" />
+                  Histórico de Vendas com o Cupom {selectedCouponForHistory.code}
+                </h3>
+                <p className="text-[11px] text-gray-400">
+                  Total de {selectedCouponForHistory.salesCount || 0} vendas realizadas informadas para este cupom ({selectedCouponForHistory.discountPercent}% OFF).
+                </p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setShowHistoryModal(false)}
+                className="p-1 text-gray-400 hover:text-white"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            {(!selectedCouponForHistory.sales || selectedCouponForHistory.sales.length === 0) ? (
+              <div className="py-10 text-center space-y-2">
+                <Tag size={32} className="text-gray-600 mx-auto" />
+                <p className="text-xs text-gray-300 font-bold">Nenhum detalhe de venda registrado ainda.</p>
+                <p className="text-[11px] text-gray-500">
+                  Clique em "+ Informar" ou "+ 1 Venda" no card do cupom para registrar as compras realizadas.
+                </p>
+              </div>
+            ) : (
+              <div className="overflow-x-auto">
+                <table className="w-full text-left text-xs min-w-[500px]">
+                  <thead className="bg-black text-gray-400 uppercase font-bold border-b border-white/10">
+                    <tr>
+                      <th className="p-2.5">Data / Hora</th>
+                      <th className="p-2.5">Código / Comanda</th>
+                      <th className="p-2.5">Cliente</th>
+                      <th className="p-2.5">Valor Venda</th>
+                      <th className="p-2.5">Informado por</th>
+                      <th className="p-2.5">Notas</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-white/5">
+                    {selectedCouponForHistory.sales.map((sale) => (
+                      <tr key={sale.id} className="hover:bg-neutral-800/40">
+                        <td className="p-2.5 text-gray-400 whitespace-nowrap">
+                          {new Date(sale.date).toLocaleString('pt-BR')}
+                        </td>
+                        <td className="p-2.5 font-bold text-white whitespace-nowrap">
+                          {sale.saleCode}
+                        </td>
+                        <td className="p-2.5 text-gray-300">
+                          {sale.customerName}
+                        </td>
+                        <td className="p-2.5 font-black text-emerald-400">
+                          {sale.amount > 0 ? `R$ ${sale.amount.toFixed(2)}` : '-'}
+                        </td>
+                        <td className="p-2.5 text-gray-400">
+                          {sale.reportedBy}
+                        </td>
+                        <td className="p-2.5 text-gray-400 max-w-[150px] truncate">
+                          {sale.notes || '-'}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+
+            <div className="pt-2 border-t border-white/10 flex justify-end">
+              <button
+                type="button"
+                onClick={() => setShowHistoryModal(false)}
+                className="py-2 px-5 bg-neutral-800 hover:bg-neutral-700 text-white rounded-xl text-xs font-bold cursor-pointer"
+              >
+                Fechar
               </button>
             </div>
           </div>

@@ -12,6 +12,7 @@ import exchangeRoutes from './modules/exchanges/exchangeRoutes.js';
 import reportRoutes from './modules/reports/reportRoutes.js';
 import auditRoutes from './modules/audit/auditRoutes.js';
 import settingsRoutes from './modules/settings/settingsRoutes.js';
+import couponRoutes from './modules/coupons/couponRoutes.js';
 
 dotenv.config();
 
@@ -159,6 +160,7 @@ app.use('/api', exchangeRoutes);
 app.use('/api/reports', reportRoutes);
 app.use('/api', auditRoutes);
 app.use('/api', settingsRoutes);
+app.use('/api', couponRoutes);
 
 // Global Error Handler
 app.use((err, req, res, next) => {

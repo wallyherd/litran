@@ -93,6 +93,12 @@ export const PRODUCTS = [
       "/products/1782933001_a58f19e37e2aeba078e2.webp",
       "/products/1782932985_8ab41b09cf123751de94.webp"
     ],
+    "colorImages": {
+      "VERDE MENTA NEON": "/products/1782932993_cef0f46b5f0890b8fd0b.webp",
+      "ROSA PINK": "/products/1782933001_a58f19e37e2aeba078e2.webp",
+      "AZUL CANETA": "/products/1782932985_8ab41b09cf123751de94.webp",
+      "AZUL": "/products/1782932985_8ab41b09cf123751de94.webp"
+    },
     "video": null,
     "variations": [
       {

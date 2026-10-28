@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { AuthProvider, useAuth } from './context/AuthContext';
-import { ProductProvider } from './context/ProductContext';
+import { ProductProvider, useProducts } from './context/ProductContext';
+import { FavoritesProvider } from './context/FavoritesContext';
 
 // Store Components
 import { AnnouncementBar } from './components/AnnouncementBar';
@@ -27,12 +28,27 @@ import { AdminApp } from './admin/AdminApp';
 import { LoginView } from './admin/LoginView';
 
 function StoreView() {
+  const { products } = useProducts();
   const [activeCategory, setActiveCategory] = useState('inicio');
   const [quickViewProduct, setQuickViewProduct] = useState(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isAccountOpen, setIsAccountOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+
+  // Abrir automaticamente produto compartilhado via link (?product=ID)
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const prodId = params.get('product');
+      if (prodId && products && products.length > 0) {
+        const found = products.find(p => String(p.id) === String(prodId) || String(p.sku) === String(prodId));
+        if (found) {
+          setQuickViewProduct(found);
+        }
+      }
+    } catch (_) {}
+  }, [products]);
 
   const handleSelectCategory = (catId) => {
     setActiveCategory(catId);
@@ -90,9 +106,17 @@ function StoreView() {
         onSearchSubmit={(q) => setSearchQuery(q)}
       />
 
-      <ProductModal product={quickViewProduct} onClose={() => setQuickViewProduct(null)} />
+      <ProductModal
+        product={quickViewProduct}
+        onClose={() => setQuickViewProduct(null)}
+        onOpenAccount={() => setIsAccountOpen(true)}
+      />
       <CartDrawer />
-      <AccountModal isOpen={isAccountOpen} onClose={() => setIsAccountOpen(false)} />
+      <AccountModal
+        isOpen={isAccountOpen}
+        onClose={() => setIsAccountOpen(false)}
+        onOpenQuickView={(product) => setQuickViewProduct(product)}
+      />
     </div>
   );
 }
@@ -110,17 +134,19 @@ function ProtectedAdmin() {
 export default function App() {
   return (
     <AuthProvider>
-      <ProductProvider>
-        <CartProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<StoreView />} />
-              <Route path="/pdv" element={<ProtectedPdv />} />
-              <Route path="/admin" element={<ProtectedAdmin />} />
-            </Routes>
-          </BrowserRouter>
-        </CartProvider>
-      </ProductProvider>
+      <FavoritesProvider>
+        <ProductProvider>
+          <CartProvider>
+            <BrowserRouter>
+              <Routes>
+                <Route path="/" element={<StoreView />} />
+                <Route path="/pdv" element={<ProtectedPdv />} />
+                <Route path="/admin" element={<ProtectedAdmin />} />
+              </Routes>
+            </BrowserRouter>
+          </CartProvider>
+        </ProductProvider>
+      </FavoritesProvider>
     </AuthProvider>
   );
 }

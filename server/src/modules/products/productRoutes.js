@@ -1,6 +1,82 @@
 import express from 'express';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 import prisma from '../../prisma.js';
 import { authenticateToken, requireRole, logAudit } from '../../middleware/auth.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const colorImagesFilePath = path.join(__dirname, '../../../../data/product_colors.json');
+
+function readColorImagesFallback() {
+  try {
+    if (fs.existsSync(colorImagesFilePath)) {
+      const raw = fs.readFileSync(colorImagesFilePath, 'utf-8');
+      return JSON.parse(raw);
+    }
+  } catch (e) {
+    console.error('Erro ao ler product_colors.json:', e.message);
+  }
+  return {};
+}
+
+function writeColorImagesFallback(data) {
+  try {
+    const dir = path.dirname(colorImagesFilePath);
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+    fs.writeFileSync(colorImagesFilePath, JSON.stringify(data, null, 2), 'utf-8');
+  } catch (e) {
+    console.error('Erro ao gravar product_colors.json:', e.message);
+  }
+}
+
+async function getColorImagesMap() {
+  const map = readColorImagesFallback();
+  try {
+    if (prisma && prisma.setting) {
+      const rows = await prisma.setting.findMany({
+        where: { key: { startsWith: 'color_imgs_' } }
+      });
+      rows.forEach(r => {
+        const prodId = r.key.replace('color_imgs_', '');
+        try {
+          map[prodId] = { ...(map[prodId] || {}), ...JSON.parse(r.value) };
+        } catch (_) {}
+      });
+    }
+  } catch (dbErr) {
+    console.warn('Aviso ao ler color_imgs do banco:', dbErr.message);
+  }
+  return map;
+}
+
+async function saveProductColorImages(productId, colorImages) {
+  if (!productId || typeof colorImages !== 'object') return;
+  const currentMap = readColorImagesFallback();
+  const cleaned = {};
+  for (const [k, v] of Object.entries(colorImages || {})) {
+    if (k && v && typeof v === 'string' && v.trim()) {
+      cleaned[k.trim()] = v.trim();
+    }
+  }
+  currentMap[productId] = cleaned;
+  writeColorImagesFallback(currentMap);
+
+  try {
+    if (prisma && prisma.setting) {
+      await prisma.setting.upsert({
+        where: { key: `color_imgs_${productId}` },
+        update: { value: JSON.stringify(cleaned) },
+        create: { key: `color_imgs_${productId}`, value: JSON.stringify(cleaned) }
+      });
+    }
+  } catch (dbErr) {
+    console.warn('Aviso ao salvar color_imgs no banco:', dbErr.message);
+  }
+}
 
 const router = express.Router();
 
@@ -41,17 +117,22 @@ router.get('/products', async (req, res) => {
     orderBy: { name: 'asc' }
   });
 
+  const colorImagesMap = await getColorImagesMap();
+
   // Mapeia produto com a soma dos saldos do Estoque Central e saldos de variantes
   const formatted = products.map(p => {
     const rawDirectPhysical = p.balances.reduce((acc, b) => acc + b.physicalQty, 0);
     const rawDirectReserved = p.balances.reduce((acc, b) => acc + b.reservedQty, 0);
     const rawDirectAvailable = Math.max(0, rawDirectPhysical - rawDirectReserved);
+    const prodColorImages = colorImagesMap[p.id] || {};
 
     const formattedVariants = (p.variants || []).map(v => {
       const vPhysical = (v.balances || []).reduce((acc, b) => acc + b.physicalQty, 0);
       const vReserved = (v.balances || []).reduce((acc, b) => acc + b.reservedQty, 0);
+      const colorImg = v.imageUrl || prodColorImages[v.color] || null;
       return {
         ...v,
+        imageUrl: colorImg,
         stockPhysical: vPhysical,
         stockReserved: vReserved,
         stockAvailable: Math.max(0, vPhysical - vReserved),
@@ -69,6 +150,7 @@ router.get('/products', async (req, res) => {
 
     return {
       ...p,
+      colorImages: prodColorImages,
       variants: formattedVariants,
       stockAvailable: totalAvailable,
       stockPhysical: totalPhysical,
@@ -88,10 +170,20 @@ router.get('/categories', async (req, res) => {
 
 // POST /api/products (Criação de Produto + Variações + Estoque Inicial + Imagem)
 router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENTE']), async (req, res) => {
-  const { name, description, categoryId, brand, sku, barcode, price, promoPrice, costPrice, minStock, variants, image } = req.body;
+  const { name, description, categoryId, brand, sku, barcode, price, promoPrice, costPrice, minStock, variants, image, colorImages } = req.body;
 
   if (!name || !sku || !price) {
     return res.status(400).json({ error: 'Nome, SKU e Preço são obrigatórios.' });
+  }
+
+  // Mapeia fotos por cor recebidas explicitamente ou através das variações
+  const mergedColorImages = { ...(colorImages || {}) };
+  if (variants && Array.isArray(variants)) {
+    variants.forEach(v => {
+      if (v && v.color && v.imageUrl && typeof v.imageUrl === 'string' && v.imageUrl.trim()) {
+        mergedColorImages[v.color.trim()] = v.imageUrl.trim();
+      }
+    });
   }
 
   try {
@@ -140,10 +232,23 @@ router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENT
         await tx.productImage.create({
           data: {
             productId: prod.id,
-            url: image,
+            url: image.trim(),
             isPrimary: true
           }
         });
+      }
+
+      // Adiciona também fotos cadastradas para cada variação de cor na galeria de imagens
+      for (const [colName, colUrl] of Object.entries(mergedColorImages)) {
+        if (colUrl && typeof colUrl === 'string' && colUrl.trim() && colUrl.trim() !== (image || '').trim()) {
+          await tx.productImage.create({
+            data: {
+              productId: prod.id,
+              url: colUrl.trim(),
+              isPrimary: false
+            }
+          });
+        }
       }
 
       if (variants && Array.isArray(variants) && variants.length > 0) {
@@ -254,6 +359,9 @@ router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENT
       timeout: 60000
     });
 
+    // Salva fotos de cada variação de cor
+    await saveProductColorImages(newProduct.id, mergedColorImages);
+
     await logAudit({
       userId: req.user.id,
       action: 'PRODUCT_CREATED',
@@ -271,8 +379,10 @@ router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENT
     const formattedVariants = (newProduct.variants || []).map(v => {
       const vPhysical = (v.balances || []).reduce((acc, b) => acc + b.physicalQty, 0);
       const vReserved = (v.balances || []).reduce((acc, b) => acc + b.reservedQty, 0);
+      const colorImg = v.imageUrl || mergedColorImages[v.color] || null;
       return {
         ...v,
+        imageUrl: colorImg,
         stockPhysical: vPhysical,
         stockReserved: vReserved,
         stockAvailable: Math.max(0, vPhysical - vReserved),
@@ -290,6 +400,7 @@ router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENT
 
     const formatted = {
       ...newProduct,
+      colorImages: mergedColorImages,
       variants: formattedVariants,
       stockAvailable: totalAvailable,
       stockPhysical: totalPhysical,
@@ -307,7 +418,18 @@ router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENT
 // PUT /api/products/:id (Editar Produto, Preços, Imagem & Grade de Variações)
 router.put('/products/:id', authenticateToken, requireRole(['PROPRIETARIA', 'GERENTE']), async (req, res) => {
   const { id } = req.params;
-  const { name, description, categoryId, brand, sku, barcode, price, promoPrice, costPrice, minStock, isActive, image, variants } = req.body;
+  const { name, description, categoryId, brand, sku, barcode, price, promoPrice, costPrice, minStock, isActive, image, variants, colorImages } = req.body;
+
+  // Mapeia fotos por cor recebidas explicitamente ou através das variações
+  let mergedColorImages = colorImages !== undefined ? { ...(colorImages || {}) } : undefined;
+  if (variants && Array.isArray(variants)) {
+    variants.forEach(v => {
+      if (v && v.color && v.imageUrl && typeof v.imageUrl === 'string' && v.imageUrl.trim()) {
+        if (!mergedColorImages) mergedColorImages = {};
+        mergedColorImages[v.color.trim()] = v.imageUrl.trim();
+      }
+    });
+  }
 
   try {
     let location = await prisma.inventoryLocation.findFirst({ where: { isMain: true } });
@@ -352,20 +474,40 @@ router.put('/products/:id', authenticateToken, requireRole(['PROPRIETARIA', 'GER
         });
 
         if (existingPrimary) {
-          if (existingPrimary.url !== image) {
+          if (existingPrimary.url !== image.trim()) {
             await tx.productImage.update({
               where: { id: existingPrimary.id },
-              data: { url: image }
+              data: { url: image.trim() }
             });
           }
         } else {
           await tx.productImage.create({
             data: {
               productId: id,
-              url: image,
+              url: image.trim(),
               isPrimary: true
             }
           });
+        }
+      }
+
+      // Adiciona fotos das variações de cor se não existirem ainda
+      if (mergedColorImages) {
+        for (const [colName, colUrl] of Object.entries(mergedColorImages)) {
+          if (colUrl && typeof colUrl === 'string' && colUrl.trim() && colUrl.trim() !== (image || '').trim()) {
+            const exists = await tx.productImage.findFirst({
+              where: { productId: id, url: colUrl.trim() }
+            });
+            if (!exists) {
+              await tx.productImage.create({
+                data: {
+                  productId: id,
+                  url: colUrl.trim(),
+                  isPrimary: false
+                }
+              });
+            }
+          }
         }
       }
 
@@ -607,6 +749,12 @@ router.put('/products/:id', authenticateToken, requireRole(['PROPRIETARIA', 'GER
       timeout: 60000
     });
 
+    if (mergedColorImages !== undefined) {
+      await saveProductColorImages(id, mergedColorImages);
+    }
+    const colorImagesMap = await getColorImagesMap();
+    const finalColorImages = mergedColorImages !== undefined ? mergedColorImages : (colorImagesMap[id] || {});
+
     await logAudit({
       userId: req.user.id,
       action: 'PRODUCT_UPDATED',
@@ -624,8 +772,10 @@ router.put('/products/:id', authenticateToken, requireRole(['PROPRIETARIA', 'GER
     const formattedVariants = (updated.variants || []).map(v => {
       const vPhysical = (v.balances || []).reduce((acc, b) => acc + b.physicalQty, 0);
       const vReserved = (v.balances || []).reduce((acc, b) => acc + b.reservedQty, 0);
+      const colorImg = v.imageUrl || finalColorImages[v.color] || null;
       return {
         ...v,
+        imageUrl: colorImg,
         stockPhysical: vPhysical,
         stockReserved: vReserved,
         stockAvailable: Math.max(0, vPhysical - vReserved),
@@ -643,6 +793,7 @@ router.put('/products/:id', authenticateToken, requireRole(['PROPRIETARIA', 'GER
 
     const formattedProduct = {
       ...updated,
+      colorImages: finalColorImages,
       variants: formattedVariants,
       stockAvailable: totalAvailable,
       stockPhysical: totalPhysical,

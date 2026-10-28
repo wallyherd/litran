@@ -1,0 +1,35 @@
+[
+  {
+    "id": "coup_litran20",
+    "code": "LITRAN20",
+    "discountPercent": 20,
+    "description": "Cupom de 20% de desconto especial Litran",
+    "isActive": true,
+    "salesCount": 0,
+    "sales": [],
+    "createdAt": "2026-10-28T18:37:38.921Z",
+    "updatedAt": "2026-10-28T18:37:38.921Z"
+  },
+  {
+    "id": "coup_litran10",
+    "code": "LITRAN10",
+    "discountPercent": 10,
+    "description": "Cupom de 10% de desconto geral",
+    "isActive": true,
+    "salesCount": 0,
+    "sales": [],
+    "createdAt": "2026-10-28T18:37:38.921Z",
+    "updatedAt": "2026-10-28T18:37:38.921Z"
+  },
+  {
+    "id": "coup_primeiracompra",
+    "code": "PRIMEIRACOMPRA",
+    "discountPercent": 15,
+    "description": "15% de desconto para primeira compra",
+    "isActive": true,
+    "salesCount": 0,
+    "sales": [],
+    "createdAt": "2026-10-28T18:37:38.921Z",
+    "updatedAt": "2026-10-28T18:37:38.921Z"
+  }
+]

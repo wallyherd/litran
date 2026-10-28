@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { STORE_CONFIG } from '../data/catalogData';
+import { API_BASE } from '../config/api';
 
 const CartContext = createContext();
 
@@ -10,8 +11,12 @@ export const CartProvider = ({ children }) => {
   });
 
   const [isCartOpen, setIsCartOpen] = useState(false);
-  const [coupon, setCoupon] = useState('');
-  const [discountPercent, setDiscountPercent] = useState(0);
+  const [coupon, setCoupon] = useState(() => localStorage.getItem('litran_applied_coupon') || '');
+  const [discountPercent, setDiscountPercent] = useState(() => {
+    const saved = localStorage.getItem('litran_applied_discount');
+    return saved ? parseFloat(saved) : 0;
+  });
+  const [couponsList, setCouponsList] = useState([]);
 
   const [customerData, setCustomerData] = useState(() => {
     const saved = localStorage.getItem('litran_customer');
@@ -73,17 +78,92 @@ export const CartProvider = ({ children }) => {
     setCart([]);
   };
 
-  const applyCoupon = (code) => {
-    const cleanCode = code.trim().toUpperCase();
-    if (cleanCode === 'LITRAN10' || cleanCode === 'HDSOLUCOES') {
-      setCoupon(cleanCode);
-      setDiscountPercent(10);
-      return { success: true, message: 'Cupom de 10% de desconto aplicado com sucesso!' };
-    } else if (cleanCode === 'PRIMEIRACOMPRA') {
-      setCoupon(cleanCode);
-      setDiscountPercent(15);
-      return { success: true, message: 'Cupom de 15% de desconto de primeira compra aplicado!' };
+  // Carregar cupons do servidor e manter em cache
+  useEffect(() => {
+    const fetchLiveCoupons = async () => {
+      try {
+        const res = await fetch(`${API_BASE}/api/coupons`);
+        if (res.ok) {
+          const data = await res.json();
+          if (data.coupons && Array.isArray(data.coupons)) {
+            setCouponsList(data.coupons);
+          }
+        }
+      } catch (err) {
+        console.warn('Usando validação de cupom em memória/fallback local.');
+      }
+    };
+    fetchLiveCoupons();
+  }, []);
+
+  useEffect(() => {
+    if (coupon) {
+      localStorage.setItem('litran_applied_coupon', coupon);
+      localStorage.setItem('litran_applied_discount', String(discountPercent));
     } else {
+      localStorage.removeItem('litran_applied_coupon');
+      localStorage.removeItem('litran_applied_discount');
+    }
+  }, [coupon, discountPercent]);
+
+  const applyCoupon = async (code) => {
+    if (!code || typeof code !== 'string') {
+      return { success: false, message: 'Digite um código de cupom.' };
+    }
+    const cleanCode = code.trim().toUpperCase();
+
+    // 1. Tentar validar via API em tempo real
+    try {
+      const res = await fetch(`${API_BASE}/api/coupons/validate`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ code: cleanCode })
+      });
+
+      const data = await res.json();
+      if (res.ok && data.valid) {
+        setCoupon(data.code);
+        setDiscountPercent(data.discountPercent);
+        return {
+          success: true,
+          message: data.message || `Cupom ${data.code} de ${data.discountPercent}% aplicado com sucesso!`
+        };
+      } else {
+        return {
+          success: false,
+          message: data.message || 'Cupom inválido ou inativo.'
+        };
+      }
+    } catch (err) {
+      // 2. Fallback offline / cache
+      const found = couponsList.find(c => c.code.toUpperCase() === cleanCode);
+      if (found) {
+        if (!found.isActive) {
+          return { success: false, message: `O cupom ${found.code} está inativo.` };
+        }
+        setCoupon(found.code);
+        setDiscountPercent(found.discountPercent);
+        return {
+          success: true,
+          message: `Cupom ${found.code} de ${found.discountPercent}% aplicado com sucesso!`
+        };
+      }
+
+      // 3. Fallbacks estáticos padrão caso o servidor não responda
+      if (cleanCode === 'LITRAN20') {
+        setCoupon('LITRAN20');
+        setDiscountPercent(20);
+        return { success: true, message: 'Cupom LITRAN20 de 20% de desconto aplicado com sucesso!' };
+      } else if (cleanCode === 'LITRAN10' || cleanCode === 'HDSOLUCOES') {
+        setCoupon(cleanCode);
+        setDiscountPercent(10);
+        return { success: true, message: 'Cupom de 10% de desconto aplicado com sucesso!' };
+      } else if (cleanCode === 'PRIMEIRACOMPRA') {
+        setCoupon(cleanCode);
+        setDiscountPercent(15);
+        return { success: true, message: 'Cupom de 15% de desconto de primeira compra aplicado!' };
+      }
+
       return { success: false, message: 'Cupom inválido ou expirado.' };
     }
   };
@@ -123,8 +203,9 @@ export const CartProvider = ({ children }) => {
 
     message += `\n------------------------------------\n`;
     message += `💰 Subtotal: R$ ${subtotal.toFixed(2).replace('.', ',')}\n`;
-    if (discountValue > 0) {
-      message += `🏷️ Desconto (${coupon}): - R$ ${discountValue.toFixed(2).replace('.', ',')}\n`;
+    if (discountValue > 0 && coupon) {
+      message += `🏷️ *Cupom de Desconto:* ${coupon} (${discountPercent}% OFF)\n`;
+      message += `🏷️ *Desconto Aplicado:* - R$ ${discountValue.toFixed(2).replace('.', ',')}\n`;
     }
     message += `🚚 Frete: ${isFreeShippingEligible ? '*GRÁTIS*' : 'A combinar'}\n`;
     message += `💳 *TOTAL FINAL: R$ ${total.toFixed(2).replace('.', ',')}*\n`;

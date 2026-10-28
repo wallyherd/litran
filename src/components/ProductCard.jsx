@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Heart, Plus, Minus, Check } from 'lucide-react';
 import { useCart } from '../context/CartContext';
+import { useFavorites } from '../context/FavoritesContext';
 import { SafeImage } from './SafeImage';
 
 export const ProductCard = ({ product, onQuickView }) => {
   const { addToCart } = useCart();
+  const { isFavorite, toggleFavorite } = useFavorites();
   const [quantity, setQuantity] = useState(1);
-  const [isLiked, setIsLiked] = useState(false);
   const [added, setAdded] = useState(false);
+
+  const favorited = isFavorite(product.id);
 
   const handleBuy = (e) => {
     e.stopPropagation();
@@ -44,10 +47,14 @@ export const ProductCard = ({ product, onQuickView }) => {
 
         {/* Top Right Heart Icon */}
         <button
-          onClick={(e) => { e.stopPropagation(); setIsLiked(!isLiked); }}
+          onClick={(e) => {
+            e.stopPropagation();
+            toggleFavorite(product);
+          }}
           className="absolute top-3 right-3 w-8 h-8 rounded-full bg-white/80 backdrop-blur-sm text-gray-700 flex items-center justify-center hover:text-red-500 transition-colors shadow"
+          title={favorited ? 'Remover dos favoritos' : 'Salvar nos favoritos'}
         >
-          <Heart size={16} fill={isLiked ? 'red' : 'none'} className={isLiked ? 'text-red-500' : ''} />
+          <Heart size={16} fill={favorited ? 'red' : 'none'} className={favorited ? 'text-red-500' : ''} />
         </button>
       </div>
 
