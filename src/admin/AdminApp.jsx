@@ -795,7 +795,7 @@ export function AdminApp() {
         }
 
         setParsedProducts(list);
-        setSuccessMsg(`Planilha processada! ${list.length} produtos e ${rows.length} itens identificados.`);
+        setSuccessMsg(`Arquivo lido com sucesso! ${list.length} modelos e ${rows.length} itens identificados na pré-visualização. Clique no botão verde abaixo para gravar no estoque.`);
       } catch (err) {
         console.error('Erro ao ler planilha:', err);
         setErrorMsg('Falha ao processar arquivo Excel: ' + err.message);
@@ -3717,6 +3717,17 @@ export function AdminApp() {
               ) : (
                 /* PRÉ-VISUALIZAÇÃO DOS PRODUTOS RECONHECIDOS */
                 <div className="space-y-4">
+                  {/* Alerta de Confirmação Pendente */}
+                  <div className="bg-amber-500/15 border border-amber-500/40 rounded-xl p-3 sm:p-4 flex items-start gap-3">
+                    <AlertTriangle className="text-amber-400 shrink-0 mt-0.5" size={18} />
+                    <div className="text-xs text-amber-200/90 leading-relaxed">
+                      <strong className="text-white block font-bold mb-0.5 uppercase tracking-wide">
+                        ⚠️ Atenção: Produtos lidos da planilha (Ainda NÃO salvos no estoque)
+                      </strong>
+                      Os {parsedProducts.length} modelos abaixo estão em pré-visualização. Para que fiquem disponíveis no PDV e na Loja Virtual, você deve clicar no botão verde <strong className="text-emerald-300">"Lançar Definitivamente no Estoque"</strong> no rodapé deste modal.
+                    </div>
+                  </div>
+
                   {/* Barra de Resumo das Peças */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                     <div className="bg-black/60 border border-white/10 rounded-xl p-3 text-center">
@@ -3886,14 +3897,15 @@ export function AdminApp() {
             </div>
 
             {/* Footer do Modal */}
-            <div className="flex items-center justify-between gap-3 pt-3 border-t border-white/10">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 pt-3 border-t border-white/10">
               <button
                 type="button"
+                disabled={importingBatch}
                 onClick={() => {
                   setShowImportModal(false);
                   setParsedProducts([]);
                 }}
-                className="px-4 py-2.5 bg-neutral-800 hover:bg-neutral-700 text-white rounded-xl text-xs font-bold transition-colors"
+                className="px-4 py-2.5 bg-neutral-800 hover:bg-neutral-700 disabled:opacity-50 text-white rounded-xl text-xs font-bold transition-colors"
               >
                 Cancelar
               </button>
@@ -3903,15 +3915,15 @@ export function AdminApp() {
                   type="button"
                   disabled={importingBatch}
                   onClick={handleExecuteBatchImport}
-                  className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white rounded-xl text-xs font-black shadow-lg shadow-emerald-950/50 transition-all flex items-center justify-center gap-2"
+                  className="px-6 py-3 bg-emerald-600 hover:bg-emerald-500 disabled:opacity-50 text-white rounded-xl text-xs font-black shadow-lg shadow-emerald-950/50 transition-all flex items-center justify-center gap-2 tracking-wide uppercase"
                 >
                   {importingBatch ? (
                     <>
-                      <RefreshCw size={16} className="animate-spin" /> Lançando no Estoque...
+                      <RefreshCw size={18} className="animate-spin" /> Gravando no Banco de Dados...
                     </>
                   ) : (
                     <>
-                      <CheckCheck size={16} /> Lançar Todos os {parsedProducts.length} Produtos no Estoque
+                      <CheckCheck size={18} /> Lançar Definitivamente os {parsedProducts.length} Produtos no Estoque
                     </>
                   )}
                 </button>

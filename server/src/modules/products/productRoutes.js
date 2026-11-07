@@ -808,7 +808,7 @@ router.put('/products/:id', authenticateToken, requireRole(['PROPRIETARIA', 'GER
   }
 });
 
-// POST /api/products/batch-import (Importação de Planilha em Lote)
+// POST /api/products/batch-import (Importação de Planilha em Lote - Otimizado em Alta Performance)
 router.post('/products/batch-import', authenticateToken, requireRole(['PROPRIETARIA', 'GERENTE']), async (req, res) => {
   const { products: importList } = req.body;
 
@@ -819,19 +819,35 @@ router.post('/products/batch-import', authenticateToken, requireRole(['PROPRIETA
   try {
     let location = await prisma.inventoryLocation.findFirst({ where: { isMain: true } });
     if (!location) {
+      location = await prisma.inventoryLocation.findFirst();
+    }
+    if (!location) {
       location = await prisma.inventoryLocation.create({
         data: { name: 'Estoque Central - Balcão Litran', isMain: true }
       });
     }
 
-    // Categorias em cache
+    const currentUserId = req.user?.id || (await prisma.user.findFirst())?.id;
+
+    // Categorias e SKUs existentes carregados em poucas consultas
     const existingCategories = await prisma.category.findMany();
     const catMap = new Map(existingCategories.map(c => [c.name.toUpperCase(), c.id]));
 
-    const currentUserId = req.user?.id || (await prisma.user.findFirst())?.id;
+    const existingProductSkus = new Set((await prisma.product.findMany({ select: { sku: true } })).map(p => p.sku));
+    const existingVariantSkus = new Set((await prisma.productVariant.findMany({ select: { sku: true } })).map(v => v.sku));
 
     const results = await prisma.$transaction(async (tx) => {
-      const createdProducts = [];
+      // 1. Assegurar categorias necessárias
+      for (const item of importList) {
+        const catName = (item.categoryName || 'MODA FITNESS').trim();
+        if (!catMap.get(catName.toUpperCase())) {
+          const newCat = await tx.category.create({ data: { name: catName } });
+          catMap.set(catName.toUpperCase(), newCat.id);
+        }
+      }
+
+      // 2. Preparar todos os produtos e variações em memória com SKUs únicos
+      const preparedList = [];
 
       for (let i = 0; i < importList.length; i++) {
         const item = importList[i];
@@ -839,36 +855,24 @@ router.post('/products/batch-import', authenticateToken, requireRole(['PROPRIETA
 
         const cleanName = item.name.trim();
         const catName = (item.categoryName || 'MODA FITNESS').trim();
-        
-        let categoryId = catMap.get(catName.toUpperCase());
-        if (!categoryId) {
-          const newCat = await tx.category.create({
-            data: { name: catName }
-          });
-          categoryId = newCat.id;
-          catMap.set(catName.toUpperCase(), categoryId);
-        }
+        const categoryId = catMap.get(catName.toUpperCase());
 
-        // Gera SKU único
         const cleanSlug = cleanName
           .normalize('NFD')
           .replace(/[\u0300-\u036f]/g, '')
           .replace(/[^a-zA-Z0-9]/g, '')
           .substring(0, 6)
           .toUpperCase();
-        
+
         const timestamp = Date.now().toString().slice(-4);
         const randomCode = Math.floor(100 + Math.random() * 900);
-        let sku = item.sku?.trim() || `LIT-${cleanSlug || 'PROD'}-${timestamp}${randomCode}-${i + 1}`;
-
-        // Checa colisão de SKU de produto
-        let skuExists = await tx.product.findUnique({ where: { sku } });
+        let prodSku = item.sku?.trim() || `LIT-${cleanSlug || 'PROD'}-${timestamp}${randomCode}-${i + 1}`;
         let skuCounter = 1;
-        while (skuExists) {
-          sku = `LIT-${cleanSlug || 'PROD'}-${timestamp}${randomCode}-${i + 1}-V${skuCounter}`;
-          skuExists = await tx.product.findUnique({ where: { sku } });
+        while (existingProductSkus.has(prodSku)) {
+          prodSku = `LIT-${cleanSlug || 'PROD'}-${timestamp}${randomCode}-${i + 1}-V${skuCounter}`;
           skuCounter++;
         }
+        existingProductSkus.add(prodSku);
 
         const costPrice = parseFloat(item.costPrice || 0);
         const price = parseFloat(item.price || (costPrice > 0 ? costPrice * 2.2 : 49.90));
@@ -876,116 +880,153 @@ router.post('/products/batch-import', authenticateToken, requireRole(['PROPRIETA
         const brand = item.brand?.trim() || 'Litran';
         const description = item.description?.trim() || `Produto confeccionado para máxima durabilidade e conforto. Marca: ${brand}.`;
 
-        const prod = await tx.product.create({
-          data: {
-            name: cleanName,
-            description,
-            categoryId,
-            brand,
-            sku,
-            price,
-            promoPrice,
-            costPrice,
-            minStock: 2,
-            isActive: true,
-            images: item.image ? { create: [{ url: item.image, isPrimary: true }] } : undefined
-          }
-        });
+        const variantsData = (item.variants && Array.isArray(item.variants) && item.variants.length > 0)
+          ? item.variants.map((v, vi) => {
+              const vSize = (v.size || 'ÚNICO').toString().trim().toUpperCase();
+              const vColor = v.color ? v.color.toString().trim() : null;
+              const colorCode = vColor ? `-${vColor.replace(/[^a-zA-Z0-9]/g, '').toUpperCase().substring(0, 4)}` : '';
+              const sizePart = vSize.replace(/[^a-zA-Z0-9]/g, '').toUpperCase() || 'U';
+              let safeSku = v.sku?.trim() || `${prodSku}${colorCode}-${sizePart}-${vi + 1}`;
+              let vCounter = 1;
+              while (existingVariantSkus.has(safeSku)) {
+                safeSku = `${prodSku}${colorCode}-${sizePart}-${vi + 1}-${vCounter}`;
+                vCounter++;
+              }
+              existingVariantSkus.add(safeSku);
 
-        if (item.variants && Array.isArray(item.variants) && item.variants.length > 0) {
-          for (let vi = 0; vi < item.variants.length; vi++) {
-            const v = item.variants[vi];
-            const vSize = (v.size || 'ÚNICO').toString().trim().toUpperCase();
-            const vColor = v.color ? v.color.toString().trim() : null;
-            const colorCode = vColor ? `-${vColor.replace(/[^a-zA-Z0-9]/g, '').toUpperCase().substring(0, 4)}` : '';
-            const sizePart = vSize.replace(/[^a-zA-Z0-9]/g, '').toUpperCase() || 'U';
-            let vSku = v.sku?.trim() || `${prod.sku}${colorCode}-${sizePart}-${vi + 1}`;
-
-            let safeSku = vSku;
-            let collision = await tx.productVariant.findUnique({ where: { sku: safeSku } });
-            let counter = 1;
-            while (collision) {
-              safeSku = `${prod.sku}${colorCode}-${sizePart}-${vi + 1}-${counter}`;
-              collision = await tx.productVariant.findUnique({ where: { sku: safeSku } });
-              counter++;
-            }
-
-            const vQty = Math.max(0, parseInt(v.stockQty || 0));
-
-            const variant = await tx.productVariant.create({
-              data: {
-                productId: prod.id,
+              return {
                 sku: safeSku,
                 size: vSize,
                 color: vColor,
-                price: v.price ? parseFloat(v.price) : prod.price,
-                costPrice: v.costPrice ? parseFloat(v.costPrice) : prod.costPrice
-              }
-            });
+                price: v.price ? parseFloat(v.price) : price,
+                costPrice: v.costPrice ? parseFloat(v.costPrice) : costPrice,
+                stockQty: Math.max(0, parseInt(v.stockQty || 0))
+              };
+            })
+          : [];
 
-            await tx.inventoryBalance.create({
-              data: {
-                locationId: location.id,
-                productId: prod.id,
-                variantId: variant.id,
-                physicalQty: vQty,
-                reservedQty: 0,
-                availableQty: vQty
-              }
+        preparedList.push({
+          cleanName,
+          description,
+          categoryId,
+          brand,
+          prodSku,
+          price,
+          promoPrice,
+          costPrice,
+          image: item.image,
+          variantsData,
+          singleQty: Math.max(0, parseInt(item.stockQty || 0))
+        });
+      }
+
+      // 3. Criar produtos com variações aninhadas em blocos paralelos controlados
+      const createdProducts = [];
+      const batchChunkSize = 5;
+
+      for (let i = 0; i < preparedList.length; i += batchChunkSize) {
+        const chunk = preparedList.slice(i, i + batchChunkSize);
+        const chunkResults = await Promise.all(chunk.map(p => tx.product.create({
+          data: {
+            name: p.cleanName,
+            description: p.description,
+            categoryId: p.categoryId,
+            brand: p.brand,
+            sku: p.prodSku,
+            price: p.price,
+            promoPrice: p.promoPrice,
+            costPrice: p.costPrice,
+            minStock: 2,
+            isActive: true,
+            images: p.image ? { create: [{ url: p.image, isPrimary: true }] } : undefined,
+            variants: p.variantsData.length > 0 ? {
+              create: p.variantsData.map(v => ({
+                sku: v.sku,
+                size: v.size,
+                color: v.color,
+                price: v.price,
+                costPrice: v.costPrice
+              }))
+            } : undefined
+          },
+          include: { variants: true }
+        })));
+        createdProducts.push(...chunkResults);
+      }
+
+      // 4. Preparar lotes de saldos e movimentações de estoque
+      const allBalances = [];
+      const allMovements = [];
+
+      for (let i = 0; i < createdProducts.length; i++) {
+        const prod = createdProducts[i];
+        const prep = preparedList[i];
+
+        if (prod.variants && prod.variants.length > 0) {
+          prod.variants.forEach((dbVariant) => {
+            const originalV = prep.variantsData.find(v => v.sku === dbVariant.sku);
+            const vQty = originalV ? originalV.stockQty : 0;
+
+            allBalances.push({
+              locationId: location.id,
+              productId: prod.id,
+              variantId: dbVariant.id,
+              physicalQty: vQty,
+              reservedQty: 0,
+              availableQty: vQty
             });
 
             if (vQty > 0 && currentUserId) {
-              await tx.inventoryMovement.create({
-                data: {
-                  productId: prod.id,
-                  variantId: variant.id,
-                  locationId: location.id,
-                  type: 'ENTRADA_MERCADORIA',
-                  qty: vQty,
-                  previousBalance: 0,
-                  newBalance: vQty,
-                  reason: `Importação de planilha: ${vSize} ${vColor || ''}`.trim(),
-                  userId: currentUserId
-                }
+              allMovements.push({
+                productId: prod.id,
+                variantId: dbVariant.id,
+                locationId: location.id,
+                type: 'ENTRADA_MERCADORIA',
+                qty: vQty,
+                previousBalance: 0,
+                newBalance: vQty,
+                reason: `Importação de planilha: ${dbVariant.size} ${dbVariant.color || ''}`.trim(),
+                userId: currentUserId
               });
             }
-          }
+          });
         } else {
-          // Produto de peça única
-          const initQty = Math.max(0, parseInt(item.stockQty || 0));
-          await tx.inventoryBalance.create({
-            data: {
-              locationId: location.id,
-              productId: prod.id,
-              physicalQty: initQty,
-              reservedQty: 0,
-              availableQty: initQty
-            }
+          const initQty = prep.singleQty || 0;
+          allBalances.push({
+            locationId: location.id,
+            productId: prod.id,
+            physicalQty: initQty,
+            reservedQty: 0,
+            availableQty: initQty
           });
 
           if (initQty > 0 && currentUserId) {
-            await tx.inventoryMovement.create({
-              data: {
-                productId: prod.id,
-                locationId: location.id,
-                type: 'ENTRADA_MERCADORIA',
-                qty: initQty,
-                previousBalance: 0,
-                newBalance: initQty,
-                reason: 'Importação de planilha em lote',
-                userId: currentUserId
-              }
+            allMovements.push({
+              productId: prod.id,
+              locationId: location.id,
+              type: 'ENTRADA_MERCADORIA',
+              qty: initQty,
+              previousBalance: 0,
+              newBalance: initQty,
+              reason: 'Importação de planilha em lote',
+              userId: currentUserId
             });
           }
         }
+      }
 
-        createdProducts.push(prod);
+      // 5. Inserir em massa todos os saldos e movimentações
+      if (allBalances.length > 0) {
+        await tx.inventoryBalance.createMany({ data: allBalances });
+      }
+      if (allMovements.length > 0) {
+        await tx.inventoryMovement.createMany({ data: allMovements });
       }
 
       return createdProducts;
     }, {
-      maxWait: 20000,
-      timeout: 180000 // 3 minutos para permitir inserção de lotes grandes sem fechar a transação
+      maxWait: 10000,
+      timeout: 60000
     });
 
     await logAudit({

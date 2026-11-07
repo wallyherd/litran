@@ -17,6 +17,8 @@ export function PdvApp() {
 
   // Estados do Caixa / Produtos
   const [products, setProducts] = useState([]);
+  const [loadingProducts, setLoadingProducts] = useState(true);
+  const [productsError, setProductsError] = useState(null);
   const [cart, setCart] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCustomer, setSelectedCustomer] = useState(null);
@@ -165,11 +167,22 @@ export function PdvApp() {
   };
 
   const fetchProducts = async () => {
+    setLoadingProducts(true);
+    setProductsError(null);
     try {
       const res = await fetch(`${API_BASE}/api/products`);
-      if (res.ok) setProducts(await res.json());
+      if (res.ok) {
+        const data = await res.json();
+        setProducts(data);
+      } else {
+        const errData = await res.json().catch(() => ({}));
+        setProductsError(errData.error || 'Falha ao conectar com o catálogo de produtos.');
+      }
     } catch (e) {
       console.error(e);
+      setProductsError('Erro de conexão ao carregar produtos. Verifique sua internet.');
+    } finally {
+      setLoadingProducts(false);
     }
   };
 
@@ -763,41 +776,78 @@ export function PdvApp() {
                       ✕
                     </button>
                   )}
+                  <button
+                    onClick={fetchProducts}
+                    title="Atualizar lista de produtos e estoque"
+                    className="p-1 text-gray-400 hover:text-white rounded hover:bg-neutral-800 transition-colors shrink-0"
+                  >
+                    <RefreshCw size={14} className={loadingProducts ? 'animate-spin text-[#dfa666]' : ''} />
+                  </button>
                 </div>
 
                 {/* Grade de Produtos com Estoque */}
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5 max-h-[380px] lg:max-h-[calc(100vh-220px)] overflow-y-auto pr-1 w-full">
-                  {filteredProducts.map((p) => {
-                    const hasStock = p.stockAvailable > 0;
-                    const price = p.promoPrice || p.price;
-
-                    return (
-                      <div
-                        key={p.id}
-                        onClick={() => hasStock && addToCart(p)}
-                        className={`p-2.5 sm:p-3 bg-neutral-900/80 border rounded-xl flex flex-col justify-between transition-all select-none min-w-0 ${
-                          hasStock
-                            ? 'border-white/10 hover:border-[#942620] cursor-pointer hover:bg-neutral-800 active:scale-[0.98]'
-                            : 'border-red-950/40 opacity-40 cursor-not-allowed'
-                        }`}
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5 max-h-[380px] lg:max-h-[calc(100vh-220px)] overflow-y-auto pr-1 w-full min-h-[160px]">
+                  {loadingProducts ? (
+                    <div className="col-span-full py-16 flex flex-col items-center justify-center text-center gap-2">
+                      <RefreshCw size={24} className="text-[#942620] animate-spin" />
+                      <span className="text-xs text-gray-400 font-bold">Carregando catálogo e estoque...</span>
+                    </div>
+                  ) : productsError ? (
+                    <div className="col-span-full py-10 px-4 bg-red-950/20 border border-red-500/20 rounded-xl flex flex-col items-center justify-center text-center gap-2.5">
+                      <AlertTriangle size={24} className="text-red-400" />
+                      <span className="text-xs text-red-200 font-bold">{productsError}</span>
+                      <button
+                        onClick={fetchProducts}
+                        className="px-3.5 py-1.5 bg-[#942620] hover:bg-red-700 text-white rounded-lg text-xs font-bold flex items-center gap-1.5 transition-colors shadow"
                       >
-                        <div>
-                          <div className="flex items-center justify-between text-[9px] text-[#dfa666] font-bold uppercase gap-1">
-                            <span className="truncate">{p.sku}</span>
-                            {p.promoPrice && <span className="bg-[#942620] text-white px-1 rounded shrink-0">PROMO</span>}
-                          </div>
-                          <h4 className="text-xs font-bold text-white line-clamp-2 leading-tight mt-1 break-words">{p.name}</h4>
-                        </div>
+                        <RefreshCw size={14} /> Recarregar Produtos
+                      </button>
+                    </div>
+                  ) : filteredProducts.length === 0 ? (
+                    <div className="col-span-full py-14 flex flex-col items-center justify-center text-center gap-2">
+                      <ShoppingCart size={28} className="text-gray-600" />
+                      <span className="text-xs text-gray-400 font-bold">
+                        {searchQuery ? 'Nenhum produto encontrado para o termo pesquisado.' : 'Nenhum produto cadastrado no catálogo.'}
+                      </span>
+                      {searchQuery && (
+                        <button onClick={() => setSearchQuery('')} className="text-xs text-[#dfa666] hover:underline">
+                          Limpar busca
+                        </button>
+                      )}
+                    </div>
+                  ) : (
+                    filteredProducts.map((p) => {
+                      const hasStock = p.stockAvailable > 0;
+                      const price = p.promoPrice || p.price;
 
-                        <div className="mt-2.5 flex items-center justify-between pt-2 border-t border-white/5">
-                          <span className="text-xs font-black text-white whitespace-nowrap">R$ {price.toFixed(2)}</span>
-                          <span className={`text-[10px] font-bold shrink-0 ${hasStock ? 'text-emerald-400' : 'text-red-400'}`}>
-                            Estoque: {p.stockAvailable}
-                          </span>
+                      return (
+                        <div
+                          key={p.id}
+                          onClick={() => hasStock && addToCart(p)}
+                          className={`p-2.5 sm:p-3 bg-neutral-900/80 border rounded-xl flex flex-col justify-between transition-all select-none min-w-0 ${
+                            hasStock
+                              ? 'border-white/10 hover:border-[#942620] cursor-pointer hover:bg-neutral-800 active:scale-[0.98]'
+                              : 'border-red-950/40 opacity-40 cursor-not-allowed'
+                          }`}
+                        >
+                          <div>
+                            <div className="flex items-center justify-between text-[9px] text-[#dfa666] font-bold uppercase gap-1">
+                              <span className="truncate">{p.sku}</span>
+                              {p.promoPrice && <span className="bg-[#942620] text-white px-1 rounded shrink-0">PROMO</span>}
+                            </div>
+                            <h4 className="text-xs font-bold text-white line-clamp-2 leading-tight mt-1 break-words">{p.name}</h4>
+                          </div>
+
+                          <div className="mt-2.5 flex items-center justify-between pt-2 border-t border-white/5">
+                            <span className="text-xs font-black text-white whitespace-nowrap">R$ {price.toFixed(2)}</span>
+                            <span className={`text-[10px] font-bold shrink-0 ${hasStock ? 'text-emerald-400' : 'text-red-400'}`}>
+                              Estoque: {p.stockAvailable}
+                            </span>
+                          </div>
                         </div>
-                      </div>
-                    );
-                  })}
+                      );
+                    })
+                  )}
                 </div>
               </div>
 
