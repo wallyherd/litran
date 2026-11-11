@@ -1,6 +1,62 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { STORIES_VIDEOS } from '../data/catalogData';
+
+// Componente inteligente de vídeo em loop leve com carregamento sob demanda (não trava a rede no carregamento inicial)
+const LazyStoryVideo = ({ story, onSelectCategory }) => {
+  const containerRef = useRef(null);
+  const videoRef = useRef(null);
+  const [inView, setInView] = useState(false);
+
+  useEffect(() => {
+    const el = containerRef.current;
+    if (!el) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          if (videoRef.current) {
+            videoRef.current.play().catch(() => {});
+          }
+        } else {
+          if (videoRef.current) {
+            videoRef.current.pause();
+          }
+        }
+      },
+      { rootMargin: '200px 0px', threshold: 0.1 }
+    );
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={containerRef}
+      onClick={() => onSelectCategory('suplementos')}
+      className="relative aspect-[9/16] rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 cursor-pointer shadow-2xl transition-transform hover:scale-[1.02]"
+    >
+      <video
+        ref={videoRef}
+        src={inView ? story.video : undefined}
+        poster={story.poster}
+        preload="none"
+        loop
+        muted
+        playsInline
+        controls={false}
+        onError={(e) => {
+          if (story.fallbackVideo && e.target.src !== story.fallbackVideo) {
+            e.target.src = story.fallbackVideo;
+          }
+        }}
+        className="w-full h-full object-cover pointer-events-none rounded-3xl"
+      />
+    </div>
+  );
+};
 
 export const BannerSlider = ({ onSelectCategory }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -124,27 +180,11 @@ export const BannerSlider = ({ onSelectCategory }) => {
       <div className="container py-12 sm:py-16">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6">
           {STORIES_VIDEOS.map((story) => (
-            <div
+            <LazyStoryVideo
               key={story.id}
-              onClick={() => onSelectCategory('suplementos')}
-              className="relative aspect-[9/16] rounded-3xl overflow-hidden bg-neutral-900 border border-white/10 cursor-pointer shadow-2xl transition-transform hover:scale-[1.02]"
-            >
-              <video
-                src={story.video}
-                poster={story.poster}
-                autoPlay
-                loop
-                muted
-                playsInline
-                controls={false}
-                onError={(e) => {
-                  if (story.fallbackVideo && e.target.src !== story.fallbackVideo) {
-                    e.target.src = story.fallbackVideo;
-                  }
-                }}
-                className="w-full h-full object-cover pointer-events-none rounded-3xl"
-              />
-            </div>
+              story={story}
+              onSelectCategory={onSelectCategory}
+            />
           ))}
         </div>
       </div>

@@ -64,6 +64,7 @@ export const ProductProvider = ({ children }) => {
           return {
             id: p.id,
             name: p.name,
+            brand: p.brand || 'LITRAN',
             refCode: `Ref: ${p.sku}`,
             sku: p.sku,
             category: catSlug,

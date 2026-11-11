@@ -21,6 +21,8 @@ export function PdvApp() {
   const [productsError, setProductsError] = useState(null);
   const [cart, setCart] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
+  const [pdvCategoryFilter, setPdvCategoryFilter] = useState('TODOS');
+  const [variantModalProduct, setVariantModalProduct] = useState(null);
   const [selectedCustomer, setSelectedCustomer] = useState(null);
   const [customers, setCustomers] = useState([]);
   
@@ -228,11 +230,48 @@ export function PdvApp() {
   // Leitor de Código de Barras no PDV
   const handleSearchKeyDown = (e) => {
     if (e.key === 'Enter') {
-      const match = products.find(p => p.barcode === searchQuery || p.sku.toLowerCase() === searchQuery.toLowerCase());
+      const q = searchQuery.trim().toLowerCase();
+      if (!q) return;
+
+      // 1. Barcode direto
+      let match = products.find(p => p.barcode && p.barcode.toLowerCase() === q);
+      // 2. SKU do produto
+      if (!match) {
+        match = products.find(p => (p.sku || '').toLowerCase() === q);
+      }
+      // 3. SKU da variante
+      if (!match) {
+        for (const prod of products) {
+          const matchedVar = prod.variants?.find(v => (v.sku || '').toLowerCase() === q);
+          if (matchedVar) {
+            addToCart(prod, matchedVar);
+            setSearchQuery('');
+            return;
+          }
+        }
+      }
+      // 4. Se houver apenas 1 resultado na lista filtrada
+      if (!match && filteredProducts.length === 1) {
+        match = filteredProducts[0];
+      }
+
       if (match) {
-        addToCart(match);
+        if (match.variants && match.variants.length > 1) {
+          setVariantModalProduct(match);
+        } else {
+          addToCart(match);
+        }
         setSearchQuery('');
       }
+    }
+  };
+
+  const handleProductCardClick = (product) => {
+    if (product.stockAvailable <= 0) return;
+    if (product.variants && product.variants.length > 1) {
+      setVariantModalProduct(product);
+    } else {
+      addToCart(product);
     }
   };
 
@@ -247,13 +286,17 @@ export function PdvApp() {
       updated[existingIndex].qty += 1;
       setCart(updated);
     } else {
+      const displaySize = variant 
+        ? [variant.size, variant.color].filter(Boolean).join(' - ')
+        : 'Único';
+
       setCart([...cart, {
         itemKey,
         productId: product.id,
         variantId: variant ? variant.id : null,
         productName: product.name,
         productSku: variant ? variant.sku : product.sku,
-        size: variant ? variant.size : 'Único',
+        size: displaySize,
         unitPrice: variant && variant.price ? variant.price : (product.promoPrice || product.price),
         unitCost: product.costPrice || 0,
         qty: 1
@@ -563,11 +606,47 @@ export function PdvApp() {
   };
 
   // Filtros
-  const filteredProducts = products.filter(p =>
-    p.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    p.sku.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    (p.barcode && p.barcode.includes(searchQuery))
-  );
+  const filteredProducts = products.filter(p => {
+    // 1. Categoria rápida do PDV
+    if (pdvCategoryFilter !== 'TODOS') {
+      const catName = (p.category?.name || '').toUpperCase();
+      const pName = (p.name || '').toUpperCase();
+      const pBrand = (p.brand || '').toUpperCase();
+
+      if (pdvCategoryFilter === 'STRELISSE') {
+        const isStrelisse = pBrand.includes('STRELISSE') || pName.includes('STRELISSE');
+        if (!isStrelisse) return false;
+      } else if (pdvCategoryFilter === 'MODA FITNESS') {
+        const isFitness = catName.includes('FITNESS') || catName.includes('MODA') ||
+          pName.includes('TOP') || pName.includes('LEGGING') || pName.includes('CALÇA') ||
+          pName.includes('MACACÃO') || pName.includes('REGATA') || pName.includes('SHORT') ||
+          pName.includes('BOLERO') || pName.includes('CALCINHA') || pBrand.includes('STRELISSE');
+        if (!isFitness) return false;
+      } else if (pdvCategoryFilter === 'SUPLEMENTOS') {
+        const isSupl = catName.includes('SUPL') || pName.includes('WHEY') || pName.includes('CREATINA') || pName.includes('PROTEIN') || pName.includes('BCAA');
+        if (!isSupl) return false;
+      } else if (pdvCategoryFilter === 'LUTAS') {
+        const isLutas = catName.includes('LUTA') || catName.includes('BOXE') || catName.includes('JIU') || pName.includes('LUVA') || pName.includes('KIMONO') || pName.includes('FAIXA');
+        if (!isLutas) return false;
+      }
+    }
+
+    // 2. Busca textual refinada: nome, sku, marca, barcode e variantes (cor, tamanho, sku da variante)
+    if (!searchQuery.trim()) return true;
+    const q = searchQuery.toLowerCase().trim();
+
+    const matchesName = (p.name || '').toLowerCase().includes(q);
+    const matchesSku = (p.sku || '').toLowerCase().includes(q);
+    const matchesBrand = (p.brand || '').toLowerCase().includes(q);
+    const matchesBarcode = p.barcode ? p.barcode.toLowerCase().includes(q) : false;
+    const matchesVariant = p.variants && p.variants.some(v =>
+      (v.size && v.size.toLowerCase().includes(q)) ||
+      (v.color && v.color.toLowerCase().includes(q)) ||
+      (v.sku && v.sku.toLowerCase().includes(q))
+    );
+
+    return matchesName || matchesSku || matchesBrand || matchesBarcode || matchesVariant;
+  });
 
   const filteredSales = salesList.filter(s => {
     // 1. Busca Textual
@@ -785,6 +864,30 @@ export function PdvApp() {
                   </button>
                 </div>
 
+                {/* Filtros Rápidos de Categoria no PDV */}
+                <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none text-[10px] font-bold">
+                  {[
+                    { id: 'TODOS', label: 'TODOS' },
+                    { id: 'STRELISSE', label: 'STRELISSE' },
+                    { id: 'MODA FITNESS', label: 'MODA FITNESS' },
+                    { id: 'SUPLEMENTOS', label: 'SUPLEMENTOS' },
+                    { id: 'LUTAS', label: 'LUTAS' },
+                  ].map(cat => (
+                    <button
+                      key={cat.id}
+                      type="button"
+                      onClick={() => setPdvCategoryFilter(cat.id)}
+                      className={`px-2.5 py-1 rounded-lg shrink-0 transition-colors uppercase tracking-wider ${
+                        pdvCategoryFilter === cat.id
+                          ? 'bg-[#942620] text-white shadow'
+                          : 'bg-neutral-900 border border-white/10 text-gray-400 hover:text-white hover:bg-neutral-800'
+                      }`}
+                    >
+                      {cat.label}
+                    </button>
+                  ))}
+                </div>
+
                 {/* Grade de Produtos com Estoque */}
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5 max-h-[380px] lg:max-h-[calc(100vh-220px)] overflow-y-auto pr-1 w-full min-h-[160px]">
                   {loadingProducts ? (
@@ -807,11 +910,16 @@ export function PdvApp() {
                     <div className="col-span-full py-14 flex flex-col items-center justify-center text-center gap-2">
                       <ShoppingCart size={28} className="text-gray-600" />
                       <span className="text-xs text-gray-400 font-bold">
-                        {searchQuery ? 'Nenhum produto encontrado para o termo pesquisado.' : 'Nenhum produto cadastrado no catálogo.'}
+                        {searchQuery || pdvCategoryFilter !== 'TODOS'
+                          ? 'Nenhum produto encontrado para o filtro atual.'
+                          : 'Nenhum produto cadastrado no catálogo.'}
                       </span>
-                      {searchQuery && (
-                        <button onClick={() => setSearchQuery('')} className="text-xs text-[#dfa666] hover:underline">
-                          Limpar busca
+                      {(searchQuery || pdvCategoryFilter !== 'TODOS') && (
+                        <button
+                          onClick={() => { setSearchQuery(''); setPdvCategoryFilter('TODOS'); }}
+                          className="text-xs text-[#dfa666] hover:underline"
+                        >
+                          Limpar filtros
                         </button>
                       )}
                     </div>
@@ -819,11 +927,12 @@ export function PdvApp() {
                     filteredProducts.map((p) => {
                       const hasStock = p.stockAvailable > 0;
                       const price = p.promoPrice || p.price;
+                      const hasMultipleVariants = p.variants && p.variants.length > 1;
 
                       return (
                         <div
                           key={p.id}
-                          onClick={() => hasStock && addToCart(p)}
+                          onClick={() => hasStock && handleProductCardClick(p)}
                           className={`p-2.5 sm:p-3 bg-neutral-900/80 border rounded-xl flex flex-col justify-between transition-all select-none min-w-0 ${
                             hasStock
                               ? 'border-white/10 hover:border-[#942620] cursor-pointer hover:bg-neutral-800 active:scale-[0.98]'
@@ -833,9 +942,17 @@ export function PdvApp() {
                           <div>
                             <div className="flex items-center justify-between text-[9px] text-[#dfa666] font-bold uppercase gap-1">
                               <span className="truncate">{p.sku}</span>
+                              {hasMultipleVariants && (
+                                <span className="bg-neutral-800 text-amber-300 border border-amber-500/30 px-1 py-0.5 rounded text-[8px] font-bold shrink-0">
+                                  {p.variants.length} var
+                                </span>
+                              )}
                               {p.promoPrice && <span className="bg-[#942620] text-white px-1 rounded shrink-0">PROMO</span>}
                             </div>
                             <h4 className="text-xs font-bold text-white line-clamp-2 leading-tight mt-1 break-words">{p.name}</h4>
+                            {p.brand && (
+                              <span className="text-[9px] text-gray-400 font-medium block truncate mt-0.5">{p.brand}</span>
+                            )}
                           </div>
 
                           <div className="mt-2.5 flex items-center justify-between pt-2 border-t border-white/5">
@@ -2163,6 +2280,102 @@ export function PdvApp() {
               <button
                 onClick={() => setExchangeReceipt(null)}
                 className="flex-1 py-2 bg-gray-200 hover:bg-gray-300 text-black rounded font-sans text-xs font-bold"
+              >
+                Fechar
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* ========================================================
+          MODAL: SELEÇÃO DE VARIAÇÕES NO PDV (Tamanho / Cor)
+      ======================================================== */}
+      {variantModalProduct && (
+        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-3 sm:p-4">
+          <div className="bg-neutral-900 border border-white/10 text-white p-5 rounded-2xl max-w-lg w-full space-y-4 shadow-2xl max-h-[90vh] flex flex-col">
+            <div className="flex items-start justify-between border-b border-white/10 pb-3">
+              <div>
+                <span className="text-[10px] font-bold text-[#dfa666] uppercase tracking-wider block">
+                  {variantModalProduct.brand || 'LITRAN'} • SKU: {variantModalProduct.sku}
+                </span>
+                <h3 className="text-sm sm:text-base font-bold text-white mt-0.5">{variantModalProduct.name}</h3>
+                <span className="text-xs text-gray-400">Selecione o tamanho e cor para lançar no caixa</span>
+              </div>
+              <button
+                onClick={() => setVariantModalProduct(null)}
+                className="p-1 text-gray-400 hover:text-white rounded-lg hover:bg-neutral-800 transition-colors"
+              >
+                <X size={18} />
+              </button>
+            </div>
+
+            <div className="flex-1 overflow-y-auto space-y-2 pr-1 max-h-[60vh]">
+              {variantModalProduct.variants && variantModalProduct.variants.length > 0 ? (
+                variantModalProduct.variants.map((v) => {
+                  const vStock = v.stockAvailable !== undefined ? v.stockAvailable : (v.stockQty || 0);
+                  const isAvailable = vStock > 0;
+                  const vPrice = v.price || variantModalProduct.promoPrice || variantModalProduct.price;
+
+                  return (
+                    <div
+                      key={v.id}
+                      className={`flex items-center justify-between p-3 rounded-xl border transition-all ${
+                        isAvailable
+                          ? 'bg-black/40 border-white/10 hover:border-[#942620]'
+                          : 'bg-black/20 border-red-950/30 opacity-40'
+                      }`}
+                    >
+                      <div className="flex items-center gap-3">
+                        <div>
+                          <div className="flex items-center gap-2">
+                            <span className="font-black text-xs text-white uppercase bg-neutral-800 px-2 py-0.5 rounded border border-white/10">
+                              {v.size || 'Único'}
+                            </span>
+                            {v.color && (
+                              <span className="text-xs text-amber-200 font-bold">{v.color}</span>
+                            )}
+                          </div>
+                          <span className="text-[10px] text-gray-500 font-mono block mt-0.5">SKU: {v.sku}</span>
+                        </div>
+                      </div>
+
+                      <div className="flex items-center gap-3">
+                        <div className="text-right">
+                          <span className="text-xs font-black text-white block">R$ {Number(vPrice).toFixed(2)}</span>
+                          <span className={`text-[10px] font-bold ${isAvailable ? 'text-emerald-400' : 'text-red-400'}`}>
+                            {isAvailable ? `${vStock} em estoque` : 'Esgotado'}
+                          </span>
+                        </div>
+                        <button
+                          disabled={!isAvailable}
+                          onClick={() => {
+                            addToCart(variantModalProduct, v);
+                            setVariantModalProduct(null);
+                          }}
+                          className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors ${
+                            isAvailable
+                              ? 'bg-[#942620] hover:bg-red-700 text-white shadow'
+                              : 'bg-neutral-800 text-gray-500 cursor-not-allowed'
+                          }`}
+                        >
+                          + Lançar
+                        </button>
+                      </div>
+                    </div>
+                  );
+                })
+              ) : (
+                <div className="text-center py-6 text-gray-400 text-xs">
+                  Nenhuma variação específica cadastrada.
+                </div>
+              )}
+            </div>
+
+            <div className="pt-2 border-t border-white/10 flex justify-end">
+              <button
+                onClick={() => setVariantModalProduct(null)}
+                className="px-4 py-2 bg-neutral-800 hover:bg-neutral-700 text-white rounded-xl text-xs font-bold transition-colors"
               >
                 Fechar
               </button>

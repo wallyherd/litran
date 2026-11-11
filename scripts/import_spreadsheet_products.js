@@ -279,3 +279,4 @@ importStockSpreadsheet()
     console.error('❌ Erro na importação:', err);
     process.exit(1);
   });
+
