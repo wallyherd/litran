@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { ImageOff } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
 
 /**
  * SafeImage - Robust image component with:
  * 1. Automatic fallback cycling (tries src, then each item in fallbackSrcs)
- * 2. Mobile-optimized referrerPolicy ('no-referrer') to prevent mobile CDN blocking
- * 3. Lazy loading and async decoding
- * 4. Shimmer loading skeleton
- * 5. Elegant placeholder UI if all image URLs fail
+ * 2. Mobile-optimized referrerPolicy
+ * 3. Lazy/Eager loading and async decoding
+ * 4. Shimmer loading skeleton that vanishes as soon as the image renders
+ * 5. Instant display of cached or already-complete images (never stuck at opacity-0)
+ * 6. Elegant placeholder UI if all image URLs fail or no image exists
  */
 export const SafeImage = ({
   src,
@@ -17,33 +17,36 @@ export const SafeImage = ({
   imgClassName = '',
   loading = 'lazy',
   decoding = 'async',
-  referrerPolicy = 'no-referrer',
+  priority = false,
   showPlaceholderOnFail = true,
   onClick,
   ...props
 }) => {
-  // Normalize candidate list of URLs
   const rawCandidates = [
     src,
     ...(Array.isArray(fallbackSrcs) ? fallbackSrcs : [fallbackSrcs])
   ];
   
   const candidates = rawCandidates.filter(
-    (url) => Boolean(url) && typeof url === 'string' && url.trim().length > 0
+    (url) => Boolean(url) && typeof url === 'string' && url.trim().length > 0 && !url.startsWith('data:')
   );
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [hasError, setHasError] = useState(false);
+  const [hasError, setHasError] = useState(candidates.length === 0);
   const [isLoaded, setIsLoaded] = useState(false);
+  const imgRef = useRef(null);
 
-  // Reset states when the primary src or candidates change
+  const currentSrc = candidates[currentIndex];
+
   useEffect(() => {
     setCurrentIndex(0);
     setHasError(candidates.length === 0);
-    setIsLoaded(false);
-  }, [src, JSON.stringify(fallbackSrcs)]);
-
-  const currentSrc = candidates[currentIndex];
+    if (imgRef.current && imgRef.current.complete && imgRef.current.naturalWidth > 0) {
+      setIsLoaded(true);
+    } else {
+      setIsLoaded(false);
+    }
+  }, [currentSrc, candidates.length]);
 
   const handleError = () => {
     if (currentIndex + 1 < candidates.length) {
@@ -66,11 +69,13 @@ export const SafeImage = ({
         onClick={onClick}
         className={`relative flex flex-col items-center justify-center bg-neutral-900 text-neutral-400 p-4 text-center select-none w-full h-full ${className}`}
       >
-        <div className="w-10 h-10 rounded-full bg-neutral-800 flex items-center justify-center mb-1 text-[#dfa666] shadow">
-          <ImageOff size={20} />
-        </div>
+        <img
+          src="/logos/litran_quadrada.png"
+          alt={alt || 'LITRAN'}
+          className="w-16 h-16 object-contain opacity-40 mb-2"
+        />
         <span className="text-[10px] font-bold uppercase tracking-wider text-neutral-400 line-clamp-1">
-          {alt || 'LITRAN'}
+          {alt || 'LITRAN MODA ESPORTIVA'}
         </span>
       </div>
     );
@@ -81,20 +86,26 @@ export const SafeImage = ({
       onClick={onClick}
       className={`relative w-full h-full overflow-hidden bg-neutral-100 dark:bg-neutral-900 ${className}`}
     >
-      {/* Loading Skeleton */}
+      {/* Loading Skeleton: exibido apenas enquanto a imagem não terminou de renderizar */}
       {!isLoaded && (
         <div className="absolute inset-0 bg-gradient-to-r from-neutral-200 via-neutral-100 to-neutral-200 dark:from-neutral-800 dark:via-neutral-700 dark:to-neutral-800 animate-pulse z-0" />
       )}
       <img
+        ref={(el) => {
+          imgRef.current = el;
+          if (el && el.complete && el.naturalWidth > 0 && !isLoaded) {
+            setIsLoaded(true);
+          }
+        }}
         src={currentSrc}
         alt={alt}
-        loading={loading}
+        loading={priority ? 'eager' : loading}
         decoding={decoding}
-        referrerPolicy={referrerPolicy}
+        fetchPriority={priority ? 'high' : 'auto'}
         onError={handleError}
         onLoad={handleLoad}
         className={`w-full h-full object-cover transition-opacity duration-300 relative z-10 ${
-          isLoaded ? 'opacity-100' : 'opacity-0'
+          isLoaded ? 'opacity-100' : 'opacity-95'
         } ${imgClassName}`}
         {...props}
       />

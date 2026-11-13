@@ -51,8 +51,10 @@ export const ProductProvider = ({ children }) => {
               ];
 
           const imgList = (p.images && p.images.length > 0)
-            ? p.images.map((img) => (typeof img === 'string' ? img : img.url))
-            : ['/products/1782932993_cef0f46b5f0890b8fd0b.webp'];
+            ? p.images
+                .map((img) => (typeof img === 'string' ? img : img.url))
+                .filter((url) => url && typeof url === 'string' && !url.startsWith('data:'))
+            : [];
 
           // Adiciona também na lista de imagens as fotos cadastradas por cor
           Object.values(prodColorImages).forEach((cUrl) => {

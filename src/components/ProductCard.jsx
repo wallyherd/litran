@@ -4,7 +4,7 @@ import { useCart } from '../context/CartContext';
 import { useFavorites } from '../context/FavoritesContext';
 import { SafeImage } from './SafeImage';
 
-export const ProductCard = ({ product, onQuickView }) => {
+export const ProductCard = ({ product, onQuickView, priority = false }) => {
   const { addToCart } = useCart();
   const { isFavorite, toggleFavorite } = useFavorites();
   const [quantity, setQuantity] = useState(1);
@@ -20,11 +20,8 @@ export const ProductCard = ({ product, onQuickView }) => {
     setTimeout(() => setAdded(false), 1500);
   };
 
-  const primaryImage = product.images?.[0] || '/products/1782932993_cef0f46b5f0890b8fd0b.webp';
-  const secondaryImages = [
-    ...(product.images?.slice(1) || []),
-    '/products/1782932993_cef0f46b5f0890b8fd0b.webp'
-  ];
+  const primaryImage = product.images?.[0] || '';
+  const secondaryImages = product.images?.slice(1) || [];
 
   return (
     <div className="bg-white text-gray-900 border border-gray-200 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col group relative">
@@ -38,6 +35,7 @@ export const ProductCard = ({ product, onQuickView }) => {
           src={primaryImage}
           fallbackSrcs={secondaryImages}
           alt={product.name}
+          priority={priority}
           imgClassName="group-hover:scale-105 transition-transform duration-500"
         />
 
