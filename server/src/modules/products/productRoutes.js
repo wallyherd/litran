@@ -82,11 +82,14 @@ const router = express.Router();
 
 // GET /api/products (Público & PDV - Lista produtos com saldo disponível do Estoque Central)
 router.get('/products', async (req, res) => {
-  const { search, category, activeOnly } = req.query;
+  const { search, category, activeOnly, onlineOnly } = req.query;
 
   const where = {};
   if (activeOnly !== 'false') {
     where.isActive = true;
+  }
+  if (onlineOnly === 'true') {
+    where.visibleOnline = true;
   }
   if (category && category !== 'todos' && category !== 'inicio') {
     where.category = { id: category };
@@ -150,6 +153,7 @@ router.get('/products', async (req, res) => {
 
     return {
       ...p,
+      visibleOnline: p.visibleOnline !== false,
       colorImages: prodColorImages,
       variants: formattedVariants,
       stockAvailable: totalAvailable,
@@ -170,7 +174,7 @@ router.get('/categories', async (req, res) => {
 
 // POST /api/products (Criação de Produto + Variações + Estoque Inicial + Imagem)
 router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENTE']), async (req, res) => {
-  const { name, description, categoryId, brand, sku, barcode, price, promoPrice, costPrice, minStock, variants, image, colorImages } = req.body;
+  const { name, description, categoryId, brand, sku, barcode, price, promoPrice, costPrice, minStock, variants, image, colorImages, visibleOnline } = req.body;
 
   if (!name || !sku || !price) {
     return res.status(400).json({ error: 'Nome, SKU e Preço são obrigatórios.' });
@@ -219,6 +223,7 @@ router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENT
           description: description ? description.trim() : null,
           categoryId: finalCategoryId,
           brand: brand ? brand.trim() : 'Litran',
+          visibleOnline: visibleOnline !== undefined ? Boolean(visibleOnline) : true,
           sku: sku.trim(),
           barcode: barcode ? barcode.trim() : null,
           price: parseFloat(price),
@@ -418,7 +423,7 @@ router.post('/products', authenticateToken, requireRole(['PROPRIETARIA', 'GERENT
 // PUT /api/products/:id (Editar Produto, Preços, Imagem & Grade de Variações)
 router.put('/products/:id', authenticateToken, requireRole(['PROPRIETARIA', 'GERENTE']), async (req, res) => {
   const { id } = req.params;
-  const { name, description, categoryId, brand, sku, barcode, price, promoPrice, costPrice, minStock, isActive, image, variants, colorImages } = req.body;
+  const { name, description, categoryId, brand, sku, barcode, price, promoPrice, costPrice, minStock, isActive, visibleOnline, image, variants, colorImages } = req.body;
 
   // Mapeia fotos por cor recebidas explicitamente ou através das variações
   let mergedColorImages = colorImages !== undefined ? { ...(colorImages || {}) } : undefined;
@@ -463,7 +468,8 @@ router.put('/products/:id', authenticateToken, requireRole(['PROPRIETARIA', 'GER
           promoPrice: promoPrice !== undefined ? (promoPrice && !isNaN(parseFloat(promoPrice)) ? parseFloat(promoPrice) : null) : undefined,
           costPrice: costPrice !== undefined && !isNaN(parseFloat(costPrice)) ? parseFloat(costPrice) : undefined,
           minStock: minStock !== undefined && !isNaN(parseInt(minStock)) ? parseInt(minStock) : undefined,
-          isActive: isActive !== undefined ? Boolean(isActive) : undefined
+          isActive: isActive !== undefined ? Boolean(isActive) : undefined,
+          visibleOnline: visibleOnline !== undefined ? Boolean(visibleOnline) : undefined
         }
       });
 

@@ -17,6 +17,11 @@ export const ProductGrid = ({ activeCategory, onQuickView, searchQuery }) => {
   }, [activeCategory, searchQuery, sortBy]);
 
   const filteredProducts = products.filter((product) => {
+    // 1. Ocultar da loja online se configurado apenas para balcão
+    if (product.visibleOnline === false) {
+      return false;
+    }
+
     const catLower = (activeCategory || '').toLowerCase();
     const nameLower = (product.name || '').toLowerCase();
     const prodCatLower = (product.category || '').toLowerCase();

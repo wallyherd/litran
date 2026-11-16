@@ -4,8 +4,27 @@ import { API_BASE } from '../config/api';
 
 const ProductContext = createContext();
 
+const REMOVED_ONLINE_SKUS = new Set([
+  'FZ4214566', 'FZ4214624', 'FZ4212010', 'FZ4364067', 'FZ3805329',
+  'LIT-BOLERO-3709460-10', 'FZ4363589', 'FZ4364085', 'LIT-CALCAC-3709780-4',
+  'LIT-CALCIN-3709464-5', 'LIT-CALCIN-3709200-6', 'LIT-CAMISE-3708353-2',
+  'FZ3976846', 'FZ4212150', 'LIT-CONJUN-3709906-9', 'LIT-CONJUN-3709871-8',
+  'FZ4214465', 'FZ4214501', 'LIT-JAQUET-3708480-3', 'FZ4364028',
+  'FZ3805873', 'LIT-MACACA-3709152-7', 'FZ3805111', 'FZ4364087',
+  'FZ4367173', 'LIT-REGATA-3708240-1', 'FZ4049991', 'FZ4363587',
+  'FZ4363822', 'FZ3858404', 'FZ3858402', 'FZ3858406'
+]);
+
+const INITIAL_STATIC_PRODUCTS = STATIC_PRODUCTS.map(p => {
+  const cleanSku = (p.sku || p.refCode?.replace('Ref: ', '') || '').trim();
+  return {
+    ...p,
+    visibleOnline: !REMOVED_ONLINE_SKUS.has(cleanSku)
+  };
+});
+
 export const ProductProvider = ({ children }) => {
-  const [products, setProducts] = useState(STATIC_PRODUCTS);
+  const [products, setProducts] = useState(INITIAL_STATIC_PRODUCTS);
   const [loading, setLoading] = useState(true);
 
   const fetchLiveProducts = useCallback(async () => {
@@ -67,6 +86,7 @@ export const ProductProvider = ({ children }) => {
             id: p.id,
             name: p.name,
             brand: p.brand || 'LITRAN',
+            visibleOnline: p.visibleOnline !== false && !REMOVED_ONLINE_SKUS.has(p.sku),
             refCode: `Ref: ${p.sku}`,
             sku: p.sku,
             category: catSlug,

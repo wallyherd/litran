@@ -8,7 +8,7 @@ import {
   ExternalLink, Phone, Mail, MapPin, Tag, ArrowUpRight, ArrowDownRight,
   UserCheck, UserX, Shield, Lock, Percent, FileText, Info, HelpCircle,
   TrendingUp, Layers, CreditCard, Menu, X, Calculator, Sliders, Check,
-  Upload, Image as ImageIcon, Sparkles, FileSpreadsheet, CheckCheck, Copy, Camera, Palette
+  Upload, Image as ImageIcon, Sparkles, FileSpreadsheet, CheckCheck, Copy, Camera, Palette, Globe, Store
 } from 'lucide-react';
 import { API_BASE } from '../config/api';
 
@@ -147,7 +147,7 @@ export function AdminApp() {
   const [modalErrorMsg, setModalErrorMsg] = useState('');
   const [productForm, setProductForm] = useState({
     name: '', description: '', categoryId: '', brand: 'Litran', sku: '',
-    barcode: '', price: '', promoPrice: '', costPrice: '', minStock: '2', stockQty: '15', image: '', variants: [], colorImages: {}
+    barcode: '', price: '', promoPrice: '', costPrice: '', minStock: '2', stockQty: '15', visibleOnline: true, image: '', variants: [], colorImages: {}
   });
   const [newColorInput, setNewColorInput] = useState('');
 
@@ -891,6 +891,7 @@ export function AdminApp() {
         costPrice: parseFloat(productForm.costPrice || 0),
         minStock: parseInt(productForm.minStock || 2),
         stockQty: parseInt(productForm.stockQty || 0),
+        visibleOnline: productForm.visibleOnline !== false,
         image: productForm.image || undefined,
         colorImages: productForm.colorImages || {},
         variants: formattedVariants
@@ -2071,6 +2072,7 @@ export function AdminApp() {
                           costPrice: '',
                           minStock: '2',
                           stockQty: '10',
+                          visibleOnline: true,
                           image: '',
                           colorImages: {},
                           variants: [
@@ -2163,11 +2165,20 @@ export function AdminApp() {
                             </span>
                           </td>
                           <td className="p-3 text-center">
-                            <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
-                              p.isActive ? 'bg-emerald-950 text-emerald-400 border border-emerald-800' : 'bg-red-950 text-red-400 border border-red-800'
-                            }`}>
-                              {p.isActive ? 'Ativo' : 'Inativo'}
-                            </span>
+                            <div className="flex flex-col items-center gap-1">
+                              <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold ${
+                                p.isActive ? 'bg-emerald-950 text-emerald-400 border border-emerald-800' : 'bg-red-950 text-red-400 border border-red-800'
+                              }`}>
+                                {p.isActive ? 'Ativo' : 'Inativo'}
+                              </span>
+                              <span className={`px-1.5 py-0.5 rounded text-[9px] font-bold uppercase tracking-wider ${
+                                p.visibleOnline === false
+                                  ? 'bg-amber-950/80 text-amber-300 border border-amber-800/80'
+                                  : 'bg-blue-950/80 text-blue-300 border border-blue-800/80'
+                              }`}>
+                                {p.visibleOnline === false ? 'Apenas Balcão' : 'Loja + Balcão'}
+                              </span>
+                            </div>
                           </td>
                           <td className="p-3 text-center">
                             <div className="flex items-center justify-center gap-1.5">
@@ -2206,6 +2217,7 @@ export function AdminApp() {
                                     costPrice: String(p.costPrice),
                                     minStock: String(p.minStock),
                                     stockQty: String(p.stockAvailable || 0),
+                                    visibleOnline: p.visibleOnline !== false,
                                     image: primaryImg || '',
                                     colorImages: loadedColorImages,
                                     variants: loadedVariants
@@ -3222,6 +3234,56 @@ export function AdminApp() {
                     placeholder="0.00"
                     className="w-full bg-black border border-white/15 rounded-xl px-3 py-2 text-white text-xs focus:outline-none focus:border-[#942620]"
                   />
+                </div>
+              </div>
+            </div>
+
+            {/* SEÇÃO: CANAL DE EXIBIÇÃO: BALCÃO / LOJA VIRTUAL */}
+            <div className="bg-black/40 border border-white/10 rounded-2xl p-3.5 space-y-2">
+              <label className="block text-xs font-bold uppercase tracking-wider text-[#dfa666] flex items-center gap-1.5">
+                <Globe size={14} /> Canal de Exibição / Venda *
+              </label>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                <div
+                  onClick={() => setProductForm({ ...productForm, visibleOnline: true })}
+                  className={`p-3 rounded-xl border flex items-center gap-3 cursor-pointer transition-all select-none ${
+                    productForm.visibleOnline !== false
+                      ? 'bg-[#942620]/20 border-[#942620] text-white shadow'
+                      : 'bg-black/40 border-white/10 text-gray-400 hover:text-white hover:bg-neutral-800'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name="visibleOnline"
+                    checked={productForm.visibleOnline !== false}
+                    onChange={() => setProductForm({ ...productForm, visibleOnline: true })}
+                    className="text-[#942620] focus:ring-0 cursor-pointer"
+                  />
+                  <div>
+                    <span className="block text-xs font-bold text-white">Loja Virtual e Balcão (PDV)</span>
+                    <span className="text-[10px] text-gray-400 block">Exibir na loja online e vender no caixa</span>
+                  </div>
+                </div>
+
+                <div
+                  onClick={() => setProductForm({ ...productForm, visibleOnline: false })}
+                  className={`p-3 rounded-xl border flex items-center gap-3 cursor-pointer transition-all select-none ${
+                    productForm.visibleOnline === false
+                      ? 'bg-[#942620]/20 border-[#942620] text-white shadow'
+                      : 'bg-black/40 border-white/10 text-gray-400 hover:text-white hover:bg-neutral-800'
+                  }`}
+                >
+                  <input
+                    type="radio"
+                    name="visibleOnline"
+                    checked={productForm.visibleOnline === false}
+                    onChange={() => setProductForm({ ...productForm, visibleOnline: false })}
+                    className="text-[#942620] focus:ring-0 cursor-pointer"
+                  />
+                  <div>
+                    <span className="block text-xs font-bold text-white">Apenas Balcão (PDV)</span>
+                    <span className="text-[10px] text-gray-400 block">Oculto na loja online, vender no caixa</span>
+                  </div>
                 </div>
               </div>
             </div>
