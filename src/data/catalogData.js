@@ -2402,7 +2402,7 @@ export const PRODUCTS = [
     "images": [
       "/products/1774465999_1f565eb5d3cf7d92458e.webp",
       "/products/1774465914_5b2ea908590fdad1e574.webp",
-      "/products/1772732498_9a95530c4bde10ccba2d.webp",
+      "/products/1772732498_9a95530c4bde10ccba2d.webp"
     ],
     "video": null,
     "variations": [
@@ -2594,5 +2594,1514 @@ export const PRODUCTS = [
     "rating": 5,
     "views": 877,
     "description": "Faixa de cabelo, elástica."
+  },
+  {
+    "id": "LIT-TOPALC-9360-11",
+    "name": "TOP ALÇA DUPLA FRANZIDO ELASTRA",
+    "refCode": "Ref: LIT-TOPALC-9360-11",
+    "sku": "LIT-TOPALC-9360-11",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 79,
+    "originalPrice": 94,
+    "images": [
+      "/products/novo_top_alca_dupla_franzido_elastra_36988-xl.webp",
+      "/products/novo_top_alca_dupla_franzido_elastra_42531-xl.webp",
+      "/products/novo_top_alca_dupla_franzido_elastra_70745-xl.webp",
+      "/products/novo_top_alca_dupla_franzido_elastra_75125-xl.webp"
+    ],
+    "colorImages": {
+      "Marrom": "/products/novo_top_alca_dupla_franzido_elastra_36988-xl.webp",
+      "Preto": "/products/novo_top_alca_dupla_franzido_elastra_42531-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-TOPALC-9360-11-MARR-G-1",
+        "name": "Marrom G",
+        "price": 79,
+        "sku": "LIT-TOPALC-9360-11-MARR-G-1"
+      },
+      {
+        "id": "LIT-TOPALC-9360-11-MARR-GG-1",
+        "name": "Marrom GG",
+        "price": 79,
+        "sku": "LIT-TOPALC-9360-11-MARR-GG-1"
+      },
+      {
+        "id": "LIT-TOPALC-9360-11-MARR-M-1",
+        "name": "Marrom M",
+        "price": 79,
+        "sku": "LIT-TOPALC-9360-11-MARR-M-1"
+      },
+      {
+        "id": "LIT-TOPALC-9360-11-MARR-P-1",
+        "name": "Marrom P",
+        "price": 79,
+        "sku": "LIT-TOPALC-9360-11-MARR-P-1"
+      },
+      {
+        "id": "LIT-TOPALC-9360-11-PRET-G-2",
+        "name": "Preto G",
+        "price": 79,
+        "sku": "LIT-TOPALC-9360-11-PRET-G-2"
+      },
+      {
+        "id": "LIT-TOPALC-9360-11-PRET-GG-2",
+        "name": "Preto GG",
+        "price": 79,
+        "sku": "LIT-TOPALC-9360-11-PRET-GG-2"
+      },
+      {
+        "id": "LIT-TOPALC-9360-11-PRET-M-2",
+        "name": "Preto M",
+        "price": 79,
+        "sku": "LIT-TOPALC-9360-11-PRET-M-2"
+      },
+      {
+        "id": "LIT-TOPALC-9360-11-PRET-P-2",
+        "name": "Preto P",
+        "price": 79,
+        "sku": "LIT-TOPALC-9360-11-PRET-P-2"
+      }
+    ],
+    "sizes": [
+      "Marrom G",
+      "Marrom GG",
+      "Marrom M",
+      "Marrom P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 438,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-REGATA-9247-13",
+    "name": "REGATA DRY SKIN POLIAMIDA",
+    "refCode": "Ref: LIT-REGATA-9247-13",
+    "sku": "LIT-REGATA-9247-13",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 67,
+    "originalPrice": 79,
+    "images": [
+      "/products/novo_regata_dry_skin_poliamida_25926-xl.webp",
+      "/products/novo_regata_dry_skin_poliamida_32704-xl.webp",
+      "/products/novo_regata_dry_skin_poliamida_45701-xl.webp"
+    ],
+    "colorImages": {
+      "Preto": "/products/novo_regata_dry_skin_poliamida_25926-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-REGATA-9247-13-PRET-G-1",
+        "name": "Preto G",
+        "price": 67,
+        "sku": "LIT-REGATA-9247-13-PRET-G-1"
+      },
+      {
+        "id": "LIT-REGATA-9247-13-PRET-GG-1",
+        "name": "Preto GG",
+        "price": 67,
+        "sku": "LIT-REGATA-9247-13-PRET-GG-1"
+      },
+      {
+        "id": "LIT-REGATA-9247-13-PRET-M-1",
+        "name": "Preto M",
+        "price": 67,
+        "sku": "LIT-REGATA-9247-13-PRET-M-1"
+      },
+      {
+        "id": "LIT-REGATA-9247-13-PRET-P-1",
+        "name": "Preto P",
+        "price": 67,
+        "sku": "LIT-REGATA-9247-13-PRET-P-1"
+      }
+    ],
+    "sizes": [
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 212,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-SHORTS-9117-14",
+    "name": "SHORT SPORT MÉDIO",
+    "refCode": "Ref: LIT-SHORTS-9117-14",
+    "sku": "LIT-SHORTS-9117-14",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 89,
+    "originalPrice": 109,
+    "images": [
+      "/products/novo_short_sport_medio_10213-xl.webp",
+      "/products/novo_short_sport_medio_20687-xl.webp",
+      "/products/novo_short_sport_medio_90844-og.webp"
+    ],
+    "colorImages": {
+      "Grafite": "/products/novo_short_sport_medio_10213-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-SHORTS-9117-14-GRAF-G-1",
+        "name": "Grafite G",
+        "price": 89,
+        "sku": "LIT-SHORTS-9117-14-GRAF-G-1"
+      },
+      {
+        "id": "LIT-SHORTS-9117-14-GRAF-GG-1",
+        "name": "Grafite GG",
+        "price": 89,
+        "sku": "LIT-SHORTS-9117-14-GRAF-GG-1"
+      },
+      {
+        "id": "LIT-SHORTS-9117-14-GRAF-M-1",
+        "name": "Grafite M",
+        "price": 89,
+        "sku": "LIT-SHORTS-9117-14-GRAF-M-1"
+      },
+      {
+        "id": "LIT-SHORTS-9117-14-GRAF-P-1",
+        "name": "Grafite P",
+        "price": 89,
+        "sku": "LIT-SHORTS-9117-14-GRAF-P-1"
+      }
+    ],
+    "sizes": [
+      "Grafite G",
+      "Grafite GG",
+      "Grafite M",
+      "Grafite P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 386,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-MACAQU-1705-4",
+    "name": "MACAQUINHO LEVANTA BUMBUM FORRADO CANELADO",
+    "refCode": "Ref: LIT-MACAQU-1705-4",
+    "sku": "LIT-MACAQU-1705-4",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 159,
+    "originalPrice": 189,
+    "images": [
+      "/products/novo_macaquinho_levanta_bumbum_forrado_canelado_26303-xl.jpeg",
+      "/products/novo_macaquinho_levanta_bumbum_forrado_canelado_30605-xl.jpeg",
+      "/products/novo_macaquinho_levanta_bumbum_forrado_canelado_75214-xl.jpeg"
+    ],
+    "colorImages": {
+      "Marsala": "/products/novo_macaquinho_levanta_bumbum_forrado_canelado_26303-xl.jpeg",
+      "Oliva": "/products/novo_macaquinho_levanta_bumbum_forrado_canelado_30605-xl.jpeg",
+      "Preto": "/products/novo_macaquinho_levanta_bumbum_forrado_canelado_75214-xl.jpeg"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-MACAQU-1705-4-MARS-G-2",
+        "name": "Marsala G",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-MARS-G-2"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-MARS-GG-2",
+        "name": "Marsala GG",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-MARS-GG-2"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-MARS-M-2",
+        "name": "Marsala M",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-MARS-M-2"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-MARS-P-2",
+        "name": "Marsala P",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-MARS-P-2"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-OLIV-G-3",
+        "name": "Oliva G",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-OLIV-G-3"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-OLIV-GG-3",
+        "name": "Oliva GG",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-OLIV-GG-3"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-OLIV-M-3",
+        "name": "Oliva M",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-OLIV-M-3"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-OLIV-P-3",
+        "name": "Oliva P",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-OLIV-P-3"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-PRET-G-1",
+        "name": "Preto G",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-PRET-G-1"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-PRET-GG-1",
+        "name": "Preto GG",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-PRET-GG-1"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-PRET-M-1",
+        "name": "Preto M",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-PRET-M-1"
+      },
+      {
+        "id": "LIT-MACAQU-1705-4-PRET-P-1",
+        "name": "Preto P",
+        "price": 159,
+        "sku": "LIT-MACAQU-1705-4-PRET-P-1"
+      }
+    ],
+    "sizes": [
+      "Marsala G",
+      "Marsala GG",
+      "Marsala M",
+      "Marsala P",
+      "Oliva G",
+      "Oliva GG",
+      "Oliva M",
+      "Oliva P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 417,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-BERMUD-5377-5",
+    "name": "BERMUDA COM FORRO E BOLSO LATERAIS CANELADO",
+    "refCode": "Ref: LIT-BERMUD-5377-5",
+    "sku": "LIT-BERMUD-5377-5",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 139,
+    "originalPrice": 159,
+    "images": [
+      "/products/novo_bermuda_com_forro_e_bolso_laterais_canelado_21384-xl.webp",
+      "/products/novo_bermuda_com_forro_e_bolso_laterais_canelado_28316-xl.webp",
+      "/products/novo_bermuda_com_forro_e_bolso_laterais_canelado_33680-xl.jpeg",
+      "/products/novo_bermuda_com_forro_e_bolso_laterais_canelado_52839-xl.webp",
+      "/products/novo_bermuda_com_forro_e_bolso_laterais_canelado_62198-xl.webp",
+      "/products/novo_bermuda_com_forro_e_bolso_laterais_canelado_99656-xl.jpeg"
+    ],
+    "colorImages": {
+      "Estelar": "/products/novo_bermuda_com_forro_e_bolso_laterais_canelado_21384-xl.webp",
+      "Preto": "/products/novo_bermuda_com_forro_e_bolso_laterais_canelado_28316-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-BERMUD-5377-5-ESTE-G-1",
+        "name": "Estelar G",
+        "price": 139,
+        "sku": "LIT-BERMUD-5377-5-ESTE-G-1"
+      },
+      {
+        "id": "LIT-BERMUD-5377-5-ESTE-GG-1",
+        "name": "Estelar GG",
+        "price": 139,
+        "sku": "LIT-BERMUD-5377-5-ESTE-GG-1"
+      },
+      {
+        "id": "LIT-BERMUD-5377-5-ESTE-M-1",
+        "name": "Estelar M",
+        "price": 139,
+        "sku": "LIT-BERMUD-5377-5-ESTE-M-1"
+      },
+      {
+        "id": "LIT-BERMUD-5377-5-ESTE-P-1",
+        "name": "Estelar P",
+        "price": 139,
+        "sku": "LIT-BERMUD-5377-5-ESTE-P-1"
+      },
+      {
+        "id": "LIT-BERMUD-5377-5-PRET-G-2",
+        "name": "Preto G",
+        "price": 139,
+        "sku": "LIT-BERMUD-5377-5-PRET-G-2"
+      },
+      {
+        "id": "LIT-BERMUD-5377-5-PRET-GG-2",
+        "name": "Preto GG",
+        "price": 139,
+        "sku": "LIT-BERMUD-5377-5-PRET-GG-2"
+      },
+      {
+        "id": "LIT-BERMUD-5377-5-PRET-M-2",
+        "name": "Preto M",
+        "price": 139,
+        "sku": "LIT-BERMUD-5377-5-PRET-M-2"
+      },
+      {
+        "id": "LIT-BERMUD-5377-5-PRET-P-2",
+        "name": "Preto P",
+        "price": 139,
+        "sku": "LIT-BERMUD-5377-5-PRET-P-2"
+      }
+    ],
+    "sizes": [
+      "Estelar G",
+      "Estelar GG",
+      "Estelar M",
+      "Estelar P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 276,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-TOPCOS-2136-6",
+    "name": "TOP COSTAS Y CANELADO",
+    "refCode": "Ref: LIT-TOPCOS-2136-6",
+    "sku": "LIT-TOPCOS-2136-6",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 99,
+    "originalPrice": 119,
+    "images": [
+      "/products/novo_top_costas_y_canelado_04900-xl.webp",
+      "/products/novo_top_costas_y_canelado_40235-xl.webp",
+      "/products/novo_top_costas_y_canelado_54991-xl.webp",
+      "/products/novo_top_costas_y_canelado_64232-xl.webp",
+      "/products/novo_top_costas_y_canelado_78776-xl.webp",
+      "/products/novo_top_costas_y_canelado_79937-xl.webp",
+      "/products/novo_top_costas_y_canelado_82736-xl.webp",
+      "/products/novo_top_costas_y_canelado_94378-xl.webp"
+    ],
+    "colorImages": {
+      "Estelar": "/products/novo_top_costas_y_canelado_04900-xl.webp",
+      "Preto": "/products/novo_top_costas_y_canelado_40235-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-TOPCOS-2136-6-ESTE-G-1",
+        "name": "Estelar G",
+        "price": 99,
+        "sku": "LIT-TOPCOS-2136-6-ESTE-G-1"
+      },
+      {
+        "id": "LIT-TOPCOS-2136-6-ESTE-GG-1",
+        "name": "Estelar GG",
+        "price": 99,
+        "sku": "LIT-TOPCOS-2136-6-ESTE-GG-1"
+      },
+      {
+        "id": "LIT-TOPCOS-2136-6-ESTE-M-1",
+        "name": "Estelar M",
+        "price": 99,
+        "sku": "LIT-TOPCOS-2136-6-ESTE-M-1"
+      },
+      {
+        "id": "LIT-TOPCOS-2136-6-ESTE-P-1",
+        "name": "Estelar P",
+        "price": 99,
+        "sku": "LIT-TOPCOS-2136-6-ESTE-P-1"
+      },
+      {
+        "id": "LIT-TOPCOS-2136-6-PRET-G-2",
+        "name": "Preto G",
+        "price": 99,
+        "sku": "LIT-TOPCOS-2136-6-PRET-G-2"
+      },
+      {
+        "id": "LIT-TOPCOS-2136-6-PRET-GG-2",
+        "name": "Preto GG",
+        "price": 99,
+        "sku": "LIT-TOPCOS-2136-6-PRET-GG-2"
+      },
+      {
+        "id": "LIT-TOPCOS-2136-6-PRET-M-2",
+        "name": "Preto M",
+        "price": 99,
+        "sku": "LIT-TOPCOS-2136-6-PRET-M-2"
+      },
+      {
+        "id": "LIT-TOPCOS-2136-6-PRET-P-2",
+        "name": "Preto P",
+        "price": 99,
+        "sku": "LIT-TOPCOS-2136-6-PRET-P-2"
+      }
+    ],
+    "sizes": [
+      "Estelar G",
+      "Estelar GG",
+      "Estelar M",
+      "Estelar P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 473,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-TOPARU-6813-7",
+    "name": "TOP ARUBA CANELADO",
+    "refCode": "Ref: LIT-TOPARU-6813-7",
+    "sku": "LIT-TOPARU-6813-7",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 79,
+    "originalPrice": 94,
+    "images": [
+      "/products/novo_top_aruba_canelado_65098-xl.webp",
+      "/products/novo_top_aruba_canelado_65302-xl.webp",
+      "/products/novo_top_aruba_canelado_70819-xl.webp",
+      "/products/novo_top_aruba_canelado_84648-xl.webp"
+    ],
+    "colorImages": {
+      "Marsala": "/products/novo_top_aruba_canelado_65098-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-TOPARU-6813-7-MARS-G-1",
+        "name": "Marsala G",
+        "price": 79,
+        "sku": "LIT-TOPARU-6813-7-MARS-G-1"
+      },
+      {
+        "id": "LIT-TOPARU-6813-7-MARS-M-1",
+        "name": "Marsala M",
+        "price": 79,
+        "sku": "LIT-TOPARU-6813-7-MARS-M-1"
+      },
+      {
+        "id": "LIT-TOPARU-6813-7-MARS-P-1",
+        "name": "Marsala P",
+        "price": 79,
+        "sku": "LIT-TOPARU-6813-7-MARS-P-1"
+      }
+    ],
+    "sizes": [
+      "Marsala G",
+      "Marsala M",
+      "Marsala P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 196,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-CALCAL-1478-8",
+    "name": "CALÇA LEVANTA BUMBUM COM FORRO CANELADO",
+    "refCode": "Ref: LIT-CALCAL-1478-8",
+    "sku": "LIT-CALCAL-1478-8",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 169,
+    "originalPrice": 199,
+    "images": [
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_08829-xl.webp",
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_08917-xl.webp",
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_18116-xl.webp",
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_31933-xl.webp",
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_33680-xl.webp",
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_46631-xl.webp",
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_65628-xl.webp",
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_73787-xl.webp",
+      "/products/novo_calca_levanta_bumbum_com_forro_canelado_83927-xl.webp"
+    ],
+    "colorImages": {
+      "Marsala": "/products/novo_calca_levanta_bumbum_com_forro_canelado_08829-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-CALCAL-1478-8-MARS-G-1",
+        "name": "Marsala G",
+        "price": 169,
+        "sku": "LIT-CALCAL-1478-8-MARS-G-1"
+      },
+      {
+        "id": "LIT-CALCAL-1478-8-MARS-M-1",
+        "name": "Marsala M",
+        "price": 169,
+        "sku": "LIT-CALCAL-1478-8-MARS-M-1"
+      },
+      {
+        "id": "LIT-CALCAL-1478-8-MARS-P-1",
+        "name": "Marsala P",
+        "price": 169,
+        "sku": "LIT-CALCAL-1478-8-MARS-P-1"
+      }
+    ],
+    "sizes": [
+      "Marsala G",
+      "Marsala M",
+      "Marsala P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 420,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-CALCAL-2530-10",
+    "name": "CALÇA LEGGING FLARE ELASTRA",
+    "refCode": "Ref: LIT-CALCAL-2530-10",
+    "sku": "LIT-CALCAL-2530-10",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 129,
+    "originalPrice": 159,
+    "images": [
+      "/products/novo_calca_legging_flare_elastra_07206-xl.webp",
+      "/products/novo_calca_legging_flare_elastra_09357-og.webp",
+      "/products/novo_calca_legging_flare_elastra_16630-og.webp",
+      "/products/novo_calca_legging_flare_elastra_23613-xl.webp",
+      "/products/novo_calca_legging_flare_elastra_44768-xl.webp",
+      "/products/novo_calca_legging_flare_elastra_47823-og.webp",
+      "/products/novo_calca_legging_flare_elastra_54205-xl.webp"
+    ],
+    "colorImages": {
+      "Marrom": "/products/novo_calca_legging_flare_elastra_07206-xl.webp",
+      "Preto": "/products/novo_calca_legging_flare_elastra_09357-og.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-CALCAL-2530-10-MARR-G-1",
+        "name": "Marrom G",
+        "price": 129,
+        "sku": "LIT-CALCAL-2530-10-MARR-G-1"
+      },
+      {
+        "id": "LIT-CALCAL-2530-10-MARR-GG-1",
+        "name": "Marrom GG",
+        "price": 129,
+        "sku": "LIT-CALCAL-2530-10-MARR-GG-1"
+      },
+      {
+        "id": "LIT-CALCAL-2530-10-MARR-M-1",
+        "name": "Marrom M",
+        "price": 129,
+        "sku": "LIT-CALCAL-2530-10-MARR-M-1"
+      },
+      {
+        "id": "LIT-CALCAL-2530-10-MARR-P-1",
+        "name": "Marrom P",
+        "price": 129,
+        "sku": "LIT-CALCAL-2530-10-MARR-P-1"
+      },
+      {
+        "id": "LIT-CALCAL-2530-10-PRET-G-2",
+        "name": "Preto G",
+        "price": 129,
+        "sku": "LIT-CALCAL-2530-10-PRET-G-2"
+      },
+      {
+        "id": "LIT-CALCAL-2530-10-PRET-GG-2",
+        "name": "Preto GG",
+        "price": 129,
+        "sku": "LIT-CALCAL-2530-10-PRET-GG-2"
+      },
+      {
+        "id": "LIT-CALCAL-2530-10-PRET-M-2",
+        "name": "Preto M",
+        "price": 129,
+        "sku": "LIT-CALCAL-2530-10-PRET-M-2"
+      },
+      {
+        "id": "LIT-CALCAL-2530-10-PRET-P-2",
+        "name": "Preto P",
+        "price": 129,
+        "sku": "LIT-CALCAL-2530-10-PRET-P-2"
+      }
+    ],
+    "sizes": [
+      "Marrom G",
+      "Marrom GG",
+      "Marrom M",
+      "Marrom P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 116,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-CALCAL-7079-15",
+    "name": "CALÇA LEGGING BOLSO COSTAS JACQUAR GEO",
+    "refCode": "Ref: LIT-CALCAL-7079-15",
+    "sku": "LIT-CALCAL-7079-15",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 169,
+    "originalPrice": 199,
+    "images": [
+      "/products/novo_top_pespontado_strappy_jacquar_geo_57619-og.webp",
+      "/products/novo_top_pespontado_strappy_jacquar_geo_76463-og.webp",
+      "/products/novo_top_pespontado_strappy_jacquar_geo_85703-og.webp"
+    ],
+    "colorImages": {
+      "Branco": "/products/novo_top_pespontado_strappy_jacquar_geo_57619-og.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-CALCAL-7079-15-BRAN-G-1",
+        "name": "Branco G",
+        "price": 169,
+        "sku": "LIT-CALCAL-7079-15-BRAN-G-1"
+      },
+      {
+        "id": "LIT-CALCAL-7079-15-BRAN-GG-1",
+        "name": "Branco GG",
+        "price": 169,
+        "sku": "LIT-CALCAL-7079-15-BRAN-GG-1"
+      },
+      {
+        "id": "LIT-CALCAL-7079-15-BRAN-M-1",
+        "name": "Branco M",
+        "price": 169,
+        "sku": "LIT-CALCAL-7079-15-BRAN-M-1"
+      },
+      {
+        "id": "LIT-CALCAL-7079-15-BRAN-P-1",
+        "name": "Branco P",
+        "price": 169,
+        "sku": "LIT-CALCAL-7079-15-BRAN-P-1"
+      }
+    ],
+    "sizes": [
+      "Branco G",
+      "Branco GG",
+      "Branco M",
+      "Branco P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 271,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-TOPPES-9883-16",
+    "name": "TOP PESPONTADO STRAPPY JACQUAR GEO",
+    "refCode": "Ref: LIT-TOPPES-9883-16",
+    "sku": "LIT-TOPPES-9883-16",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 99,
+    "originalPrice": 119,
+    "images": [
+      "/products/novo_top_pespontado_strappy_jacquar_geo_57619-og.webp",
+      "/products/novo_top_pespontado_strappy_jacquar_geo_76463-og.webp",
+      "/products/novo_top_pespontado_strappy_jacquar_geo_85703-og.webp"
+    ],
+    "colorImages": {
+      "Branco": "/products/novo_top_pespontado_strappy_jacquar_geo_57619-og.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-TOPPES-9883-16-BRAN-G-1",
+        "name": "Branco G",
+        "price": 99,
+        "sku": "LIT-TOPPES-9883-16-BRAN-G-1"
+      },
+      {
+        "id": "LIT-TOPPES-9883-16-BRAN-GG-1",
+        "name": "Branco GG",
+        "price": 99,
+        "sku": "LIT-TOPPES-9883-16-BRAN-GG-1"
+      },
+      {
+        "id": "LIT-TOPPES-9883-16-BRAN-M-1",
+        "name": "Branco M",
+        "price": 99,
+        "sku": "LIT-TOPPES-9883-16-BRAN-M-1"
+      },
+      {
+        "id": "LIT-TOPPES-9883-16-BRAN-P-1",
+        "name": "Branco P",
+        "price": 99,
+        "sku": "LIT-TOPPES-9883-16-BRAN-P-1"
+      }
+    ],
+    "sizes": [
+      "Branco G",
+      "Branco GG",
+      "Branco M",
+      "Branco P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 308,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-CUECAB-9381-19",
+    "name": "CUECA BOXER DRY POLIAMIDA C40",
+    "refCode": "Ref: LIT-CUECAB-9381-19",
+    "sku": "LIT-CUECAB-9381-19",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 42,
+    "originalPrice": 49,
+    "images": [
+      "/products/novo_cueca_boxer_dry_poliamida_c40_28343-xl.webp",
+      "/products/novo_cueca_boxer_dry_poliamida_c40_52843-xl.webp",
+      "/products/novo_cueca_boxer_dry_poliamida_c40_55230-xl.webp",
+      "/products/novo_cueca_boxer_dry_poliamida_c40_60566-xl.webp",
+      "/products/novo_cueca_boxer_dry_poliamida_c40_75748-xl.webp",
+      "/products/novo_cueca_boxer_dry_poliamida_c40_82931-xl.webp",
+      "/products/novo_cueca_boxer_dry_poliamida_c40_84493-xl.webp",
+      "/products/novo_cueca_boxer_dry_poliamida_c40_89474-xl.webp",
+      "/products/novo_cueca_boxer_dry_poliamida_c40_92925-xl.webp"
+    ],
+    "colorImages": {
+      "Marinho": "/products/novo_cueca_boxer_dry_poliamida_c40_28343-xl.webp",
+      "Preto": "/products/novo_cueca_boxer_dry_poliamida_c40_52843-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-CUECAB-9381-19-MARI-G-1",
+        "name": "Marinho G",
+        "price": 42,
+        "sku": "LIT-CUECAB-9381-19-MARI-G-1"
+      },
+      {
+        "id": "LIT-CUECAB-9381-19-MARI-GG-1",
+        "name": "Marinho GG",
+        "price": 42,
+        "sku": "LIT-CUECAB-9381-19-MARI-GG-1"
+      },
+      {
+        "id": "LIT-CUECAB-9381-19-MARI-M-1",
+        "name": "Marinho M",
+        "price": 42,
+        "sku": "LIT-CUECAB-9381-19-MARI-M-1"
+      },
+      {
+        "id": "LIT-CUECAB-9381-19-MARI-P-1",
+        "name": "Marinho P",
+        "price": 42,
+        "sku": "LIT-CUECAB-9381-19-MARI-P-1"
+      },
+      {
+        "id": "LIT-CUECAB-9381-19-PRET-G-2",
+        "name": "Preto G",
+        "price": 42,
+        "sku": "LIT-CUECAB-9381-19-PRET-G-2"
+      },
+      {
+        "id": "LIT-CUECAB-9381-19-PRET-GG-2",
+        "name": "Preto GG",
+        "price": 42,
+        "sku": "LIT-CUECAB-9381-19-PRET-GG-2"
+      },
+      {
+        "id": "LIT-CUECAB-9381-19-PRET-M-2",
+        "name": "Preto M",
+        "price": 42,
+        "sku": "LIT-CUECAB-9381-19-PRET-M-2"
+      },
+      {
+        "id": "LIT-CUECAB-9381-19-PRET-P-2",
+        "name": "Preto P",
+        "price": 42,
+        "sku": "LIT-CUECAB-9381-19-PRET-P-2"
+      }
+    ],
+    "sizes": [
+      "Marinho G",
+      "Marinho GG",
+      "Marinho M",
+      "Marinho P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 104,
+    "description": "Peça confeccionada com tecido de alta tecnologia, toque macio, alta compressão e respirabilidade. Marca Litran."
+  },
+  {
+    "id": "LIT-REGATA-3708240-1",
+    "name": "REGATA ABERTO COSTAS ACTIVE",
+    "refCode": "Ref: LIT-REGATA-3708240-1",
+    "sku": "LIT-REGATA-3708240-1",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 79,
+    "originalPrice": 89,
+    "images": [
+      "/products/novo_regata_aberto_costas_active_50725-og.png",
+      "/products/novo_regata_aberto_costas_active_62118-og.png"
+    ],
+    "colorImages": {
+      "Expresso": "/products/novo_regata_aberto_costas_active_50725-og.png",
+      "Preto": "/products/novo_regata_aberto_costas_active_62118-og.png",
+      "Vermelho": "/products/novo_regata_aberto_costas_active_50725-og.png"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-REGATA-3708240-1-EXPR-G-7",
+        "name": "Expresso G",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-EXPR-G-7"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-EXPR-GG-8",
+        "name": "Expresso GG",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-EXPR-GG-8"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-EXPR-M-6",
+        "name": "Expresso M",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-EXPR-M-6"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-EXPR-P-5",
+        "name": "Expresso P",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-EXPR-P-5"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-PRET-G-11",
+        "name": "Preto G",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-PRET-G-11"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-PRET-GG-12",
+        "name": "Preto GG",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-PRET-GG-12"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-PRET-M-10",
+        "name": "Preto M",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-PRET-M-10"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-PRET-P-9",
+        "name": "Preto P",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-PRET-P-9"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-VERM-G-3",
+        "name": "Vermelho G",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-VERM-G-3"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-VERM-GG-4",
+        "name": "Vermelho GG",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-VERM-GG-4"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-VERM-M-2",
+        "name": "Vermelho M",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-VERM-M-2"
+      },
+      {
+        "id": "LIT-REGATA-3708240-1-VERM-P-1",
+        "name": "Vermelho P",
+        "price": 79,
+        "sku": "LIT-REGATA-3708240-1-VERM-P-1"
+      }
+    ],
+    "sizes": [
+      "Expresso G",
+      "Expresso GG",
+      "Expresso M",
+      "Expresso P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P",
+      "Vermelho G",
+      "Vermelho GG",
+      "Vermelho M",
+      "Vermelho P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 238,
+    "description": "Produto confeccionado para máxima durabilidade e conforto. Fornecedor: Strelisse."
+  },
+  {
+    "id": "LIT-CAMISE-3708353-2",
+    "name": "CAMISETA MANGA LONGA UV ACTIVE",
+    "refCode": "Ref: LIT-CAMISE-3708353-2",
+    "sku": "LIT-CAMISE-3708353-2",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 84,
+    "originalPrice": 99,
+    "images": [
+      "/products/novo_camiseta_manga_longa_uv_active_31933-og.png",
+      "/products/novo_camiseta_manga_longa_uv_active_53512-og.png"
+    ],
+    "colorImages": {
+      "Algodão Doce": "/products/novo_camiseta_manga_longa_uv_active_31933-og.png",
+      "Preto": "/products/novo_camiseta_manga_longa_uv_active_53512-og.png"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-CAMISE-3708353-2-ALGO-G-3",
+        "name": "Algodão Doce G",
+        "price": 84,
+        "sku": "LIT-CAMISE-3708353-2-ALGO-G-3"
+      },
+      {
+        "id": "LIT-CAMISE-3708353-2-ALGO-GG-4",
+        "name": "Algodão Doce GG",
+        "price": 84,
+        "sku": "LIT-CAMISE-3708353-2-ALGO-GG-4"
+      },
+      {
+        "id": "LIT-CAMISE-3708353-2-ALGO-M-2",
+        "name": "Algodão Doce M",
+        "price": 84,
+        "sku": "LIT-CAMISE-3708353-2-ALGO-M-2"
+      },
+      {
+        "id": "LIT-CAMISE-3708353-2-ALGO-P-1",
+        "name": "Algodão Doce P",
+        "price": 84,
+        "sku": "LIT-CAMISE-3708353-2-ALGO-P-1"
+      },
+      {
+        "id": "LIT-CAMISE-3708353-2-PRET-G-7",
+        "name": "Preto G",
+        "price": 84,
+        "sku": "LIT-CAMISE-3708353-2-PRET-G-7"
+      },
+      {
+        "id": "LIT-CAMISE-3708353-2-PRET-GG-8",
+        "name": "Preto GG",
+        "price": 84,
+        "sku": "LIT-CAMISE-3708353-2-PRET-GG-8"
+      },
+      {
+        "id": "LIT-CAMISE-3708353-2-PRET-M-6",
+        "name": "Preto M",
+        "price": 84,
+        "sku": "LIT-CAMISE-3708353-2-PRET-M-6"
+      },
+      {
+        "id": "LIT-CAMISE-3708353-2-PRET-P-5",
+        "name": "Preto P",
+        "price": 84,
+        "sku": "LIT-CAMISE-3708353-2-PRET-P-5"
+      }
+    ],
+    "sizes": [
+      "Algodão Doce G",
+      "Algodão Doce GG",
+      "Algodão Doce M",
+      "Algodão Doce P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 284,
+    "description": "Produto confeccionado para máxima durabilidade e conforto. Fornecedor: Strelisse."
+  },
+  {
+    "id": "LIT-CALCIN-3709200-6",
+    "name": "CALCINHA FIO DENTAL SEM COSTURA",
+    "refCode": "Ref: LIT-CALCIN-3709200-6",
+    "sku": "LIT-CALCIN-3709200-6",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 24,
+    "originalPrice": 29,
+    "images": [
+      "/products/novo_calcinha_fio_dental_sem_costura_02157-xl.webp",
+      "/products/novo_calcinha_fio_dental_sem_costura_07757-xl.webp",
+      "/products/novo_calcinha_fio_dental_sem_costura_10263-xl.webp",
+      "/products/novo_calcinha_fio_dental_sem_costura_45590-og.webp",
+      "/products/novo_calcinha_fio_dental_sem_costura_66927-og.webp",
+      "/products/novo_calcinha_fio_dental_sem_costura_79419-xl.webp"
+    ],
+    "colorImages": {
+      "Chocolate": "/products/novo_calcinha_fio_dental_sem_costura_02157-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-CALCIN-3709200-6-CHOC-G-1",
+        "name": "Chocolate G",
+        "price": 24,
+        "sku": "LIT-CALCIN-3709200-6-CHOC-G-1"
+      },
+      {
+        "id": "LIT-CALCIN-3709200-6-CHOC-GG-3",
+        "name": "Chocolate GG",
+        "price": 24,
+        "sku": "LIT-CALCIN-3709200-6-CHOC-GG-3"
+      },
+      {
+        "id": "LIT-CALCIN-3709200-6-CHOC-M-4",
+        "name": "Chocolate M",
+        "price": 24,
+        "sku": "LIT-CALCIN-3709200-6-CHOC-M-4"
+      },
+      {
+        "id": "LIT-CALCIN-3709200-6-CHOC-P-2",
+        "name": "Chocolate P",
+        "price": 24,
+        "sku": "LIT-CALCIN-3709200-6-CHOC-P-2"
+      }
+    ],
+    "sizes": [
+      "Chocolate G",
+      "Chocolate GG",
+      "Chocolate M",
+      "Chocolate P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 495,
+    "description": "Produto confeccionado para máxima durabilidade e conforto. Fornecedor: Strelisse."
+  },
+  {
+    "id": "LIT-MACACA-3709152-7",
+    "name": "MACACÃO LEVANTA BUMBUM FORRADO CANELADO",
+    "refCode": "Ref: LIT-MACACA-3709152-7",
+    "sku": "LIT-MACACA-3709152-7",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 179,
+    "originalPrice": 199,
+    "images": [
+      "/products/novo_macacao_levanta_bumbum_forrado_canelado_03724-xl.jpeg",
+      "/products/novo_macacao_levanta_bumbum_forrado_canelado_52272-xl.jpeg",
+      "/products/novo_macacao_levanta_bumbum_forrado_canelado_67626-xl.jpeg"
+    ],
+    "colorImages": {
+      "Estelar": "/products/novo_macacao_levanta_bumbum_forrado_canelado_03724-xl.jpeg",
+      "Marsala": "/products/novo_macacao_levanta_bumbum_forrado_canelado_52272-xl.jpeg",
+      "Preto": "/products/novo_macacao_levanta_bumbum_forrado_canelado_67626-xl.jpeg"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-MACACA-3709152-7-ESTE-G-11",
+        "name": "Estelar G",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-ESTE-G-11"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-ESTE-GG-12",
+        "name": "Estelar GG",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-ESTE-GG-12"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-ESTE-M-10",
+        "name": "Estelar M",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-ESTE-M-10"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-ESTE-P-9",
+        "name": "Estelar P",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-ESTE-P-9"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-MARS-G-7",
+        "name": "Marsala G",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-MARS-G-7"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-MARS-GG-8",
+        "name": "Marsala GG",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-MARS-GG-8"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-MARS-M-6",
+        "name": "Marsala M",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-MARS-M-6"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-MARS-P-5",
+        "name": "Marsala P",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-MARS-P-5"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-PRET-G-3",
+        "name": "Preto G",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-PRET-G-3"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-PRET-GG-4",
+        "name": "Preto GG",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-PRET-GG-4"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-PRET-M-2",
+        "name": "Preto M",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-PRET-M-2"
+      },
+      {
+        "id": "LIT-MACACA-3709152-7-PRET-P-1",
+        "name": "Preto P",
+        "price": 179,
+        "sku": "LIT-MACACA-3709152-7-PRET-P-1"
+      }
+    ],
+    "sizes": [
+      "Estelar G",
+      "Estelar GG",
+      "Estelar M",
+      "Estelar P",
+      "Marsala G",
+      "Marsala GG",
+      "Marsala M",
+      "Marsala P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 249,
+    "description": "Produto confeccionado para máxima durabilidade e conforto. Fornecedor: Strelisse."
+  },
+  {
+    "id": "LIT-CALCAC-3709780-4",
+    "name": "CALÇA COM FORRO E BOLSOS LATERAIS CANELADO",
+    "refCode": "Ref: LIT-CALCAC-3709780-4",
+    "sku": "LIT-CALCAC-3709780-4",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 169,
+    "originalPrice": 199,
+    "images": [
+      "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_12962-xl.webp",
+      "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_14239-xl.webp",
+      "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_27405-xl.webp",
+      "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_28416-xl.webp",
+      "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_57719-xl.webp",
+      "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_79839-xl.webp",
+      "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_89038-xl.webp",
+      "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_99728-og.webp"
+    ],
+    "colorImages": {
+      "Estelar": "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_12962-xl.webp",
+      "Preto": "/products/novo_calca_com_forro_e_bolsos_laterais_canelado_14239-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-CALCAC-3709780-4-ESTE-G-7",
+        "name": "Estelar G",
+        "price": 169,
+        "sku": "LIT-CALCAC-3709780-4-ESTE-G-7"
+      },
+      {
+        "id": "LIT-CALCAC-3709780-4-ESTE-GG-8",
+        "name": "Estelar GG",
+        "price": 169,
+        "sku": "LIT-CALCAC-3709780-4-ESTE-GG-8"
+      },
+      {
+        "id": "LIT-CALCAC-3709780-4-ESTE-M-6",
+        "name": "Estelar M",
+        "price": 169,
+        "sku": "LIT-CALCAC-3709780-4-ESTE-M-6"
+      },
+      {
+        "id": "LIT-CALCAC-3709780-4-ESTE-P-5",
+        "name": "Estelar P",
+        "price": 169,
+        "sku": "LIT-CALCAC-3709780-4-ESTE-P-5"
+      },
+      {
+        "id": "LIT-CALCAC-3709780-4-PRET-G-3",
+        "name": "Preto G",
+        "price": 169,
+        "sku": "LIT-CALCAC-3709780-4-PRET-G-3"
+      },
+      {
+        "id": "LIT-CALCAC-3709780-4-PRET-GG-4",
+        "name": "Preto GG",
+        "price": 169,
+        "sku": "LIT-CALCAC-3709780-4-PRET-GG-4"
+      },
+      {
+        "id": "LIT-CALCAC-3709780-4-PRET-M-2",
+        "name": "Preto M",
+        "price": 169,
+        "sku": "LIT-CALCAC-3709780-4-PRET-M-2"
+      },
+      {
+        "id": "LIT-CALCAC-3709780-4-PRET-P-1",
+        "name": "Preto P",
+        "price": 169,
+        "sku": "LIT-CALCAC-3709780-4-PRET-P-1"
+      }
+    ],
+    "sizes": [
+      "Estelar G",
+      "Estelar GG",
+      "Estelar M",
+      "Estelar P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 422,
+    "description": "Produto confeccionado para máxima durabilidade e conforto. Fornecedor: Strelisse."
+  },
+  {
+    "id": "LIT-JAQUET-3708480-3",
+    "name": "JAQUETA COM BOLSO TELA CORTA-VENTO",
+    "refCode": "Ref: LIT-JAQUET-3708480-3",
+    "sku": "LIT-JAQUET-3708480-3",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 119,
+    "originalPrice": 139,
+    "images": [
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_03113-og.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_03743-og.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_24307-og.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_29859-og.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_34311-xl.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_53104-xl.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_64716-og.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_71490-og.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_72251-xl.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_78568-og.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_83668-og.webp",
+      "/products/novo_jaqueta_com_bolso_tela_corta_vento_87327-og.webp"
+    ],
+    "colorImages": {
+      "Branco": "/products/novo_jaqueta_com_bolso_tela_corta_vento_03113-og.webp",
+      "Marinho": "/products/novo_jaqueta_com_bolso_tela_corta_vento_03743-og.webp",
+      "Preto": "/products/novo_jaqueta_com_bolso_tela_corta_vento_24307-og.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-JAQUET-3708480-3-BRAN-G-11",
+        "name": "Branco G",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-BRAN-G-11"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-BRAN-GG-12",
+        "name": "Branco GG",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-BRAN-GG-12"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-BRAN-M-10",
+        "name": "Branco M",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-BRAN-M-10"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-BRAN-P-9",
+        "name": "Branco P",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-BRAN-P-9"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-MARI-G-3",
+        "name": "Marinho G",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-MARI-G-3"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-MARI-GG-4",
+        "name": "Marinho GG",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-MARI-GG-4"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-MARI-M-2",
+        "name": "Marinho M",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-MARI-M-2"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-MARI-P-1",
+        "name": "Marinho P",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-MARI-P-1"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-PRET-G-7",
+        "name": "Preto G",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-PRET-G-7"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-PRET-GG-8",
+        "name": "Preto GG",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-PRET-GG-8"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-PRET-M-6",
+        "name": "Preto M",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-PRET-M-6"
+      },
+      {
+        "id": "LIT-JAQUET-3708480-3-PRET-P-5",
+        "name": "Preto P",
+        "price": 119,
+        "sku": "LIT-JAQUET-3708480-3-PRET-P-5"
+      }
+    ],
+    "sizes": [
+      "Branco G",
+      "Branco GG",
+      "Branco M",
+      "Branco P",
+      "Marinho G",
+      "Marinho GG",
+      "Marinho M",
+      "Marinho P",
+      "Preto G",
+      "Preto GG",
+      "Preto M",
+      "Preto P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 200,
+    "description": "Produto confeccionado para máxima durabilidade e conforto. Fornecedor: Strelisse."
+  },
+  {
+    "id": "LIT-CALCIN-3709464-5",
+    "name": "CALCINHA BIQUÍNI SEM COSTURA",
+    "refCode": "Ref: LIT-CALCIN-3709464-5",
+    "sku": "LIT-CALCIN-3709464-5",
+    "category": "moda-fitness",
+    "subcategory": "MODA FITNESS",
+    "price": 27,
+    "originalPrice": 32,
+    "images": [
+      "/products/novo_calcinha_biquini_sem_costura_14600-xl.webp",
+      "/products/novo_calcinha_biquini_sem_costura_44857-xl.webp",
+      "/products/novo_calcinha_biquini_sem_costura_67208-xl.webp",
+      "/products/novo_calcinha_biquini_sem_costura_70761-xl.webp",
+      "/products/novo_calcinha_biquini_sem_costura_89475-xl.webp"
+    ],
+    "colorImages": {
+      "Chocolate": "/products/novo_calcinha_biquini_sem_costura_14600-xl.webp"
+    },
+    "video": null,
+    "variations": [
+      {
+        "id": "LIT-CALCIN-3709464-5-CHOC-G-1",
+        "name": "Chocolate G",
+        "price": 27,
+        "sku": "LIT-CALCIN-3709464-5-CHOC-G-1"
+      },
+      {
+        "id": "LIT-CALCIN-3709464-5-CHOC-GG-3",
+        "name": "Chocolate GG",
+        "price": 27,
+        "sku": "LIT-CALCIN-3709464-5-CHOC-GG-3"
+      },
+      {
+        "id": "LIT-CALCIN-3709464-5-CHOC-M-2",
+        "name": "Chocolate M",
+        "price": 27,
+        "sku": "LIT-CALCIN-3709464-5-CHOC-M-2"
+      },
+      {
+        "id": "LIT-CALCIN-3709464-5-CHOC-P-4",
+        "name": "Chocolate P",
+        "price": 27,
+        "sku": "LIT-CALCIN-3709464-5-CHOC-P-4"
+      }
+    ],
+    "sizes": [
+      "Chocolate G",
+      "Chocolate GG",
+      "Chocolate M",
+      "Chocolate P"
+    ],
+    "tag": "Black Friday",
+    "rating": 5,
+    "views": 188,
+    "description": "Produto confeccionado para máxima durabilidade e conforto. Fornecedor: Strelisse."
   }
 ];
