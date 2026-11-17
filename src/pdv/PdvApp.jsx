@@ -297,7 +297,7 @@ export function PdvApp() {
         productName: product.name,
         productSku: variant ? variant.sku : product.sku,
         size: displaySize,
-        unitPrice: variant && variant.price ? variant.price : (product.promoPrice || product.price),
+        unitPrice: product.promoPrice ? product.promoPrice : (variant && variant.price ? variant.price : product.price),
         unitCost: product.costPrice || 0,
         qty: 1
       }]);

@@ -133,8 +133,11 @@ router.get('/products', async (req, res) => {
       const vPhysical = (v.balances || []).reduce((acc, b) => acc + b.physicalQty, 0);
       const vReserved = (v.balances || []).reduce((acc, b) => acc + b.reservedQty, 0);
       const colorImg = v.imageUrl || prodColorImages[v.color] || null;
+      const effectivePrice = p.promoPrice ? p.promoPrice : (v.price || p.price);
       return {
         ...v,
+        price: effectivePrice,
+        originalPrice: p.promoPrice ? (v.price || p.price) : null,
         imageUrl: colorImg,
         stockPhysical: vPhysical,
         stockReserved: vReserved,

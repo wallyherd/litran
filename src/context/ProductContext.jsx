@@ -45,13 +45,15 @@ export const ProductProvider = ({ children }) => {
           const formattedVariations = (p.variants && p.variants.length > 0)
             ? p.variants.map((v) => {
                 const colorImg = v.imageUrl || (v.color && prodColorImages[v.color]) || null;
+                const effectiveVarPrice = p.promoPrice ? p.promoPrice : (v.price || p.price);
                 return {
                   id: v.id || v.sku,
                   name: `${v.color ? v.color.trim() + ' ' : ''}${v.size ? v.size.trim() : ''}`.trim() || 'Único',
                   size: v.size ? v.size.trim() : '',
                   color: v.color ? v.color.trim() : '',
                   imageUrl: colorImg,
-                  price: v.price || p.price,
+                  price: effectiveVarPrice,
+                  originalPrice: p.promoPrice ? (v.price || p.price) : null,
                   sku: v.sku,
                   stockAvailable: v.stockAvailable ?? v.stockQty ?? 0
                 };

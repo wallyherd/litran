@@ -116,11 +116,18 @@ export const ProductModal = ({ product, onClose, onOpenAccount }) => {
     }
   };
 
-  const variations = (product.variations && product.variations.length > 0)
-    ? product.variations
-    : [
-        { id: `v_${product.id}`, name: 'Único', price: product.price, sku: product.sku || product.refCode || String(product.id) }
-      ];
+  const variations = useMemo(() => {
+    const rawVars = (product.variations && product.variations.length > 0)
+      ? product.variations
+      : [
+          { id: `v_${product.id}`, name: 'Único', price: product.price, sku: product.sku || product.refCode || String(product.id) }
+        ];
+
+    return rawVars.map((v) => ({
+      ...v,
+      price: product.price ?? v.price
+    }));
+  }, [product]);
 
   // Reordena as variações trazendo as da cor selecionada para o início
   const displayedVariations = useMemo(() => {
