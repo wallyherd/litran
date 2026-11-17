@@ -8,10 +8,8 @@ import { FavoritesProvider } from './context/FavoritesContext';
 // Store Components
 import { AnnouncementBar } from './components/AnnouncementBar';
 import { Header } from './components/Header';
-import { DesktopNav } from './components/DesktopNav';
 import { MobileDrawer } from './components/MobileDrawer';
 import { BannerSlider } from './components/BannerSlider';
-import { CategoryCircles } from './components/CategoryCircles';
 import { ProductGrid } from './components/ProductGrid';
 import { PromoBanner } from './components/PromoBanner';
 import { ProductModal } from './components/ProductModal';
@@ -71,14 +69,8 @@ function StoreView() {
         onOpenAccount={() => setIsAccountOpen(true)}
       />
 
-      <DesktopNav
-        activeCategory={activeCategory}
-        onSelectCategory={handleSelectCategory}
-      />
-
       <main className="flex-1">
         <BannerSlider onSelectCategory={handleSelectCategory} />
-        <CategoryCircles activeCategory={activeCategory} onSelectCategory={handleSelectCategory} />
         <ProductGrid
           activeCategory={activeCategory}
           onQuickView={(product) => setQuickViewProduct(product)}
